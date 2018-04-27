@@ -1,7 +1,7 @@
 <header class="c-header">
   <a class="c-header__logo" routerLink="/">{{ headerContent.logoText }}</a>
   <nav class="c-header__nav">
-    <ul class="c-nav-list">
+    <ul class="c-header__nav-list">
       <li *ngFor="let item of headerContent.navItems">
         <a routerLink="{{ item.url }}">{{ item.text }}</a>
       </li>

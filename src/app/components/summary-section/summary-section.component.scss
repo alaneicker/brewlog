@@ -18,15 +18,15 @@
     }
 
     &__beer-name {
-        font-size: rem(40);
+        font-size: rem(30);
         font-weight: 800;
     }
 
     &__brewery {
-        font-size: rem(32);
+        font-size: rem(22);
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: $breakpoint-medium) {
         display: flex;
 
         &__photo {
@@ -34,6 +34,14 @@
             height: auto;
             min-height: 100%;
             min-width: rem(250);
+        }
+
+        &__beer-name {
+            font-size: rem(40);
+        }
+
+        &__brewery {
+            font-size: rem(32);
         }
     }
 }

@@ -15,20 +15,27 @@
     }
 
     &__nav {
+        font-size: rem(14);
         flex: 1;
     }
-}
 
-.c-nav-list {
-    display: flex;
-    justify-content: flex-end;
-
-    & > * + * {
-        margin-left: rem(20);
+    &__nav-list {
+        display: flex;
+        justify-content: flex-end;
+    
+        & > * + * {
+            margin-left: rem(20);
+        }
+    
+        & > * > a {
+            color: $white;
+            text-decoration: none;
+        }
     }
 
-    & > * > a {
-        color: $white;
-        text-decoration: none;
+    @media(min-width: $breakpoint-medium) {
+        &__nav {
+            font-size: inherit;
+        }
     }
 }
