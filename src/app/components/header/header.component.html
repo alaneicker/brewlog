@@ -1,3 +1,10 @@
-<div class="header">
-  header...
-</div>
+<header class="c-header">
+  <a class="c-header__logo" routerLink="/">{{ headerContent.logoText }}</a>
+  <nav class="c-header__nav">
+    <ul class="c-nav-list">
+      <li *ngFor="let item of headerContent.navItems">
+        <a routerLink="{{ item.url }}">{{ item.text }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

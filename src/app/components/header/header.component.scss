@@ -1,0 +1,33 @@
+@import '../../../assets/styles/_tools.scss';
+
+.c-header {
+    background: $black;
+    display: flex;
+    align-items: center;
+    height: rem(50);
+    padding: rem(0 16);
+
+    &__logo {
+        color: $white;
+        font-size: rem(22);
+        text-decoration: none;
+    }
+
+    &__nav {
+        flex: 1 0 auto;
+    }
+}
+
+.c-nav-list {
+    display: flex;
+    justify-content: flex-end;
+
+    & > * + * {
+        margin-left: rem(20);
+    }
+
+    & > * > a {
+        color: $white;
+        text-decoration: none;
+    }
+}

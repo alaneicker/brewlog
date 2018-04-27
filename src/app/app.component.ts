@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
+import { IHeader, INavItem } from './interfaces/header.interface';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Brelog';
+
+  headerContent: IHeader = {
+    logoText: 'Brewlog',
+    navItems: [
+      { text: 'Dashboard', url: '/' },
+      { text: 'Settings', url: '/settings' }
+    ],
+  };
 }
