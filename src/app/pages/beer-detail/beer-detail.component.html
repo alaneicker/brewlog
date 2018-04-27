@@ -1,2 +1,12 @@
 <app-summary-section
-    [summaryContent]="summaryContent"></app-summary-section>
+    [summaryContent]="summaryContent">
+</app-summary-section>
+
+<section class="padding padding--24">
+    <h3 class="u-text-lg u-vr-4 u-vr-2-top u-align-center--medium">
+        Other Beers By {{ summaryContent.brewery }} You May Like
+    </h3>
+    <app-recommended-beers
+        [recommendedBeers]="recommendedBeers">
+    </app-recommended-beers>
+</section>

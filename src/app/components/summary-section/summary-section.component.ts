@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IsummarySection } from '../../interfaces/summary-section.interface';
+import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 
 @Component({
   selector: 'app-summary-section',
@@ -7,7 +7,7 @@ import { IsummarySection } from '../../interfaces/summary-section.interface';
   styleUrls: ['./summary-section.component.scss']
 })
 export class SummarySectionComponent implements OnInit {
-  @Input() summaryContent: IsummarySection;
+  @Input() summaryContent: IBeerDetail;
 
   constructor() { }
 

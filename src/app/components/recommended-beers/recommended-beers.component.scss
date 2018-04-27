@@ -1,0 +1,24 @@
+@import '../../../assets/styles/_tools.scss';
+
+.c-recommended-beers-list {
+    & > * {
+        background: $gray-6;
+        flex: 0 32%;
+    }
+
+    &__photo {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        height: rem(250);
+    }   
+    
+    &__details {
+        padding: rem(16);
+    }
+
+    @media(min-width: $breakpoint-medium) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

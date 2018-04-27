@@ -4,6 +4,12 @@
     '_reset',
     '_tools',
     '_base',
+    '_alignment',
     '_flexbox',
+    '_padding',
     '_text',
     '_vr';
+
+@media (min-width: $breakpoint-medium) {
+    @import '_alinment-medium';
+}

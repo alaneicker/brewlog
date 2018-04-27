@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:4200/beer-detail/1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Brewlog</title>
+  <!--<base href="/">--><base href=".">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i);</style><style type="text/css">/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+* {
+  box-sizing: border-box; }
+
+b, strong {
+  font-weight: 700; }
+
+p {
+  line-height: 1.8; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700; }
+
+.u-align-center {
+  text-align: center; }
+
+.u-flex {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .u-flex--wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .u-flex--hr > * + * {
+    margin-left: 1rem; }
+  .u-flex--hr-2 > * + * {
+    margin-left: 2rem; }
+  .u-flex--hr--reverse > * {
+    margin-right: 1rem; }
+  .u-flex--small[class*="--hr"] > * + *, .u-flex--medium[class*="--hr"] > * + *, .u-flex--large[class*="--hr"] > * + * {
+    margin-left: 0; }
+  .u-flex--middle {
+    -ms-flex-align: center;
+        align-items: center; }
+  .u-flex--space-between {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .u-flex--equalCols > * {
+    -ms-flex: 1;
+        flex: 1; }
+  .u-flex__item--grow {
+    -ms-flex: 1;
+        flex: 1; }
+  @media only screen and (min-width: 480px) {
+    .u-flex--small {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .u-flex--small.u-flex--hr > * + * {
+        margin-left: 1rem; }
+      .u-flex--small.u-flex--hr-2 > * + * {
+        margin-left: 2rem; } }
+  @media only screen and (min-width: 768px) {
+    .u-flex--medium {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .u-flex--medium.u-flex--hr > * + * {
+        margin-left: 1rem; }
+      .u-flex--medium.u-flex--hr-2 > * + * {
+        margin-left: 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .u-flex--large {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .u-flex--large.u-flex--hr > * + * {
+        margin-left: 1rem; }
+      .u-flex--large.u-flex--hr-2 > * + * {
+        margin-left: 2rem; } }
+
+.padding {
+  padding: 0.5rem; }
+  .padding--16 {
+    padding: 1rem; }
+  .padding--24 {
+    padding: 1.5rem; }
+  .padding--32 {
+    padding: 2rem; }
+
+.u-line-height-condensed {
+  line-height: 1.3; }
+
+.u-text-xs {
+  font-size: 0.75rem; }
+
+.u-text-sm {
+  font-size: 0.875rem; }
+
+.u-text-md {
+  font-size: 1.0625rem; }
+
+.u-text-lg {
+  font-size: 1.5rem; }
+
+.u-text-xl {
+  font-size: 2rem; }
+
+.u-text-white {
+  color: #fff; }
+
+.u-text-gray {
+  color: #444; }
+
+.u-text-link-blue {
+  color: #0c78af; }
+
+.u-text-success {
+  color: #4fa009; }
+
+.u-text-error {
+  color: #fc5519; }
+
+.u-text-light-blue {
+  color: #59b6e5; }
+
+.u-text-gold {
+  color: #fcb635; }
+
+.u-text-uppercase {
+  text-transform: uppercase; }
+
+.u-text-lowercase {
+  text-transform: lowercase; }
+
+.u-text-normal {
+  font-weight: 300; }
+
+.u-text-medium {
+  font-weight: 500; }
+
+.u-text-semibold {
+  font-weight: 600; }
+
+.u-text-bold {
+  font-weight: 700; }
+
+.u-vr {
+  margin-bottom: 0.5rem; }
+
+.u-vr-2 {
+  margin-bottom: 1rem; }
+
+.u-vr-3 {
+  margin-bottom: 1.5rem; }
+
+.u-vr-4 {
+  margin-bottom: 2rem; }
+
+.u-vr-5 {
+  margin-bottom: 2.5rem; }
+
+.u-vr-6 {
+  margin-bottom: 3rem; }
+
+.u-vr-7 {
+  margin-bottom: 3.5rem; }
+
+.u-vr-top {
+  margin-top: 0.5rem; }
+
+.u-vr-2-top {
+  margin-top: 1rem; }
+
+.u-vr-3-top {
+  margin-top: 1.5rem; }
+
+.u-vr-4-top {
+  margin-top: 2rem; }
+
+.u-vr-5-top {
+  margin-top: 2.5rem; }
+
+.u-vr-6-top {
+  margin-top: 3rem; }
+
+.u-vr-7-top {
+  margin-top: 3.5rem; }
+
+@media (min-width: 768px) {
+  .u-align-center--medium {
+    text-align: center; } }
+</style><style>.c-header[_ngcontent-c0] {
+  background: #222;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 3.75rem;
+  padding: 0 1rem; }
+  .c-header__logo[_ngcontent-c0] {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 600;
+    text-decoration: none; }
+  .c-header__nav[_ngcontent-c0] {
+    font-size: 0.875rem;
+    -ms-flex: 1;
+        flex: 1; }
+  .c-header__nav-list[_ngcontent-c0] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .c-header__nav-list[_ngcontent-c0]    > *[_ngcontent-c0]    + *[_ngcontent-c0] {
+      margin-left: 1.25rem; }
+    .c-header__nav-list[_ngcontent-c0]    > *[_ngcontent-c0]    > a[_ngcontent-c0] {
+      color: #fff;
+      text-decoration: none; }
+  @media (min-width: 768px) {
+    .c-header__nav[_ngcontent-c0] {
+      font-size: inherit; } }</style><style></style><style>.summary[_ngcontent-c2] {
+  background: #eaf5fc;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 25rem; }
+  .summary__photo[_ngcontent-c2] {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem; }
+  .summary__details[_ngcontent-c2] {
+    -ms-flex: 1;
+        flex: 1;
+    padding: 1.5rem; }
+  .summary__beer-name[_ngcontent-c2] {
+    font-size: 1.875rem;
+    font-weight: 800; }
+  .summary__brewery[_ngcontent-c2] {
+    font-size: 1.375rem; }
+  @media (min-width: 768px) {
+    .summary[_ngcontent-c2] {
+      display: -ms-flexbox;
+      display: flex; }
+      .summary__photo[_ngcontent-c2] {
+        -ms-flex: 0 35%;
+            flex: 0 35%;
+        height: auto;
+        min-height: 100%;
+        min-width: 15.625rem; }
+      .summary__beer-name[_ngcontent-c2] {
+        font-size: 2.5rem; }
+      .summary__brewery[_ngcontent-c2] {
+        font-size: 2rem; } }</style></head>
+<body>
+  <app-root ng-version="5.2.10">
+<app-header _nghost-c0="" ng-reflect-header-content="[object Object]"><header _ngcontent-c0="" class="c-header">
+  <a _ngcontent-c0="" class="c-header__logo" routerlink="/" ng-reflect-router-link="/" href="http://localhost:4200/">Brewlog</a>
+  <nav _ngcontent-c0="" class="c-header__nav">
+    <ul _ngcontent-c0="" class="c-header__nav-list">
+      <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--><li _ngcontent-c0="">
+        <a _ngcontent-c0="" ng-reflect-router-link="/" href="http://localhost:4200/">Dashboard</a>
+      </li><li _ngcontent-c0="">
+        <a _ngcontent-c0="" ng-reflect-router-link="/my-beers" href="http://localhost:4200/my-beers">My Beers</a>
+      </li><li _ngcontent-c0="">
+        <a _ngcontent-c0="" ng-reflect-router-link="/settings" href="http://localhost:4200/settings">Settings</a>
+      </li>
+    </ul>
+  </nav>
+</header></app-header>
+
+
+<router-outlet></router-outlet><app-beer-detail _nghost-c1=""><app-summary-section _ngcontent-c1="" _nghost-c2="" ng-reflect-summary-content="[object Object]"><section _ngcontent-c2="" class="summary">
+	<div _ngcontent-c2="" class="summary__photo" style="background-image: url(&quot;assets/images/goose-island-green-line.jpg&quot;);">
+	</div>
+	<div _ngcontent-c2="" class="summary__details">
+		<h1 _ngcontent-c2="" class="summary__beer-name">
+			Green Line Pale Ale
+		</h1>
+		<h2 _ngcontent-c2="" class="summary__brewery">
+			Goose Island Brewing Co., Chicago, IL
+		</h2>
+		<div _ngcontent-c2="" class="u-vr-top">
+			<app-rating _ngcontent-c2="" _nghost-c4="" ng-reflect-rating="2">
+  <div _ngcontent-c4="" class="c-rating">
+    <b _ngcontent-c4="">Overall Rating:</b>
+    <!--bindings={
+  "ng-reflect-ng-for-of": "0,0"
+}--><span _ngcontent-c4="" class="u-text-gold">★</span><span _ngcontent-c4="" class="u-text-gold">★</span>
+  </div>
+  </app-rating>
+		</div>
+		<ul _ngcontent-c2="" class="u-vr-3-top u-flex--medium u-flex--hr">
+			<li _ngcontent-c2=""><b _ngcontent-c2="">Style:</b> American Pale Ale</li>
+			<li _ngcontent-c2=""><b _ngcontent-c2="">ABV:</b> 5.4</li>
+			<li _ngcontent-c2=""><b _ngcontent-c2="">IBU:</b> 30</li>
+			<li _ngcontent-c2=""><b _ngcontent-c2="">Glassware:</b> Mug, Pint Glass</li>
+		</ul>
+		<p _ngcontent-c2="" class="u-vr-3-top">This was a complete disappointment. Not hoppy. Not tasty. Super flat and no head at all. Tastes like a flat Budweiser. Someone before said that it was abusive to the consumer and I completely agree. This is down right one of the worst beers I've ever tasted.</p>
+	</div>
+</section></app-summary-section>
+
+<section _ngcontent-c1="" class="padding padding--24">
+    <h3 _ngcontent-c1="" class="u-text-lg u-vr-3 u-align-center--medium">
+        Other Beers By Goose Island Brewing Co. You May Like
+    </h3>
+    <app-recommended-beers _ngcontent-c1="" _nghost-c3="" ng-reflect-recommended-beers="[object Object],[object Object"><ul _ngcontent-c3="" class="c-recommended-beers-list">
+  <li _ngcontent-c3="">
+    <div _ngcontent-c3="" class="c-recommended-beers-list__photo"></div>
+    <div _ngcontent-c3="" class="c-recommended-beers-list__details">
+      <h3 _ngcontent-c3=""></h3>
+      <h4 _ngcontent-c3=""></h4>
+    </div>
+  </li>
+</ul></app-recommended-beers>
+</section></app-beer-detail></app-root>
+<script type="text/javascript" src="./Brewlog_files/inline.bundle.js"></script><script type="text/javascript" src="./Brewlog_files/polyfills.bundle.js"></script><script type="text/javascript" src="./Brewlog_files/styles.bundle.js"></script><script type="text/javascript" src="./Brewlog_files/vendor.bundle.js"></script><script type="text/javascript" src="./Brewlog_files/main.bundle.js"></script>
+
+</body></html>
