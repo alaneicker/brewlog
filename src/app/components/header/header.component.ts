@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IHeader } from '../../interfaces/header.interface';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerContent: string;
+  @Input() headerContent: IHeader;
 
   constructor() { }
 

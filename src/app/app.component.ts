@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { IHeader, INavItem } from './interfaces/header.interface';
+
+import { IHeader } from './interfaces/header.interface';
 
 @Component({
   selector: 'app-root',

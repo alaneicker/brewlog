@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { SummarySectionComponent } from './components/summary-section/summary-section.component';
+import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     HeaderComponent,
     DashboardComponent,
     PageNotFoundComponent,
+    SummarySectionComponent,
+    BeerDetailComponent,
   ],
   imports: [
     BrowserModule,
