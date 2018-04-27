@@ -9,6 +9,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SummarySectionComponent } from './components/summary-section/summary-section.component';
 import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
     PageNotFoundComponent,
     SummarySectionComponent,
     BeerDetailComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,

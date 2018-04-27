@@ -7,4 +7,5 @@ export interface IsummarySection {
     ibu: string;
     glassware: string;
     comments: string;
+    rating: any;
 }

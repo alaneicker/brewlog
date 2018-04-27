@@ -1,16 +1,25 @@
 <section class="summary">
-  <div 
-    class="summary__photo" 
-    [style.backgroundImage]="'url('+ summaryContent.photoUrl +')'">
-  </div>
-  <div class="summary__details">
-    <h1 class="summary__beer-name">{{ summaryContent.beerName }}</h1>
-    <h2 class="summary__brewery">{{ summaryContent.brewery }}, {{summaryContent.location}}</h2>
-    <ul class="u-text-lg u-vr-3-top u-flex--medium u-flex--hr">
-      <li><b>ABV:</b> {{ summaryContent.abv }}</li>
-      <li><b>IBU:</b> {{ summaryContent.ibu }}</li>
-      <li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
-    </ul>
-    <p class="u-vr-3-top">{{ summaryContent.comments }}</p>
-  </div>
+	<div 
+		class="summary__photo" 
+		[style.backgroundImage]="'url('+ summaryContent.photoUrl +')'">
+	</div>
+	<div class="summary__details">
+		<h1 class="summary__beer-name">
+			{{ summaryContent.beerName }}
+		</h1>
+		<h2 class="summary__brewery">
+			{{ summaryContent.brewery }}, {{summaryContent.location}}
+		</h2>
+		<div class="u-vr-top">
+			<app-rating
+				[rating]="summaryContent.rating">
+			</app-rating>
+		</div>
+		<ul class="u-vr-3-top u-flex--medium u-flex--hr">
+			<li><b>ABV:</b> {{ summaryContent.abv }}</li>
+			<li><b>IBU:</b> {{ summaryContent.ibu }}</li>
+			<li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
+		</ul>
+		<p class="u-vr-3-top">{{ summaryContent.comments }}</p>
+	</div>
 </section>
