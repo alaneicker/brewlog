@@ -1,0 +1,30 @@
+@import '../../../assets/styles/_tools.scss';
+
+.summary {
+    background: $blue-3;
+    display: flex;
+    align-content: center;
+    min-height: rem(400);
+
+    &__photo {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        min-height: 100%;
+        width: rem(500);
+    }
+
+    &__details {
+        flex: 1;
+        padding: rem(24);
+    }
+
+    &__beer-name {
+        font-size: rem(40);
+        font-weight: 800;
+    }
+
+    &__brewery {
+        font-size: rem(32);
+    }
+}

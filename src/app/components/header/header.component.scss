@@ -4,7 +4,7 @@
     background: $black;
     display: flex;
     align-items: center;
-    height: rem(50);
+    height: rem(60);
     padding: rem(0 16);
 
     &__logo {
@@ -14,7 +14,7 @@
     }
 
     &__nav {
-        flex: 1 0 auto;
+        flex: 1;
     }
 }
 
