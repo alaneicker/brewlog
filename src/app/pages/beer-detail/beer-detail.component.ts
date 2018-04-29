@@ -19,7 +19,7 @@ export class BeerDetailComponent implements OnInit {
     ibu: '30',
     glassware: 'Mug, Pint Glass',
     comments: 'This was a complete disappointment. Not hoppy. Not tasty. Super flat and no head at all. Tastes like a flat Budweiser. Someone before said that it was abusive to the consumer and I completely agree. This is down right one of the worst beers I\'ve ever tasted.',
-    rating: 2,
+    rating: 1,
   };
 
   recommendedBeers: IBeerDetail[] = [
@@ -37,6 +37,11 @@ export class BeerDetailComponent implements OnInit {
       photoUrl: 'assets/images/sky-high-rye.jpg',
       beerName: 'Sky High Rye',
       brewery: 'Arcadia Brewing Co.',
+    },
+    {
+      photoUrl: 'assets/images/sierra-nevada-paleale.jpg',
+      beerName: 'Sierra Nevada Pale Ale',
+      brewery: 'Sierra Nevada Brewing Co.',
     },
   ];
 

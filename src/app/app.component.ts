@@ -13,8 +13,8 @@ export class AppComponent {
     logoText: 'Brewlog',
     navItems: [
       { text: 'Dashboard', url: '/' },
-      { text: 'My Beers', url: '/my-beers' }
-      { text: 'Settings', url: '/settings' }
+      { text: 'My Beers', url: '/my-beers' },
+      { text: 'Settings', url: '/settings' },
     ],
   };
 }
