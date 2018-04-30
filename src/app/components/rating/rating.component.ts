@@ -1,22 +1,23 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-rating',
-  styleUrls: ['./rating.component.scss'],
-  template: `
-  <div class="c-rating">
-    <b>Overall Rating:</b>
-    <span class="u-text-gold" *ngFor="let star of rating">&#9733;</span>
-  </div>
-  `,
+    selector: 'app-rating',
+    styleUrls: ['./rating.component.scss'],
+    template: `
+    <div class="c-rating">
+        <b>Overall Rating:</b>
+        <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
+    </div>
+    `,
 })
 export class RatingComponent implements OnInit {
-  @Input() rating: any;
+    @Input() rating: number;
+    stars: number[];
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-    this.rating = Array(this.rating).fill(0);
-  }
+    ngOnInit() {
+        this.stars = Array(this.rating).fill(0);
+    }
 
 }
