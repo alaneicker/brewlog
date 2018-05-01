@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AppService } from './services/app.service';
 import { HttpService } from './services/http.service';
 
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { RecommendedBeersComponent } from './components/recommended-beers/recomm
     HttpClientModule,
   ],
   providers: [
+    AppService,
     HttpService,
   ],
   bootstrap: [AppComponent]

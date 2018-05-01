@@ -21,6 +21,7 @@
 			<li><b>IBU:</b> {{ summaryContent.ibu }}</li>
 			<li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
 		</ul>
-		<p class="u-vr-3-top">{{ summaryContent.comments }}</p>
+		<p class="u-vr-3-top u-vr-3">{{ summaryContent.comments }}</p>
+		<button *ngIf="readOnly == false" class="c-btn">Edit</button>
 	</div>
 </section>

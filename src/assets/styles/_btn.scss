@@ -1,0 +1,23 @@
+.c-btn {
+    border: 0;
+    background: $blue-1;
+    border-radius: rem(3);
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    padding: rem(10 16);
+    text-transform: uppercase;
+    transition: background .2s linear;
+
+    &:hover,
+    &:focus {
+        background: lighten($blue-1, 5%);
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
