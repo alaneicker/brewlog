@@ -14,7 +14,6 @@ export class AppComponent {
     navItems: [
       { text: 'Dashboard', url: '/' },
       { text: 'Add Beer', url: '/add-beer' },
-      { text: 'My Beers', url: '/my-beers' },
       { text: 'Settings', url: '/settings' },
     ],
   };

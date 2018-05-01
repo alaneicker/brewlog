@@ -11,8 +11,10 @@
     '_flexbox',
     '_padding',
     '_text',
-    '_vr';
+    '_vr',
+    '_wrapper';
 
 @media (min-width: $breakpoint-medium) {
-    @import '_alinment-medium';
+    @import 
+        '_alinment-medium';
 }
