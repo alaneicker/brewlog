@@ -1,0 +1,18 @@
+.is-visible--medium {
+    display: none;
+}
+
+.is-hidden {
+    display: none;
+}
+  
+ @media only screen and (min-width: 768px) {
+    
+    .is-hidden--medium {
+      display: none;
+    }
+  
+    .is-visible--medium {
+        display: block;
+    }
+}
