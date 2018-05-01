@@ -1,10 +1,41 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const winston = require('winston');
+const mysql = require('mysql');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 8080;
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'dev';
+const dbConfig = require('./db-config')[env];
+
+const pool = mysql.createPool(dbConfig);
+pool.config.connectionLimit = 400;
+
+const query = options => {
+    const {
+      query,
+      data,
+      isArray,
+    } = options;
+
+    return new Promise((resolve, reject) => {
+      pool.getConnection((err, connection) => {
+        if (err) {
+            console.log('DATABASE ERROR: ', err);
+            connection.release();
+            reject(err);
+        }
+        connection.query(query, data, (err, result) => {
+            connection.release();
+            if (err) {
+                reject(err);
+            } else {
+                resolve(isArray === false ? result[0] : result);
+            }
+        });
+      });
+    });
+};
 
 winston.add(winston.transports.File, {
     filename: 'winston.log',
@@ -16,18 +47,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.route('/api/beer/:id').get((req, res) => {
-    res.send({
-        "photoUrl": "assets/images/goose-island-green-line.jpg",
-        "beerName": "Green Line Pale Ale",
-        "brewery": "Goose Island Brewing Co.",
-        "location": "Chicago, IL",
-        "style": "American Pale Ale",
-        "abv": "5.4",
-        "ibu": "30",
-        "glassware": "Mug, Pint Glass",
-        "comments": "This was a complete disappointment. Not hoppy. Not tasty. Super flat and no head at all. Tastes like a flat Budweiser. Someone before said that it was abusive to the consumer and I completely agree. This is down right one of the worst beers I\'ve ever tasted.",
-        "rating": 1
-    });
+    query({ query: `SELECT * FROM beers WHERE id = ${req.params.id}`, isArray: false })
+        .then(data => res.send(data))
+        .catch(error => console.log(error));
 });
 
 app.get('/recommended-beers', (req, res) => {
