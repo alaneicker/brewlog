@@ -25,6 +25,7 @@
 
     &__brewery {
         font-size: rem(22);
+        font-weight: 600;
     }
 
     @media(min-width: $breakpoint-medium) {

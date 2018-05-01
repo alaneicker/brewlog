@@ -17,7 +17,7 @@
 		</div>
 		<ul class="u-vr-3-top u-flex--medium u-flex--hr">
 			<li><b>Style:</b> {{ summaryContent.style }}</li>
-			<li><b>ABV:</b> {{ summaryContent.abv }}</li>
+			<li><b>ABV:</b> {{ summaryContent.abv | number : '1.1' }}%</li>
 			<li><b>IBU:</b> {{ summaryContent.ibu }}</li>
 			<li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
 		</ul>
