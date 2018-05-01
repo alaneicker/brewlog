@@ -26,7 +26,7 @@ app.route('/api/beer/:id').get((req, res) => {
         "ibu": "30",
         "glassware": "Mug, Pint Glass",
         "comments": "This was a complete disappointment. Not hoppy. Not tasty. Super flat and no head at all. Tastes like a flat Budweiser. Someone before said that it was abusive to the consumer and I completely agree. This is down right one of the worst beers I\'ve ever tasted.",
-        "rating": 3
+        "rating": 1
     });
 });
 

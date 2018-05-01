@@ -8,10 +8,25 @@ import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 import { BeerDetailResolver } from './pages/beer-detail/beer-detail.resolver';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'beer-detail/:id', component: BeerDetailComponent, resolve: { beerData: BeerDetailResolver } },
-  { path: '**', component: PageNotFoundComponent }
+  {
+    path: '',
+    component: DashboardComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'beer-detail/:id',
+    component: BeerDetailComponent,
+    resolve: {
+      beerDetailSummary: BeerDetailResolver,
+    }
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({

@@ -11,7 +11,6 @@ export class BeerDetailResolver implements Resolve<IBeerDetail> {
     ) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<IBeerDetail> {
-        const id = route.params['id'];
-        return this.httpService.request(`http://localhost:8080/api/beer/${id}`);
+        return this.httpService.request(`http://localhost:8080/api/beer/${route.params['id']}`);
     }
 }

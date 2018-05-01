@@ -16,7 +16,7 @@ export class BeerDetailComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.summaryContent = this.route.snapshot.data.beerData;
+        this.summaryContent = this.route.snapshot.data.beerDetailSummary;
     }
 
 }
