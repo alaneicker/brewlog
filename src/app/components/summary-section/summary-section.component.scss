@@ -1,9 +1,10 @@
 @import '../../../assets/styles/_tools.scss';
 
 .summary {
-    background: $blue-3;
+    background: $gray-0;
     align-content: center;
     min-height: rem(400);
+    color: $white;
 
     &__photo {
         background-position: center;

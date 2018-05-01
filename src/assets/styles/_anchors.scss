@@ -1,0 +1,16 @@
+.anchor {
+    color: $blue-1;
+    text-decoration: none;
+
+    &--inverse {
+        color: inherit;
+
+        &:visited {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $blue-1;
+        }
+    }
+}
