@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const winston = require('winston');
 const mysql = require('mysql');
 const cors = require('cors');
 const app = express();
@@ -37,17 +36,12 @@ const query = options => {
     });
 };
 
-winston.add(winston.transports.File, {
-    filename: 'winston.log',
-    json: false
-});
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
 app.route('/api/beer/:id').get((req, res) => {
-    query({ query: `SELECT * FROM beers WHERE id = ${req.params.id}`, isArray: false })
+    query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
         .then(data => res.send(data))
         .catch(error => console.log(error));
 });
