@@ -1,3 +1,3 @@
 # Brewlog
 
-An Angular 5 Progress Web App for dcoumenting and discovering great beer.
+An Angular 5 Progress Web App for documenting and discovering great beer.
