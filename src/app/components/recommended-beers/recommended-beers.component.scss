@@ -14,7 +14,10 @@
     }   
     
     &__details {
+        color: $blue-1;
+        display: block;
         padding: rem(16);
+        text-decoration: none;
     }
 
     @media(min-width: $breakpoint-medium) {

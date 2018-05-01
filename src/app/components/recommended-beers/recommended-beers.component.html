@@ -4,9 +4,9 @@
       class="c-recommended-beers-list__photo"
       [style.backgroundImage]="'url('+ beer.photoUrl +')'">
     </div>
-    <div class="c-recommended-beers-list__details">
+    <a class="c-recommended-beers-list__details" target="_blank" [href]="beer.url">
       <h3 class="u-text-lg">{{ beer.beerName }}</h3>
       <h4 class="u-text-normal">{{ beer.brewery }}</h4>
-    </div>
+    </a>
   </li>
 </ul>

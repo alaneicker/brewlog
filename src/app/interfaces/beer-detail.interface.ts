@@ -9,5 +9,6 @@ export interface IBeerDetail {
     ibu?: string;
     glassware?: string;
     comments?: string;
-    rating?: any;
+    rating?: number;
+    url?: string;
 }

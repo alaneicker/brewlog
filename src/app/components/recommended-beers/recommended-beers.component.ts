@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IBeerDetail } from '../../interfaces/beer-detail.interface';
+import { IRecommendedBeers } from '../../interfaces/recommended-beers.interface';
 
 import { HttpService } from '../../services/http.service';
 
@@ -10,7 +10,7 @@ import { HttpService } from '../../services/http.service';
 })
 export class RecommendedBeersComponent implements OnInit {
   @Input() beerStyle: string;
-  recommendedBeers: IBeerDetail;
+  recommendedBeers: IRecommendedBeers;
 
   constructor(
     private httpService: HttpService,
