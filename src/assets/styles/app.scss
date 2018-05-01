@@ -9,6 +9,7 @@
     '_anchors',
     '_btn',
     '_flexbox',
+    '_forms',
     '_padding',
     '_text',
     '_vr',
@@ -16,5 +17,6 @@
 
 @media (min-width: $breakpoint-medium) {
     @import 
+        '_forms-medium',
         '_alinment-medium';
 }

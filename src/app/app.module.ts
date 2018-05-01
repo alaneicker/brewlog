@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,6 +16,7 @@ import { SummarySectionComponent } from './components/summary-section/summary-se
 import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { RecommendedBeersComponent } from './components/recommended-beers/recommended-beers.component';
+import { AddBeerComponent } from './pages/add-beer/add-beer.component';
 
 
 @NgModule({
@@ -27,11 +29,14 @@ import { RecommendedBeersComponent } from './components/recommended-beers/recomm
     BeerDetailComponent,
     RatingComponent,
     RecommendedBeersComponent,
+    AddBeerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     AppService,

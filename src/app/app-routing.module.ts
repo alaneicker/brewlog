@@ -4,28 +4,33 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
+import { AddBeerComponent } from './pages/add-beer/add-beer.component';
 
 import { BeerDetailResolver } from './pages/beer-detail/beer-detail.resolver';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: DashboardComponent,
+  },
+  {
+    path: 'add-beer',
+    component: AddBeerComponent,
   },
   {
     path: 'beer-detail/:id',
     component: BeerDetailComponent,
     resolve: {
       beerDetailSummary: BeerDetailResolver,
-    }
+    },
   },
   {
     path: '**',
-    component: PageNotFoundComponent
+    component: PageNotFoundComponent,
   }
 ];
 

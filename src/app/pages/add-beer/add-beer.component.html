@@ -1,0 +1,44 @@
+<section class="padding padding--24 wrapper">
+    <h1 class="u-text-xl u-vr-5">Add a Beer</h1>
+    <form #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" novalidate>
+        <div class="u-vr-2">
+            <label for="beer-name">Beer Name</label>
+            <input id="beer-name" class="input-lg" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="brewery">Brewery</label>
+            <input id="brewery" class="input-lg" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="location">Location</label>
+            <input id="location" class="input-lg u-vr" type="text" />
+            <div class="u-text-xs">City, State</div>
+        </div>
+        <div class="u-vr-2">
+            <label for="style">Style</label>
+            <input id="style" class="input-lg" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="glassware">Glassware</label>
+            <input id="glassware" class="input-lg" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="abv">ABV</label>
+            <input id="abv" class="input-sm" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="ibu">IBU</label>
+            <input id="ibu" class="input-sm" type="text" />
+        </div>
+        <div class="u-vr-2">
+            <label for="rating">Rating</label>
+            <input id="rating" class="input-sm u-vr" type="number" />
+            <div class="u-text-xs">Enter number between 0-5</div>
+        </div>
+        <div class="u-vr-2">
+            <label for="comments">Comments</label>
+            <textarea id="comments" class="input-lg"></textarea>
+        </div>
+        <button class="c-btn" type="submit" (click)="submitForm()">Submit</button>
+    </form>
+</section>

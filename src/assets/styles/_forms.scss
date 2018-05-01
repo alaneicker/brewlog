@@ -1,0 +1,26 @@
+label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: rem(5);
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+textarea {
+    background: $white;
+    border: 1px solid $gray-4;
+    font-family: inherit;
+    font-size: inherit;
+    padding: rem(8);
+    width: 100%;
+
+    &.has-error {
+        border: 1px solid $red;
+    }
+}
+
+textarea {
+    min-height: rem(150);
+}
