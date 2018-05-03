@@ -1,0 +1,2329 @@
+{  
+   "currentPage":1,
+   "numberOfPages":3,
+   "totalResults":127,
+   "data":[  
+      {  
+         "id":"jsf8kz",
+         "name":"10\u00b0",
+         "nameDisplay":"10\u00b0",
+         "description":"Quad brewed a year before being released in bottles. Giving this robust beer time to age properly was essential in bringing the dark specialty malts forward and allowing the alcohol to mellow.",
+         "abv":"9.8",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/jsf8kz\/upload_BHlulj-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/jsf8kz\/upload_BHlulj-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/jsf8kz\/upload_BHlulj-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2015-01-10 00:37:28",
+         "updateDate":"2015-12-17 19:34:50",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"PNs64Y",
+         "name":"4 Mad Chefs",
+         "nameDisplay":"4 Mad Chefs",
+         "description":"This Belgian style quadruple is our tribute to our chef friends who are known on occasion to go a little over the edge. They have graciously proven to us that food is art and that they love their craft. We hope it is a worthy and perfect compliment to a well-cooked meal. Deep brown in color with hints of caramel, plum and fig, this big beer is great with hearty fare or as an after dinner beer. With an abv approaching 10% some might say we\u2019re the ones that went a little over the edge.",
+         "abv":"8.5",
+         "ibu":"20",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/PNs64Y\/upload_VNLV7k-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/PNs64Y\/upload_VNLV7k-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/PNs64Y\/upload_VNLV7k-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-09-23 19:10:00",
+         "updateDate":"2017-08-30 18:21:47",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"o17PR2",
+         "name":"4th Year Beer",
+         "nameDisplay":"4th Year Beer",
+         "abv":"11.5",
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/o17PR2\/upload_hMQgSQ-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/o17PR2\/upload_hMQgSQ-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/o17PR2\/upload_hMQgSQ-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-01-27 12:56:02",
+         "updateDate":"2015-12-17 09:17:57",
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"TYV2z6",
+         "name":"7 Swans-A-Swimming",
+         "nameDisplay":"7 Swans-A-Swimming (2014)",
+         "description":"Delightfully malty Belgian-style quadrupel.  Notes of caramel, raisins, and fruity yeast.",
+         "abv":"11",
+         "ibu":"15",
+         "glasswareId":8,
+         "srmId":20,
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "year":2014,
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TYV2z6\/upload_sX6lRe-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TYV2z6\/upload_sX6lRe-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TYV2z6\/upload_sX6lRe-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Your favorite Christmas meal.",
+         "servingTemperature":"cool",
+         "servingTemperatureDisplay":"Cool - (8-12C\/45-54F)",
+         "createDate":"2014-09-10 22:07:10",
+         "updateDate":"2015-12-17 16:43:26",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "srm":{  
+            "id":20,
+            "name":"20",
+            "hex":"9B3200"
+         },
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"vxzuxc",
+         "name":"Abt 12",
+         "nameDisplay":"Abt 12",
+         "description":"The absolute top quality in the hierarchy of the St. Bernardus beers. It is also the beer with the highest alcohol content (10.50 %).\r\nA dark ivory coloured beer with a high fermentation. \r\n\r\nThe show piece of the brewery. Thanks to its soft and unconditionally genuine aroma, the beer can be smoothly tasted.  The Abt has a very fruity flavour.",
+         "abv":"10",
+         "ibu":"22",
+         "srmId":37,
+         "availableId":1,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/vxzuxc\/upload_5kPh7z-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/vxzuxc\/upload_5kPh7z-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/vxzuxc\/upload_5kPh7z-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-01-03 02:42:38",
+         "updateDate":"2017-09-21 13:15:37",
+         "srm":{  
+            "id":37,
+            "name":"37",
+            "hex":"3F0708"
+         },
+         "available":{  
+            "id":1,
+            "name":"Year Round",
+            "description":"Available year round as a staple beer."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"yzxTo0",
+         "name":"Baby Tree",
+         "nameDisplay":"Baby Tree",
+         "description":"Baby Tree was our first Easter beer. We LOVE Easter here at Pretty Things. Usually after the long Boston winter, we\u2019re itching to bring out the bunnies, bonnets and yellow fluffy chicks and get on with our Springtime.\r\n\r\nThe Baby Tree is a real tree. This must be said. It dwells in Sexhow and carries cavorting baby-dolls and in season, a few pears appear. It belongs to great friends of Dann & Martha, and they chose to rescue these small plastic people from a landfill-fate by allowing them to ride in their pear-tree many years ago. And thank heavens they did.\r\n\r\nOur Baby Tree is a very magical, traveling tree filled with waving, happy babies, some of whom may or may not resemble Mikheil Gorbachev. There may also be some discrepancy in the number of limbs, but we cannot be sure where other baby heads may be poking through the leaves so we don\u2019t worry ourselves about it. If you want, read our poem about it.\r\n\r\nBaby Tree beer is a Pretty Things take on the best of Abbey-style brewing from Belgium. Inspired by monastic and abbey quadruples, embellished with dark fruit flavours, not too sweet, not too heavy, it\u2019s a springtime beer with some of the richness of late winter. It makes it perfect year round, so that\u2019s when we offer it! You should be able to find it most months of the year, on draft or in bottle.\r\n\r\nAll in all, it\u2019s our way of bringing a bit of Springtime to you and to us, all year round. Hooray!",
+         "abv":"9",
+         "glasswareId":6,
+         "srmId":21,
+         "availableId":1,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/yzxTo0\/upload_GI3KNa-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/yzxTo0\/upload_GI3KNa-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/yzxTo0\/upload_GI3KNa-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-04-23 18:04:47",
+         "updateDate":"2017-01-10 21:32:43",
+         "glass":{  
+            "id":6,
+            "name":"Snifter",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "srm":{  
+            "id":21,
+            "name":"21",
+            "hex":"952D00"
+         },
+         "available":{  
+            "id":1,
+            "name":"Year Round",
+            "description":"Available year round as a staple beer."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"a2hQIc",
+         "name":"Bachelors Delight",
+         "nameDisplay":"Bachelors Delight",
+         "description":"Aged in Nicaraguan Flora de Cana Rum Barrels for over 12 weeks, the Batchelors Delight is a unique and delicious Belgian-Style Quadrupel Ale.\r\n\r\nTasting Notes:\r\nPlum, dates, raisin, vanilla and rum\r\n\r\nName Origin:\r\nLike all great legends the facts are in dispute. Batchlors Delight is named for one of the most notorious and important pirate ships in history. Captained by the infamous buccaneers Davis, Wafer and Hingson, who won the ship in a card game. After years of pirating in the Caribbean the trio were set on retiring in Virginia. They were arrested near Hampton Roads and spent nearly 3 years in prison. They were able to negotiate their freedom by giving up a large portion of their booty, which King William used for the \u201cCharitable Purpose\u201d of founding the College of William and Mary.",
+         "abv":"12",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/a2hQIc\/upload_4org45-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/a2hQIc\/upload_4org45-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/a2hQIc\/upload_4org45-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Pairs exceptionally well with roasted lamb.",
+         "servingTemperature":"cellar",
+         "servingTemperatureDisplay":"Cellar - (12-14C\/54-57F)",
+         "createDate":"2014-07-09 23:39:33",
+         "updateDate":"2015-12-17 14:44:30",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"cf9crr",
+         "name":"Belgian Quad",
+         "nameDisplay":"Belgian Quad",
+         "description":"Ale Aged in Bourbon Barrels",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cf9crr\/upload_XWsHCh-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cf9crr\/upload_XWsHCh-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cf9crr\/upload_XWsHCh-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-04-29 10:43:16",
+         "updateDate":"2015-12-17 12:46:13",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"l5LDK2",
+         "name":"Belgian-Style Quad Ale",
+         "nameDisplay":"Belgian-Style Quad Ale",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/l5LDK2\/upload_WqFTRq-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/l5LDK2\/upload_WqFTRq-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/l5LDK2\/upload_WqFTRq-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-04-17 12:40:59",
+         "updateDate":"2015-12-17 12:28:14",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"94EMQb",
+         "name":"Big Jim",
+         "nameDisplay":"Big Jim",
+         "description":"A Belgian Quad, Jim has a dark stone-fruit flavor, hinting at plum and raisin, that comes from Belgian yeast and a blend of Special B malt with Dark Candi sugar.",
+         "abv":"10.5",
+         "availableId":4,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/94EMQb\/upload_fjNOXd-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/94EMQb\/upload_fjNOXd-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/94EMQb\/upload_fjNOXd-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "originalGravity":"1.092",
+         "createDate":"2013-08-06 11:19:35",
+         "updateDate":"2015-12-17 03:37:58",
+         "available":{  
+            "id":4,
+            "name":"Seasonal",
+            "description":"Available at the same time of year, every year."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"fzR2NM",
+         "name":"Bishop's Barrel No. 13",
+         "nameDisplay":"Bishop's Barrel No. 13",
+         "description":"The base beer for Bishop\u2019s Barrel No. 13 is, fittingly, Divine Reserve No. 13, our big, but drinkable Quad. BB13 pours a dark brown color with ruby highlights that supports a thin, khaki colored head that dissipates slowly. The high alcohol shows itself visually with legs that stick to the glass when swirled. The aroma brings forth a bouquet of bourbon, vanilla and Belgian yeast characteristics. As it warms, a liquid dessert is brought forth with aromas similar to flan and bananas foster.\r\n\r\nThe flavor is sweet throughout without being cloying - a palate of sweet, sticky toffee with a nice dark fruit\/cherry parfait accompaniment. The barrel shows itself with bourbon and subtle chocolate notes with a soft tannic finish. A full bodied beer with a soft CO2 bite and alcohol that warms the throat without being aggressive.",
+         "abv":"12",
+         "ibu":"20",
+         "availableId":3,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/fzR2NM\/upload_nBnlq8-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/fzR2NM\/upload_nBnlq8-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/fzR2NM\/upload_nBnlq8-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2018-01-03 15:36:55",
+         "updateDate":"2018-01-03 15:38:04",
+         "available":{  
+            "id":3,
+            "name":"Not Available",
+            "description":"Beer is not available."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"UnWCFr",
+         "name":"Black Quad",
+         "nameDisplay":"Black Quad",
+         "description":"Once found only by the intrepid hunters of our Brewers\u2019 Cuts, Black Quad now deservedly finds its way into our year round lineup. This ale was inspired by the most august of abbey brews and is a mystery worth exploring. A bounty of dried fruits, subtle roastiness, and a surprisingly dry finish combine for an ale of delicious dark complexity. All of this is complimented by the spiciness and fruit character provided by our house Belgian yeast strain. Join us in paying tribute to monastic brewing tradition.",
+         "abv":"10.5",
+         "ibu":"33",
+         "availableId":1,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/UnWCFr\/upload_XT4CDB-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/UnWCFr\/upload_XT4CDB-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/UnWCFr\/upload_XT4CDB-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Grilled lamb chops\r\nCheesecake",
+         "originalGravity":"1.092",
+         "createDate":"2016-04-16 01:23:48",
+         "updateDate":"2016-04-16 01:27:29",
+         "available":{  
+            "id":1,
+            "name":"Year Round",
+            "description":"Available year round as a staple beer."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"Gml8Pj",
+         "name":"Bourbon Barrel Aged Quad",
+         "nameDisplay":"Bourbon Barrel Aged Quad",
+         "abv":"11.5",
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Gml8Pj\/upload_zCwvIz-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Gml8Pj\/upload_zCwvIz-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Gml8Pj\/upload_zCwvIz-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-01-29 19:52:16",
+         "updateDate":"2017-07-06 17:34:57",
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"idchnc",
+         "name":"Bourbon Cru",
+         "nameDisplay":"Bourbon Cru",
+         "description":"Hardywood Bourbon Cru is brewed in the fashion of the abbey quadrupel, the grand cru of many of Belgium\u2019s revered monastic breweries. Bourbon Cru displays a sunset orange hue with a substantial head and brilliant clarity after months of barrel ageing. The maturity and melding of flavors brought on by the freshly drained, half-decade old Virginia bourbon barrels from Fredericksburg\u2019s A. Smith Bowman Distillery lends an extraordinary sense of harmony to Bourbon Cru. Almond toffee and oaky vanilla aromatics give way to dark cherries, raisins and mature whiskey. A bit of plum flavor is greeted by caramel overtones and an assertive yet incredibly rounded body and a lingering, bourbon-laced finish.",
+         "abv":"12",
+         "ibu":"18",
+         "glasswareId":8,
+         "availableId":5,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/idchnc\/upload_CvG2fD-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/idchnc\/upload_CvG2fD-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/idchnc\/upload_CvG2fD-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Hardywood Bourbon Cru harmonizes beautifully with soft, spreadable cheeses such as Neufch\u00e2tel, Camembert or Brie, perhaps topped with plum preserves. Bison, venison loin or short ribs cooked in a savory sauce or as a stew would also pair quite well. Potato leek soup or corn chowder would lend themselves to the rich malt character of Bourbon Cru. A wide range of desserts, but particularly dark fruit pastries such as blueberry crisp or tart cherry pie \u00e0 la mode would make a heavenly accompaniment.",
+         "servingTemperature":"cellar",
+         "servingTemperatureDisplay":"Cellar - (12-14C\/54-57F)",
+         "createDate":"2014-04-12 14:43:15",
+         "updateDate":"2016-05-27 16:47:53",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "available":{  
+            "id":5,
+            "name":"Spring",
+            "description":"Available during the spring months."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"v4A3Bc",
+         "name":"Box of Chocolate",
+         "nameDisplay":"Box of Chocolate",
+         "abv":"10.5",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v4A3Bc\/upload_VejNx9-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v4A3Bc\/upload_VejNx9-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v4A3Bc\/upload_VejNx9-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-03-30 12:31:47",
+         "updateDate":"2017-01-09 18:42:31",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"Ka9wh0",
+         "name":"Brewer's Reserve Bourbon Barrel Belgian Quadruple Ale",
+         "nameDisplay":"Brewer's Reserve Bourbon Barrel Belgian Quadruple Ale",
+         "description":"Brewed with well water, locally malted barley from Blacklands Malt, raw Texas wheat, hops, and lime salt. We fermented it in stainless steel with our mixed culture of brewers yeast, native yeast, and native bacteria. We then blended it with Montmorency vs. Balaton, our barrel aged sour beer refermented with cherries at a ratio of about twelve to one (farmhouse ale to MvB).",
+         "abv":"10",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Ka9wh0\/upload_mi1PdA-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Ka9wh0\/upload_mi1PdA-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Ka9wh0\/upload_mi1PdA-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-11-02 20:31:28",
+         "updateDate":"2016-11-02 20:36:06",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"H7WUDc",
+         "name":"Brewers' Cut No. 2",
+         "nameDisplay":"Brewers' Cut No. 2",
+         "description":"An homage to Belgian brewing tradition, with a slight departure. Characteristic of the style are notes of caramel, candi sugar, and dark fruit. Our addition of premium Belgian Black Malt adds a subtle component of dry roastiness for a deliciously dark complexity.",
+         "abv":"10.8",
+         "ibu":"33",
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/H7WUDc\/upload_j02IQS-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/H7WUDc\/upload_j02IQS-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/H7WUDc\/upload_j02IQS-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-10-25 23:27:22",
+         "updateDate":"2015-12-16 19:54:06",
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"6qYCA8",
+         "name":"Brute's Quad",
+         "nameDisplay":"Brute's Quad",
+         "description":"The original 14th Anniversary beer of our brewpub, Brute\u2019s Quad is malty and rich with plum, raisin and other dark fruit flavors and aromas. Each sip offers a complex and robust taste and finishes with just a hint of dryness. This Belgian-style Dark Strong Ale is best served in Belgian stemware and slightly chilled.",
+         "abv":"11.5",
+         "ibu":"28",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6qYCA8\/upload_psz7J3-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6qYCA8\/upload_psz7J3-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6qYCA8\/upload_psz7J3-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2015-08-19 20:25:14",
+         "updateDate":"2015-12-18 04:27:43",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"v8QGuA",
+         "name":"Can Can",
+         "nameDisplay":"Can Can",
+         "abv":"13",
+         "glasswareId":8,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v8QGuA\/upload_pAJM9l-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v8QGuA\/upload_pAJM9l-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v8QGuA\/upload_pAJM9l-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "servingTemperature":"cellar",
+         "servingTemperatureDisplay":"Cellar - (12-14C\/54-57F)",
+         "createDate":"2014-12-29 13:50:09",
+         "updateDate":"2015-12-17 19:24:53",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"hJl7cX",
+         "name":"Carolus Magnus",
+         "nameDisplay":"Carolus Magnus",
+         "abv":"14",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/hJl7cX\/upload_VhEsSF-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/hJl7cX\/upload_VhEsSF-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/hJl7cX\/upload_VhEsSF-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-06-01 01:37:20",
+         "updateDate":"2016-06-01 01:38:13",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"L3Id9O",
+         "name":"Christmas Ale",
+         "nameDisplay":"Christmas Ale",
+         "description":"St.Bernardus Christmas Ale is a dark seasonal brewed in the classic 'Quadrupel' style of Belgium's best Abbey Ales. (10,0 % ABV) Similar to all the beers from our brewery, it greets the drinker with the signature aroma of the St.Bernardus house yeast strain (in use since 1946!) Rivaling the complexity of the St.Bernardus Abt 12, St.Bernardus Christmas Ale offers a spicy, mint-like flavor profile exuding the tastes of warming alcohol, fermented molasses, apricots, licorice and marzipan that are highligted by the perfect balance of brewing sugars.\r\nThe perfect companion to enjoy a (cold?) winter evening, with or without the company of your friends!",
+         "abv":"10",
+         "availableId":8,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/L3Id9O\/upload_56C9hq-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/L3Id9O\/upload_56C9hq-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/L3Id9O\/upload_56C9hq-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-11-11 16:04:21",
+         "updateDate":"2016-04-25 20:47:44",
+         "available":{  
+            "id":8,
+            "name":"Winter",
+            "description":"Available during the winter months."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"Y0zLUf",
+         "name":"Christmas Quad",
+         "nameDisplay":"Christmas Quad",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Y0zLUf\/upload_OTT8zH-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Y0zLUf\/upload_OTT8zH-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Y0zLUf\/upload_OTT8zH-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2013-12-05 12:32:43",
+         "updateDate":"2015-12-17 08:30:31",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"495ADM",
+         "name":"Company",
+         "nameDisplay":"Company",
+         "description":"This beer was made in celebration of our breweries 3rd anniversary. Company is a Belgian Quadruple which we brewed using house toasted cherrywood that was aged for months in white rum barrels from our friends at Flag Hill Distillery in Lee, NH. Look for notes of banana, rum, marzipan, and cherry. Perfect for cellar aging and vertical tastings. We drink this beer in appreciation of your support over our first three years and hopefully many more into the future, cheers!",
+         "abv":"10.5",
+         "ibu":"25",
+         "availableId":4,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/495ADM\/upload_jwJz2G-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/495ADM\/upload_jwJz2G-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/495ADM\/upload_jwJz2G-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-01-21 14:47:51",
+         "updateDate":"2016-01-21 14:48:17",
+         "available":{  
+            "id":4,
+            "name":"Seasonal",
+            "description":"Available at the same time of year, every year."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"pfDzI4",
+         "name":"Cosmic Monster",
+         "nameDisplay":"Cosmic Monster",
+         "description":"Cosmic Monster is a rustic Belgian style strong ale that is balanced with a generous addition of fresh fruit.  This beer is fermented with real, pureed blackberries and then aged to perfection over fresh raspberries.  Its balance of robust malt and fruit flavors make it a beer that is as refreshing as it is complex.",
+         "abv":"11",
+         "glasswareId":8,
+         "availableId":4,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/pfDzI4\/upload_0rczk6-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/pfDzI4\/upload_0rczk6-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/pfDzI4\/upload_0rczk6-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2013-03-03 21:21:18",
+         "updateDate":"2015-12-17 02:12:11",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "available":{  
+            "id":4,
+            "name":"Seasonal",
+            "description":"Available at the same time of year, every year."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"txR5ou",
+         "name":"Cuv\u00e9e d'Erpigny",
+         "nameDisplay":"Cuv\u00e9e d'Erpigny",
+         "abv":"15",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/txR5ou\/upload_IOGnt9-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/txR5ou\/upload_IOGnt9-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/txR5ou\/upload_IOGnt9-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-07-08 14:28:33",
+         "updateDate":"2015-12-17 15:08:59",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"HdiHfT",
+         "name":"Cuv\u00e9e de Mortagne",
+         "nameDisplay":"Cuv\u00e9e de Mortagne",
+         "abv":"14",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/HdiHfT\/upload_nYRLPQ-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/HdiHfT\/upload_nYRLPQ-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/HdiHfT\/upload_nYRLPQ-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-07-08 14:27:55",
+         "updateDate":"2015-12-17 14:32:32",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"cWZKMv",
+         "name":"Dark Hammer",
+         "nameDisplay":"Dark Hammer",
+         "description":"A massive beer brewed with German, Belgian and French malts and imported Belgian Candi Syrup. Its 9.8% AVB is carefully hidden under layers of caramel and dark fruit esters.",
+         "abv":"9.8",
+         "availableId":4,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cWZKMv\/upload_mJK5Bc-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cWZKMv\/upload_mJK5Bc-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/cWZKMv\/upload_mJK5Bc-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-01-20 17:21:35",
+         "updateDate":"2016-11-28 14:19:20",
+         "available":{  
+            "id":4,
+            "name":"Seasonal",
+            "description":"Available at the same time of year, every year."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"6YwNmm",
+         "name":"Day Of Doom",
+         "nameDisplay":"Day Of Doom",
+         "abv":"12",
+         "glasswareId":8,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6YwNmm\/upload_Kq67la-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6YwNmm\/upload_Kq67la-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/6YwNmm\/upload_Kq67la-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-11-01 18:25:40",
+         "updateDate":"2015-12-16 19:55:49",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"rbNatw",
+         "name":"Dead Man's Game",
+         "nameDisplay":"Dead Man's Game",
+         "description":"A blend of Rum Barrel-aged and Bourbon barrel-aged beer, Dead Man's Game begins with heavy aromas of bourbon and dates, leading to rich notes of caramel and cocoa, finishing with a sweet kick of rum and spices.",
+         "abv":"14",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/rbNatw\/upload_ev0lNY-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/rbNatw\/upload_ev0lNY-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/rbNatw\/upload_ev0lNY-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2018-01-19 20:18:58",
+         "updateDate":"2018-01-19 20:20:04",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"DHet6x",
+         "name":"Deception",
+         "nameDisplay":"Deception",
+         "description":"This rare, experimental Belgian Quad was brewed in 2003 and has since become a unicorn for beer collectors and conisseurs. Full-bodied and hazy gold with a lingering off-white head, Deception combines Belgian candy sugar and honey for a sweet taste and smooth mouthfeel that balances and masks the high alcohol content. Like most \u201cbig beers\u201d, the flavor palate changes and matures with age making cellared bottles an entirely new experience\u2026 if you can find one!",
+         "abv":"16.4",
+         "ibu":"40",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/DHet6x\/upload_bVkuBG-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/DHet6x\/upload_bVkuBG-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/DHet6x\/upload_bVkuBG-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "originalGravity":"1.096",
+         "createDate":"2015-03-16 19:07:16",
+         "updateDate":"2015-12-17 22:40:18",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"aec5Pl",
+         "name":"DEFCON I BELGIAN QUAD",
+         "nameDisplay":"DEFCON I BELGIAN QUAD",
+         "description":"FACTION DEFCON I BELGIAN QUAD IS A TRADITIONAL BELGIAN STYLE QUAD BREWED WITH CASTLE PILSNER AND CARAMUNICH MALT AND STYRIAN GOLDING HOPS",
+         "abv":"7.9",
+         "ibu":"40",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/aec5Pl\/upload_BqR0dg-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/aec5Pl\/upload_BqR0dg-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/aec5Pl\/upload_BqR0dg-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2015-03-15 21:14:39",
+         "updateDate":"2015-12-17 22:13:08",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"7yiVmy",
+         "name":"Deschutes Not The Stoic",
+         "nameDisplay":"Deschutes Not The Stoic",
+         "description":"Reserve Series (22-ounce wax-dipped bottles and draft) With the expansion of our coveted Reserve Series this year, fans will be happy to hear about a new addition to the lineup: \u201cNot the Stoic\u201d. This contemplatively brewed Belgian-styled quad was aged and sequestered in Rye Whiskey and Pinot Noir barrels, resulting in a complex flavor that is an entirely new rendition (with a nod to the original \u201cThe Stoic\u201d that was released in 2011).",
+         "abv":"12.1",
+         "ibu":"15",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7yiVmy\/upload_jPfGc0-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7yiVmy\/upload_jPfGc0-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7yiVmy\/upload_jPfGc0-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-02-28 13:08:27",
+         "updateDate":"2017-12-26 17:35:09",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"5vVDf3",
+         "name":"Devil Whale",
+         "nameDisplay":"Devil Whale",
+         "abv":"10.5",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5vVDf3\/upload_5pBnKi-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5vVDf3\/upload_5pBnKi-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5vVDf3\/upload_5pBnKi-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2018-01-15 15:57:48",
+         "updateDate":"2018-03-15 21:14:05",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"8MWyaK",
+         "name":"Diabolus",
+         "nameDisplay":"Diabolus",
+         "description":"Hemos mantenido a Diabolus encerrado durante 12 meses en una barrica de Bourbon. Ahora ha sido liberado... Est\u00e1s avisado. Esta masiva y libidinosa quadrupel es una libaci\u00f3n al mism\u00edsimo Diablo.\r\n\r\nWe kept Diabolus locked up for 12 months in a Bourbon barrel. He has now been liberated... You're warned. This massive and libidinous Quadrupel is a libation to the Devil himself.",
+         "abv":"13",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/8MWyaK\/upload_sWfZ9w-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/8MWyaK\/upload_sWfZ9w-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/8MWyaK\/upload_sWfZ9w-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-05-01 16:38:48",
+         "updateDate":"2016-05-01 16:39:04",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"bhGVDk",
+         "name":"Doubting Thomas",
+         "nameDisplay":"Doubting Thomas",
+         "description":"Jopen Doubting Thomas (aka Ongelovige Thomas) is our interpretation of a quadrupel. A distinct beer with rich malt as the main flavour. The American hops gives it a fruity character.\r\nThis beer is named after the apostle Thomas, who would not believe that Jesus had risen from the dead. Thomas has his name-day at the start of winter on 21 December. This reddish-brown beer is a genuine winter warmer. Surprisingly rich in flavour and ideal for sipping beside the fireplace. Believe it or not, this is a heavyweight.",
+         "abv":"10",
+         "ibu":"40",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/bhGVDk\/upload_wMJBFV-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/bhGVDk\/upload_wMJBFV-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/bhGVDk\/upload_wMJBFV-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "servingTemperature":"cool",
+         "servingTemperatureDisplay":"Cool - (8-12C\/45-54F)",
+         "originalGravity":"1.096",
+         "createDate":"2015-01-26 20:44:28",
+         "updateDate":"2015-12-17 20:53:35",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"kK4MMM",
+         "name":"Dutch Hammer",
+         "nameDisplay":"Dutch Hammer",
+         "description":"A strong Belgian quadrupel with a PA Dutch twist.  Old fashioned Pennsylvania Dutch Apple Butter, made from apples picked out of the orchard, is added during the boil. The combination of which provides a heavy malt bill with a caramel apple undertone. Delightfully aromatic and rich on your pallet.",
+         "abv":"9.2",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/kK4MMM\/upload_WYy0Kr-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/kK4MMM\/upload_WYy0Kr-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/kK4MMM\/upload_WYy0Kr-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2016-04-01 17:25:53",
+         "updateDate":"2016-04-15 19:31:34",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"q0B1Fm",
+         "name":"Eden Quadrupel",
+         "nameDisplay":"Eden Quadrupel",
+         "abv":"9.6",
+         "ibu":"45",
+         "glasswareId":8,
+         "srmId":20,
+         "availableId":1,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/q0B1Fm\/upload_LEcyZq-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/q0B1Fm\/upload_LEcyZq-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/q0B1Fm\/upload_LEcyZq-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "servingTemperature":"cold",
+         "servingTemperatureDisplay":"Cold - (4-7C\/39-45F)",
+         "originalGravity":"1.085",
+         "createDate":"2015-08-29 09:25:05",
+         "updateDate":"2015-12-18 05:34:27",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "srm":{  
+            "id":20,
+            "name":"20",
+            "hex":"9B3200"
+         },
+         "available":{  
+            "id":1,
+            "name":"Year Round",
+            "description":"Available year round as a staple beer."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"dmHEEp",
+         "name":"Eleven",
+         "nameDisplay":"Eleven",
+         "description":"Eleven! I guess that makes us old, in \u201cMinnesota Brewing Years\u201d.\r\nWe brewed this beer in honor of two-faced Janus who peers both ahead and behind. A Belgian-style Quad Ale honors the past while 100% Brett-fermented wheat beer looks towards the future. Blended together, Eleven exists in a purely liminal space.",
+         "abv":"10",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dmHEEp\/upload_Lph1YN-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dmHEEp\/upload_Lph1YN-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dmHEEp\/upload_Lph1YN-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2017-07-15 17:16:49",
+         "updateDate":"2017-08-30 19:25:40",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"lIi5fS",
+         "name":"Entendez Noel",
+         "nameDisplay":"Entendez Noel",
+         "description":"Like most big Belgian holiday beers, Noel is bursting with subtly complex flavors and fits no particular beer style. Its explosion of sensations comes from just Belgian Pilsner malt, cane sugar, Motueka hops, Trappist yeast, water, and fermentation. Drink warm or cold in various glassware shapes and sizes to discover all its nuances. Entendez should age extremely well for years to come.",
+         "abv":"11.4",
+         "ibu":"50",
+         "glasswareId":6,
+         "availableId":8,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/lIi5fS\/upload_5J1pic-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/lIi5fS\/upload_5J1pic-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/lIi5fS\/upload_5J1pic-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2012-12-21 18:48:47",
+         "updateDate":"2015-12-16 21:19:39",
+         "glass":{  
+            "id":6,
+            "name":"Snifter",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "available":{  
+            "id":8,
+            "name":"Winter",
+            "description":"Available during the winter months."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"p5RR2C",
+         "name":"False Summit",
+         "nameDisplay":"False Summit",
+         "description":"Aromas of dark fruits, vanilla, and bourbon seep off False Summit\u2019s milk chocolate head.  As the beer warms, notes of caramel, oak and dark Belgian candi sugar come more prevalent. We named this beer False Summit as some may be disheartened to find that this is not a barrel-aged version of our famous Apis IV, yet this barrel-aged quadruple, like the final stretch of a mountain\u2019s peak, is as enjoyable if not more rewarding then what came before.",
+         "abv":"11",
+         "ibu":"30",
+         "glasswareId":6,
+         "availableId":7,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/p5RR2C\/upload_3qpZsb-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/p5RR2C\/upload_3qpZsb-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/p5RR2C\/upload_3qpZsb-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2013-04-19 09:59:39",
+         "updateDate":"2017-07-18 18:55:37",
+         "glass":{  
+            "id":6,
+            "name":"Snifter",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "available":{  
+            "id":7,
+            "name":"Fall",
+            "description":"Available during the fall months."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"0FR88r",
+         "name":"Figaro Figaro Figaro Fiiigaaaro",
+         "nameDisplay":"Figaro Figaro Figaro Fiiigaaaro",
+         "description":"We dare you not to sing Fiiigaaaro. When the Houston Grand Opera asked us to brew something truly creative to celebrate the opening night of The Barber of Seville, we needed a secret ingredient as dark, sweet, and tricky as Figaro himself. We had never seen a fig beer before, so naturally we had to make one and dedicate it to them. Turkish figs were immediately ordered for overnight delivery and a one-of-a-kind brew recipe was created.\r\n\r\nFigs contribute a rich, round earthiness to the malt's dark fruit and raisin flavors. This Belgian quad yeast strain embodies both spicy pepper and light fruit flavors.",
+         "abv":"11",
+         "ibu":"20",
+         "availableId":3,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/0FR88r\/upload_8PtMRI-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/0FR88r\/upload_8PtMRI-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/0FR88r\/upload_8PtMRI-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2015-08-21 17:03:57",
+         "updateDate":"2016-07-07 19:08:18",
+         "available":{  
+            "id":3,
+            "name":"Not Available",
+            "description":"Beer is not available."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"9ABTcw",
+         "name":"FIGJAM",
+         "nameDisplay":"FIGJAM",
+         "description":"Nothing gets you in the holiday spirit quite like this FIGJAM QUADRUPLE with it\u2019s warming alcohol, figgy undertones, dark dried fruit flavors of raison dates, hints of fresh baked bread, and a beautiful dry finish that leaves you wanting more.\r\n\r\nWe new we wanted to brew a big, boozy abbey-style quadruple for the holidays but we didn\u2019t have a name.  When a friend of ours told us about a celebrity with whose nickname is FIGJAM (which stands for F@*k I\u2019m Good, Just Ask Me), a star was born!\r\n\r\nWe are pleased to feature our head brewer John Ritenour on the packaging and while he is decidedly humble than FIGJAM, he\u2019s pretty damn good!",
+         "abv":"11.5",
+         "ibu":"35",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/9ABTcw\/upload_6GEbMQ-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/9ABTcw\/upload_6GEbMQ-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/9ABTcw\/upload_6GEbMQ-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Great with rich roasty foods and cured meats, candied yams, Roquefort and Gorgonzola cheese and of course warm figgy pudding!",
+         "originalGravity":"1.097",
+         "createDate":"2014-09-08 15:59:51",
+         "updateDate":"2015-12-17 17:36:14",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"5qyB2E",
+         "name":"Fimbulvvinter",
+         "nameDisplay":"Fimbulvvinter",
+         "description":"No 49. Find warmth in this rum barrel-aged odyssey, a legend of our steadfast brew warriors in their quest to take a traditional Belgian yeast to new heights of glory.",
+         "abv":"16.9",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5qyB2E\/upload_WyGzrt-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5qyB2E\/upload_WyGzrt-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/5qyB2E\/upload_WyGzrt-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2018-02-01 19:14:28",
+         "updateDate":"2018-02-01 19:15:05",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"ydWWCw",
+         "name":"Four Barrel Quad",
+         "nameDisplay":"Four Barrel Quad",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/ydWWCw\/upload_syG4uZ-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/ydWWCw\/upload_syG4uZ-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/ydWWCw\/upload_syG4uZ-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2013-04-18 11:27:07",
+         "updateDate":"2015-12-17 03:14:27",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"dH30IO",
+         "name":"Four Headed Wooly Mammoth",
+         "nameDisplay":"Four Headed Wooly Mammoth",
+         "description":"Brewed with Dark Belgian Candi Syrup (Kandijstroop Donker) in the boil, which provides notes of anise, dark chocolate, caramel & toasted bread. Candi Syrup, a traditional brewing ingredient in Belgium, also adds a dark hue and a complex Belgian character to the brew, which is fermented with Belgian Abbey Yeast.  This brilliant garnet-red beer is true to style with its warming 11% ABV, which is balanced perfectly with caramel, dark sugar & malty sweet flavors from the Candi Syrup.",
+         "abv":"11",
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dH30IO\/upload_E99A39-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dH30IO\/upload_E99A39-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/dH30IO\/upload_E99A39-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "foodPairings":"Particularly tasty when paired with roasted duck, aged gouda or bread pudding.",
+         "createDate":"2015-12-28 17:57:15",
+         "updateDate":"2015-12-29 19:23:30",
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"QDRk80",
+         "name":"Four Swords",
+         "nameDisplay":"Four Swords",
+         "description":"A Quad in the Belgian Monastic Tradition\r\n\r\nFour Swords is not a beer to be taken lightly. Inspired by the Trappist Brewers of Belgium, this quadruple is an ale of great strength and bold flavor.\r\n\r\nIn the early days, there was no precise method of measuring the alcohol content of a beer, so in order to increase the strength, the brewing monks would use double, triple, or even quadruple the ingredients to achieve a desired result.\r\n\r\nBeginning with a big surge of complex, fruity aromatics, the flavor of this full-bodied dark ale give way to notes of dark fruit and caramel with a slightly spicy finish brought forth by a traditional abbey ale yeast.",
+         "abv":"12.1",
+         "ibu":"43.5",
+         "glasswareId":8,
+         "srmId":18,
+         "availableId":8,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/QDRk80\/upload_LsHxVI-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/QDRk80\/upload_LsHxVI-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/QDRk80\/upload_LsHxVI-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "servingTemperature":"cellar",
+         "servingTemperatureDisplay":"Cellar - (12-14C\/54-57F)",
+         "createDate":"2014-01-13 23:31:36",
+         "updateDate":"2015-12-17 08:14:07",
+         "glass":{  
+            "id":8,
+            "name":"Tulip",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "srm":{  
+            "id":18,
+            "name":"18",
+            "hex":"A63E00"
+         },
+         "available":{  
+            "id":8,
+            "name":"Winter",
+            "description":"Available during the winter months."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"awkFv3",
+         "name":"Friar\u2019s Quad",
+         "nameDisplay":"Friar\u2019s Quad",
+         "description":"Friar\u2019s Quad - a Belgian-style ale whose flavor is as bold as my wife\u2019s meat loaf - and four times as tasty, 8b\u2019dump-tssssh* But I kid, folks. This ale is a real mensch. We\u2019re here all week",
+         "abv":"10.2",
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/awkFv3\/upload_4vTZOQ-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/awkFv3\/upload_4vTZOQ-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/awkFv3\/upload_4vTZOQ-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2015-02-19 16:01:48",
+         "updateDate":"2017-01-09 19:44:55",
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"blL2mT",
+         "name":"Ganeshale",
+         "nameDisplay":"Ganeshale",
+         "description":"Our Belgian style quadrupel is aged in whiskey barrels.",
+         "abv":"11",
+         "availableId":4,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/blL2mT\/upload_c4yaGb-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/blL2mT\/upload_c4yaGb-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/blL2mT\/upload_c4yaGb-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2013-08-14 16:39:41",
+         "updateDate":"2015-12-17 04:47:18",
+         "available":{  
+            "id":4,
+            "name":"Seasonal",
+            "description":"Available at the same time of year, every year."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"CCOZgz",
+         "name":"Goochland Quad",
+         "nameDisplay":"Goochland Quad",
+         "description":"We used 4 yeast strains, which add to the complexity of the quad and Belgian Candy Syrup called D180. D-180 is a very dark award winning premium Candi Syrup, which contributes the depth and lightens the body of the most authentic Belgian-Style Quads.",
+         "abv":"10.5",
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CCOZgz\/upload_NNxOY9-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CCOZgz\/upload_NNxOY9-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CCOZgz\/upload_NNxOY9-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "createDate":"2014-11-07 17:41:52",
+         "updateDate":"2015-12-17 18:27:06",
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      },
+      {  
+         "id":"2lGkbE",
+         "name":"Gravitation",
+         "nameDisplay":"Gravitation",
+         "description":"Gravitation Belgian Quad is the newest offering in the Smuttynose Big Beer Series. This strong dark ale is brewed using a variety of Belgian specialty malts along with Belgian candi syrup. The resulting flavor is a viscous mix of dark fruit, rum, toffee and raisins balanced with aromatic fruitiness of the Belgian yeast.",
+         "abv":"12.5",
+         "ibu":"22",
+         "glasswareId":6,
+         "srmId":37,
+         "availableId":2,
+         "styleId":60,
+         "isOrganic":"N",
+         "labels":{  
+            "icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/2lGkbE\/upload_H1eSR5-icon.png",
+            "medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/2lGkbE\/upload_H1eSR5-medium.png",
+            "large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/2lGkbE\/upload_H1eSR5-large.png"
+         },
+         "status":"verified",
+         "statusDisplay":"Verified",
+         "originalGravity":"1.092",
+         "createDate":"2012-01-03 02:43:18",
+         "updateDate":"2015-12-16 08:02:17",
+         "glass":{  
+            "id":6,
+            "name":"Snifter",
+            "createDate":"2012-01-03 02:41:33"
+         },
+         "srm":{  
+            "id":37,
+            "name":"37",
+            "hex":"3F0708"
+         },
+         "available":{  
+            "id":2,
+            "name":"Limited",
+            "description":"Limited availability."
+         },
+         "style":{  
+            "id":60,
+            "categoryId":5,
+            "category":{  
+               "id":5,
+               "name":"Belgian And French Origin Ales",
+               "createDate":"2012-03-21 20:06:46"
+            },
+            "name":"Belgian-Style Quadrupel",
+            "shortName":"Belgian Quad",
+            "description":"Quadrupels or \"Quads\" are characterized by the immense presence of alcohol and balanced flavor, bitterness and aromas. Its color is deep amber to rich chestnut\/garnet brown. Often characterized by a mousse-like dense, sometimes amber head will top off a properly poured and served quad. Complex fruity aroma and flavor emerge reminiscent of raisins, dates, figs, grapes, plums often accompanied with a hint of winy character. Caramel, dark sugar and malty sweet flavors and aromas can be intense, not cloying, while complementing fruitiness. Though well attenuated it usually has a full, creamy body. Hop characters do not dominate; low to low-medium bitterness is perceived. Perception of alcohol can be extreme. Clove-like phenolic flavor and aroma should not be evident. Chill haze is acceptable at low serving temperatures. Diacetyl and DMS should not be perceived. Well balanced with savoring\/sipping drinkability. Oxidative character if evident in aged Quads should be mild and pleasant.",
+            "ibuMin":"25",
+            "ibuMax":"50",
+            "abvMin":"9",
+            "abvMax":"14",
+            "srmMin":"8",
+            "srmMax":"20",
+            "ogMin":"1.084",
+            "fgMin":"1.014",
+            "fgMax":"1.02",
+            "createDate":"2012-03-21 20:06:46",
+            "updateDate":"2015-04-07 15:33:33"
+         }
+      }
+   ],
+   "status":"success"
+}
