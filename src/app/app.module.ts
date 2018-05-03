@@ -17,6 +17,7 @@ import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { RecommendedBeersComponent } from './components/recommended-beers/recommended-beers.component';
 import { AddBeerComponent } from './pages/add-beer/add-beer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { AddBeerComponent } from './pages/add-beer/add-beer.component';
     RatingComponent,
     RecommendedBeersComponent,
     AddBeerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
