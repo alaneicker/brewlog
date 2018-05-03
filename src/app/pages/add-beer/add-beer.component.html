@@ -1,44 +1,64 @@
 <section class="padding padding--24 wrapper">
     <h1 class="u-text-xl u-vr-5">Add a Beer</h1>
-    <form #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" novalidate>
+    <form method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
         <div class="u-vr-2">
+            <label for="upload">Upload Image</label>
+            <input id="upload" type="file" formControlName="photoUrl" (change)="onFileChange($event)">
+        </div>
+        <div class="u-vr-2"> 
             <label for="beer-name">Beer Name</label>
-            <input id="beer-name" class="input-lg" type="text" />
+            <input id="beer-name" class="input-lg" type="text" formControlName="beerName">
         </div>
         <div class="u-vr-2">
             <label for="brewery">Brewery</label>
-            <input id="brewery" class="input-lg" type="text" />
+            <input id="brewery" class="input-lg" type="text" formControlName="brewery">
         </div>
         <div class="u-vr-2">
             <label for="location">Location</label>
-            <input id="location" class="input-lg u-vr" type="text" />
+            <input id="location" class="input-lg u-vr" type="text" formControlName="location">
             <div class="u-text-xs">City, State</div>
         </div>
         <div class="u-vr-2">
             <label for="style">Style</label>
-            <input id="style" class="input-lg" type="text" />
+            <input id="style" class="input-lg" type="text" formControlName="style">
         </div>
         <div class="u-vr-2">
             <label for="glassware">Glassware</label>
-            <input id="glassware" class="input-lg" type="text" />
+            <input id="glassware" class="input-lg" type="text" formControlName="glassware">
         </div>
         <div class="u-vr-2">
-            <label for="abv">ABV</label>
-            <input id="abv" class="input-sm" type="text" />
+            <label for="abv">ABV (%)</label>
+            <input id="abv" class="input-sm" type="text" formControlName="abv">
         </div>
         <div class="u-vr-2">
             <label for="ibu">IBU</label>
-            <input id="ibu" class="input-sm" type="text" />
+            <input id="ibu" class="input-sm" type="text" formControlName="ibu">
         </div>
         <div class="u-vr-2">
-            <label for="rating">Rating</label>
-            <input id="rating" class="input-sm u-vr" type="number" />
-            <div class="u-text-xs">Enter number between 0-5</div>
+            <span class="label">Rating</span>
+            <div class="u-flex u-flex--hr u-vr">
+                <label class="u-text-normal">
+                    1 <input class="input-xl u-vr" type="radio" name="rating" value="1" formControlName="rating">
+                </label>
+                <label class="u-text-normal">
+                    2 <input class="input-xl u-vr" type="radio" name="rating" value="2" formControlName="rating">
+                </label>
+                <label class="u-text-normal">
+                    3 <input class="input-xl u-vr" type="radio" name="rating" value="3" formControlName="rating">
+                </label>
+                <label class="u-text-normal">
+                    4 <input class="input-xl u-vr" type="radio" name="rating" value="4" formControlName="rating">
+                </label>
+                <label class="u-text-normal">
+                    5 <input class="input-xl u-vr" type="radio" name="rating" value="5" formControlName="rating">
+                </label>
+            </div>
+            <div class="u-text-xs">1 = worst, 5 = Best</div>
         </div>
         <div class="u-vr-2">
             <label for="comments">Comments</label>
             <textarea id="comments" class="input-lg"></textarea>
         </div>
-        <button class="c-btn" type="submit" (click)="submitForm()">Submit</button>
+        <button class="c-btn" type="submit">Submit</button>
     </form>
 </section>

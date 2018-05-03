@@ -22,6 +22,6 @@
 			<li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
 		</ul>
 		<p class="u-vr-3-top u-vr-3">{{ summaryContent.comments }}</p>
-		<button *ngIf="readOnly == false" class="c-btn">Edit</button>
+		<button *ngIf="isLoggedIn == true" class="c-btn">Edit</button>
 	</div>
 </section>

@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
-import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'app-summary-section',
@@ -9,13 +8,9 @@ import { AppService } from '../../services/app.service';
 })
 export class SummarySectionComponent implements OnInit {
   @Input() summaryContent: IBeerDetail;
-  readOnly = true;
+  @Input() isLoggedIn: boolean;
 
-  constructor(
-    private appService: AppService,
-  ) { }
+  constructor() { }
 
-  ngOnInit() {
-    this.readOnly = this.appService.readOnly;
-  }
+  ngOnInit() { }
 }
