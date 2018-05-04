@@ -36,8 +36,8 @@ const query = options => {
     });
 };
 
-app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000 }));
-app.use(bodyParser.json({ limit: 1000000000 })); 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json()); 
 app.use(cors());
 
 app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
@@ -55,7 +55,7 @@ app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
         )`)
     });
 
-    const combinedQueries = queries.join(' UNION ALL ');
+    const combinedQueries = queries.join('UNION ALL');
 
     query({ query: combinedQueries }).then(data => {
         response.send(data);
