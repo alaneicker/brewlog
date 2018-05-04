@@ -1,0 +1,27 @@
+@import '../../../assets/styles/_tools.scss';
+
+.c-beer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: rem(-5);
+
+    &__item {
+        flex: 0 33.333%;
+        padding: rem(5);
+    }
+
+    &__photo {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: rem(250);
+    }
+
+    &__details {
+        background: $white;
+        flex: 1;
+        padding: rem(10);
+    }
+}

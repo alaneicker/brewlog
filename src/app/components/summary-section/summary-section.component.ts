@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 
 @Component({

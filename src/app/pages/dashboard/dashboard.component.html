@@ -1,3 +1,19 @@
 <section class="padding padding--24 wrapper">
-  <h1 class="u-text-xl">Dashboard</h1>
+    <h1 class="u-text-xl u-vr-5">Dashboard</h1>
+    
+    <ul class="c-beer-list">
+        <li class="c-beer-list__item" *ngFor="let beer of beers">
+            <a class="anchor anchor--inverse" routerLink="/beer-detail/{{beer.id}}">
+                <div 
+                    class="c-beer-list__photo"
+                    [style.backgroundImage]="'url('+ beer.photoUrl +')'"></div>
+                <div class="c-beer-list__details">
+                    <h3>{{ beer.beerName }}</h3>
+                    <app-rating
+                        [rating]="beer.rating">
+                    </app-rating>
+                </div>
+            </a>
+        </li>
+    </ul>
 </section>

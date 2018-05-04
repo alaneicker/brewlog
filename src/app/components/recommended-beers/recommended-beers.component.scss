@@ -4,6 +4,7 @@
     & > * {
         background: $white;
         flex: 0 24%;
+        position: relative;
     }
 
     &__photo {

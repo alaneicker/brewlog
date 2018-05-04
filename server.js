@@ -56,13 +56,19 @@ app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
     });
 });
 
+app.route('/api/beers').get((req, res) => {
+    query({ query: `SELECT * FROM mybeers` })
+        .then(data => res.send(data))
+        .catch(error => console.log(error));
+});
+
 app.route('/api/beer/:id').get((req, res) => {
     query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
         .then(data => res.send(data))
         .catch(error => console.log(error));
 });
 
-app.get('/recommended-beers', (req, res) => {
+app.route('/recommended-beers').get((req, res) => {
     const beerStyle = req.body.beerStyle;
     
     res.send([
