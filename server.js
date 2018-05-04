@@ -41,6 +41,48 @@ app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000 }));
 app.use(bodyParser.json({ limit: 1000000000 })); 
 app.use(cors());
 
+/*const beers = require('./beers.backup.json').data;
+
+function setBeers() {
+    beers.forEach(beer => {
+
+        var photoUrl = beer.labels.large;
+
+        if ('images' in beer.breweries[0]) {
+            if ('squareMedium' in beer.breweries[0].images) {
+                photoUrl = beer.breweries[0].images.squareMedium;
+            }
+        }
+
+        query({ query: `
+            INSERT INTO 
+                beers
+            SET
+                name = ?,
+                description = ?,
+                abv = ?,
+                ibu = ?,
+                style = ?,
+                brewery = ?,
+                photoUrl = ?,
+                breweryWebsite = ?
+        `, data: [
+            beer.name,
+            beer.description,
+            beer.abv,
+            beer.ibu,
+            beer.style.name,
+            beer.breweries[0].name,
+            photoUrl,
+            beer.breweries[0].website
+        ] })
+            .then(data => res.send(data))
+            .catch(error => console.log(error));
+    });
+}
+
+setBeers();*/
+
 app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
     const response = res;
     const styleIds = req.params.styleIds.split(',').splice(0, 4);

@@ -38,11 +38,11 @@ export class AddBeerComponent implements OnInit {
         });
     }
 
-    onFileChange(event) {
+    onFileChange(files: File[]) {
         const reader = new FileReader();
-        // alert(JSON.stringify(event.target.files));
-        if (event.target.files && event.target.files.length) {
-            const [file] = event.target.files;
+
+        if (files) {
+            const [file] = files;
 
             reader.readAsDataURL(file);
 
@@ -57,7 +57,6 @@ export class AddBeerComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        alert(form.valid);
         console.log(this.addBeerForm.controls);
     }
 }

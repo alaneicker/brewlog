@@ -3,7 +3,7 @@
     <form method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
         <div class="u-vr-2">
             <label for="upload">Upload Image</label>
-            <input id="upload" type="file" formControlName="photoUrl" (change)="onFileChange($event)">
+            <input id="upload" type="file" formControlName="photoUrl" #file (change)="onFileChange(file.files)">
         </div>
         <div class="u-vr-2"> 
             <label for="beer-name">Beer Name</label>
