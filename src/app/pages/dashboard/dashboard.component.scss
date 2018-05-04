@@ -21,7 +21,6 @@
     @media(min-width: $breakpoint-medium) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin: rem(-5);
 
         &__item {

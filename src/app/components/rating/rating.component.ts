@@ -4,10 +4,10 @@ import { Component, OnInit, Input } from '@angular/core';
     selector: 'app-rating',
     styleUrls: ['./rating.component.scss'],
     template: `
-    <div class="c-rating">
-        <b>Overall Rating:</b>
-        <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
-    </div>
+        <div class="c-rating">
+            Overall Rating:
+            <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
+        </div>
     `,
 })
 export class RatingComponent implements OnInit {
