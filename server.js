@@ -62,7 +62,8 @@ function setBeers() {
                 description = ?,
                 abv = ?,
                 ibu = ?,
-                style = ?,
+                styleId = ?,
+                styleName = ?,
                 brewery = ?,
                 photoUrl = ?,
                 breweryWebsite = ?
@@ -71,6 +72,7 @@ function setBeers() {
             beer.description,
             beer.abv,
             beer.ibu,
+            beer.styleId,
             beer.style.name,
             beer.breweries[0].name,
             photoUrl,
