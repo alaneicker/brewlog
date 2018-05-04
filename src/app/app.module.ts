@@ -19,6 +19,7 @@ import { RatingComponent } from './components/rating/rating.component';
 import { RecommendedBeersComponent } from './components/recommended-beers/recommended-beers.component';
 import { AddBeerComponent } from './pages/add-beer/add-beer.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { FooterComponent } from './components/footer/footer.component';
     RecommendedBeersComponent,
     AddBeerComponent,
     FooterComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,

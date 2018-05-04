@@ -1,6 +1,9 @@
 <section class="padding padding--24 wrapper">
-    <h1 class="u-text-xl u-vr-5">Dashboard</h1>
     
+    <div class="u-vr-3">
+        <app-search-bar></app-search-bar>
+    </div>    
+
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">
             <a class="anchor anchor--inverse" routerLink="/beer-detail/{{beer.id}}">
