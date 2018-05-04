@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppService } from './services/app.service';
 import { HttpService } from './services/http.service';
+import { BeerStyleService } from './services/beer-styles.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -43,6 +44,7 @@ import { FooterComponent } from './components/footer/footer.component';
   providers: [
     AppService,
     HttpService,
+    BeerStyleService,
   ],
   bootstrap: [AppComponent]
 })

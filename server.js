@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const cors = require('cors');
+const request = require('ajax-request');
 const app = express();
 const port = process.env.PORT || 8080;
 const env = process.env.NODE_ENV || 'dev';
@@ -36,8 +37,8 @@ const query = options => {
     });
 };
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000 }));
+app.use(bodyParser.json({ limit: 1000000000 })); 
 app.use(cors());
 
 app.route('/api/beer/:id').get((req, res) => {
