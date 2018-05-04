@@ -11,7 +11,6 @@ import { BeerStyleService } from '../../services/beer-styles.service';
 export class RecommendedBeersComponent implements OnInit {
     @Input() beerStyle: string;
     recommendedBeers: any;
-    // recommendedBeers = [];
 
   constructor(
     private httpService: HttpService,
@@ -19,11 +18,7 @@ export class RecommendedBeersComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.httpService
-        .request('http://localhost:8080/recommended-beers', { beerStyle: this.beerStyle })
-        .then(res => this.recommendedBeers = res)
-        .catch(error => console.log(error));
-    // this.getRecommendedBeers();
+    this.getRecommendedBeers();
   }
 
   getRecommendedBeers() {
@@ -37,9 +32,8 @@ export class RecommendedBeersComponent implements OnInit {
     this.httpService
         .request(`http://localhost:8080/api/get-beers-by-style/${styleIds}`)
         .then(res => {
-            res.forEach(item => {
-                this.recommendedBeers.push(JSON.parse(item).data);
-            });
+            console.log(res);
+            this.recommendedBeers = res.splice(0, 4);
         })
         .catch(error => console.log(error));
   }

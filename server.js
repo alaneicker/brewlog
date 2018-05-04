@@ -87,15 +87,16 @@ setBeers();*/
 
 app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
     const response = res;
-    const styleIds = req.params.styleIds.split(',').splice(0, 4);
-    const urls = [];
+    const styleIds = req.params.styleIds.split(',');
+    const queries = [];
 
     styleIds.forEach(id => {
-        urls.push(`https://api.brewerydb.com/v2/beer/random?key=df7e3d9ef514039778837e71f2ddace3&styleId=60&hasLabels=Y&withBreweries=Y&styleId=${id}`);
+        queries.push(`(SELECT * FROM beers WHERE styleId = ${id} ORDER BY RAND() LIMIT 1)`)
     });
 
-    const promises = urls.map(url => request(url));
-    Promise.all(promises).then((data) => {
+    const combinedQueries = queries.join(' UNION ALL ');
+
+    query({ query: combinedQueries }).then(data => {
         response.send(data);
     });
 });

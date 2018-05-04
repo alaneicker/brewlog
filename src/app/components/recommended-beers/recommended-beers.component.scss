@@ -2,14 +2,14 @@
 
 .c-recommended-beers-list {
     & > * {
-        background: $white;
-        flex: 0 24%;
+        flex: 0 25%;
+        padding: rem(8);
         position: relative;
     }
 
     &__photo {
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat; 
         height: rem(250);
     }   
@@ -20,8 +20,13 @@
         padding: rem(16);
     }
 
+    &__inner {
+        background: $white;
+        display: block;
+        height: 100%;
+    }
+
     @media(min-width: $breakpoint-medium) {
         display: flex;
-        justify-content: space-between;
     }
 }

@@ -1,27 +1,12 @@
-<!--<ul *ngIf="recommendedBeers.length > 0" class="c-recommended-beers-list">
-<li *ngFor="let beer of recommendedBeers" class="u-vr-2">
-    <a class="anchor anchor--inverse" target="_blank" [href]="beer.breweries[0].locations[0].website">
-      <div 
-        class="c-recommended-beers-list__photo"
-        [style.backgroundImage]="'url('+ beer.breweries[0].images.squareLarge +')'">
-      </div>
-      <div class="c-recommended-beers-list__details">
-            <h3>{{ beer.name }}</h3>
-            <h4 class="u-text-normal">{{ beer.breweries[0].name }}</h4>
-      </div>
-    </a>
-</li>
-</ul>-->
-
 <ul class="c-recommended-beers-list">
     <li *ngFor="let beer of recommendedBeers" class="u-vr-2">
-        <a class="anchor anchor--inverse" target="_blank" [href]="beer.url">
+        <a class="c-recommended-beers-list__inner anchor anchor--inverse" target="_blank" [href]="beer.breweryWebsite">
             <div 
                 class="c-recommended-beers-list__photo"
                 [style.backgroundImage]="'url('+ beer.photoUrl +')'">
             </div>
             <div class="c-recommended-beers-list__details">
-                <h3>{{ beer.beerName }}</h3>
+                <h3>{{ beer.name }}</h3>
                 <h4 class="u-text-normal">{{ beer.brewery }}</h4>
             </div>
         </a>
