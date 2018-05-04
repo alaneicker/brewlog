@@ -14,9 +14,6 @@ export class BeerDetailComponent implements OnInit {
     summaryContent: IBeerDetail;
     isLoggedIn: boolean;
 
-    // BEERS: https://api.brewerydb.com/v2/beers?key=df7e3d9ef514039778837e71f2ddace3&styleId=60&hasLabels=Y
-    // STYLES: https://api.brewerydb.com/v2/styles?key=df7e3d9ef514039778837e71f2ddace3
-
     constructor(
         private httpService: HttpService,
         private appService: AppService,

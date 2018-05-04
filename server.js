@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const cors = require('cors');
-const request = require('ajax-request');
+const request = require('request-promise'); 
 const app = express();
 const port = process.env.PORT || 8080;
 const env = process.env.NODE_ENV || 'dev';
@@ -40,6 +40,21 @@ const query = options => {
 app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000 }));
 app.use(bodyParser.json({ limit: 1000000000 })); 
 app.use(cors());
+
+app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
+    const response = res;
+    const styleIds = req.params.styleIds.split(',').splice(0, 4);
+    const urls = [];
+
+    styleIds.forEach(id => {
+        urls.push(`https://api.brewerydb.com/v2/beer/random?key=df7e3d9ef514039778837e71f2ddace3&styleId=60&hasLabels=Y&withBreweries=Y&styleId=${id}`);
+    });
+
+    const promises = urls.map(url => request(url));
+    Promise.all(promises).then((data) => {
+        response.send(data);
+    });
+});
 
 app.route('/api/beer/:id').get((req, res) => {
     query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
