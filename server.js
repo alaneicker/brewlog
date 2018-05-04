@@ -47,7 +47,13 @@ app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
     const queries = [];
 
     styleIds.forEach(id => {
-        queries.push(`(SELECT * FROM beers WHERE styleId = ${id} ORDER BY RAND() LIMIT 1)`)
+        queries.push(`(
+            SELECT * 
+            FROM beers 
+            WHERE styleId = ${id} 
+            ORDER BY RAND() 
+            LIMIT 1
+        )`)
     });
 
     const combinedQueries = queries.join(' UNION ALL ');
@@ -67,37 +73,6 @@ app.route('/api/beer/:id').get((req, res) => {
     query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
         .then(data => res.send(data))
         .catch(error => console.log(error));
-});
-
-app.route('/recommended-beers').get((req, res) => {
-    const beerStyle = req.body.beerStyle;
-    
-    res.send([
-        {
-          "photoUrl": "assets/images/honkers-ale.jpg",
-          "beerName": "Honkers Ale",
-          "brewery": "Goose Island Brewing Co.",
-          "url": "https://www.ratebeer.com/beer/goose-island-honkers-ale/811/"
-        },
-        {
-          "photoUrl": "assets/images/daisy-cutter.jpg",
-          "beerName": "Daisy Cutter",
-          "brewery": "Half Acre Beer Co.",
-          "url": "https://www.ratebeer.com/beer/half-acre-daisy-cutter/102472/"
-        },
-        {
-          "photoUrl": "assets/images/sky-high-rye.jpg",
-          "beerName": "Sky High Rye",
-          "brewery": "Arcadia Brewing Co.",
-          "url": "https://www.ratebeer.com/beer/arcadia-sky-high-rye/90983/"
-        },
-        {
-          "photoUrl": "assets/images/sierra-nevada-paleale.jpg",
-          "beerName": "Sierra Nevada Pale Ale",
-          "brewery": "Sierra Nevada Brewing Co.",
-          "url": "https://www.ratebeer.com/beer/sierra-nevada-pale-ale-bottle-can/365/"
-        }
-    ]);
 });
 
 module.exports = app.listen(port, () => {
