@@ -1,14 +1,8 @@
 @import '../../../assets/styles/_tools.scss';
 
 .c-beer-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: rem(-5);
-
     &__item {
-        flex: 0 33.333%;
-        padding: rem(5);
+        margin-bottom: rem(10);
     }
 
     &__photo {
@@ -21,7 +15,23 @@
 
     &__details {
         background: $white;
-        flex: 1;
         padding: rem(10);
+    }
+
+    @media(min-width: $breakpoint-medium) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: rem(-5);
+
+        &__item {
+            flex: 0 33.333%;
+            margin-bottom: 0;
+            padding: rem(5);
+        }
+
+        &__details {
+            flex: 1;
+        }
     }
 }
