@@ -5,13 +5,14 @@ import { Component, OnInit, Input } from '@angular/core';
     template: `
         <div class="c-search">
             <label class="screenreader-only" for="search">Search</label>
-            <input id="search" type="text" placeholder="Search">
+            <input id="search" type="text" placeholder="{{placeholder}}">
         </div>
     `,
     styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
     @Input() searchTerm: string;
+    @Input() placeholder: string;
 
     constructor() { }
 

@@ -3,6 +3,8 @@
 .c-search {
 
     input {
+        border: 0;
+        background: $gray-6;
         font-size: rem(20);
         padding: rem(16);
     }

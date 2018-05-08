@@ -10,31 +10,32 @@ import { BeerStyleService } from '../../services/beer-styles.service';
 })
 export class RecommendedBeersComponent implements OnInit {
     @Input() beerStyle: string;
-    recommendedBeers: any;
 
-  constructor(
-    private httpService: HttpService,
-    private beerStyleService: BeerStyleService,
-  ) { }
+    recommendedBeers = [];
 
-  ngOnInit() {
-    this.getRecommendedBeers();
-  }
+    constructor(
+        private httpService: HttpService,
+        private beerStyleService: BeerStyleService,
+    ) { }
 
-  getRecommendedBeers() {
-    const styleIds = [];
-    this.beerStyleService.styles.forEach(style => {
-        if (style.name.match(this.beerStyle.replace(' ', '|'))) {
-            styleIds.push(style.id);
-        }
-    });
+    ngOnInit() {
+        this.getRecommendedBeers();
+    }
 
-    this.httpService
-        .request(`http://localhost:8080/api/get-beers-by-style/${styleIds}`)
-        .then(res => {
-            console.log(res);
-            this.recommendedBeers = res.splice(0, 4);
-        })
-        .catch(error => console.log(error));
-  }
+    getRecommendedBeers() {
+        const styleIds = [];
+
+        this.beerStyleService.styles.forEach(style => {
+            if (style.name.match(this.beerStyle.replace(' ', '|'))) {
+                styleIds.push(style.id);
+            }
+        });
+
+        this.httpService
+            .request(`http://localhost:8080/api/get-beers-by-style?styleIds=${styleIds}`)
+            .then(res => {
+                this.recommendedBeers = res.splice(0, 4);
+            })
+            .catch(error => console.log(error));
+    }
 }

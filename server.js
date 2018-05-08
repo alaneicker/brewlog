@@ -40,9 +40,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); 
 app.use(cors());
 
-app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
+app.route('/api/get-beers-by-style').get((req, res) => {
     const response = res;
-    const styleIds = req.params.styleIds.split(',');
+    const styleIds = req.query.styleIds.split(',');
     const queries = [];
 
     styleIds.forEach(id => {
@@ -60,6 +60,10 @@ app.route('/api/get-beers-by-style/:styleIds').get((req, res) => {
     query({ query: combinedQueries }).then(data => {
         response.send(data);
     });
+});
+
+app.route('/api/get-style-info/:styleIds').get((req, res) => {
+
 });
 
 app.route('/api/beers').get((req, res) => {
