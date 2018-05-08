@@ -10,19 +10,13 @@ import { BeerStyleService } from './services/beer-styles.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { BeerSearchComponent } from './pages/beer-search/beer-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PageNotFoundComponent,
     FooterComponent,
-    SearchBarComponent,
-    BeerSearchComponent,
   ],
   imports: [
     BrowserModule,

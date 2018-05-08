@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'beer-search',
-    component: BeerSearchComponent,
+    loadChildren: './pages/beer-search/beer-search.module#BeerSearchModule',
   },
   {
     path: 'add-beer',
@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: PageNotFoundComponent,
+    loadChildren: './pages/page-not-found/page-not-found.module#PageNotFoundModule',
   }
 ];
 

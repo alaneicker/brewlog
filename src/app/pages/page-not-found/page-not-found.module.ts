@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DashboardComponent } from './dashboard.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 import { RatingComponent } from '../../components/rating/rating.component';
 
-import { routing } from './dashboard.router';
+import { routing } from './page-not-found.router';
 
 @NgModule({
   imports: [
@@ -12,9 +12,8 @@ import { routing } from './dashboard.router';
     CommonModule,
   ],
   declarations: [
-    DashboardComponent,
-    RatingComponent,
+    PageNotFoundComponent,
   ],
 })
 
-export class DashboardModule {}
+export class PageNotFoundModule {}
