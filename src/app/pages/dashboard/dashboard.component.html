@@ -8,9 +8,7 @@
                     [style.backgroundImage]="'url('+ beer.photoUrl +')'"></div>
                 <div class="c-beer-list__details">
                     <h3>{{ beer.beerName }}</h3>
-                    <!--<app-rating
-                        [rating]="beer.rating">
-                    </app-rating>-->
+                    <app-rating [rating]="beer.rating"></app-rating>
                 </div>
             </a>
         </li>
