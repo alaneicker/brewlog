@@ -6,6 +6,8 @@ import { BeerDetailComponent } from './beer-detail.component';
 import { SummarySectionComponent } from '../../components/summary-section/summary-section.component';
 import { RecommendedBeersComponent } from '../../components/recommended-beers/recommended-beers.component';
 
+import { BeerStyleService } from '../../services/beer-styles.service';
+
 import { RatingModule } from '../../components/rating/rating.module';
 
 import { routing } from './beer-detail.router';
@@ -21,7 +23,10 @@ import { routing } from './beer-detail.router';
     SummarySectionComponent,
     RecommendedBeersComponent,
   ],
-  providers: [BeerDetailResolver],
+  providers: [
+    BeerDetailResolver,
+    BeerStyleService,
+  ],
 })
 
 export class BeerDetailModule {}
