@@ -3,10 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 import { BeerSearchComponent } from './pages/beer-search/beer-search.component';
-
-import { BeerDetailResolver } from './pages/beer-detail/beer-detail.resolver';
 
 const routes: Routes = [
   {
@@ -27,10 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'beer-detail/:id',
-    component: BeerDetailComponent,
-    resolve: {
-      beerDetailSummary: BeerDetailResolver,
-    },
+    loadChildren: './pages/beer-detail/beer-detail.module#BeerDetailModule',
   },
   {
     path: '**',
@@ -41,6 +35,5 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [BeerDetailResolver],
 })
 export class AppRoutingModule { }
