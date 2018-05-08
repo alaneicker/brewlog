@@ -5,7 +5,8 @@ import { BeerDetailResolver } from './beer-detail.resolver';
 import { BeerDetailComponent } from './beer-detail.component';
 import { SummarySectionComponent } from '../../components/summary-section/summary-section.component';
 import { RecommendedBeersComponent } from '../../components/recommended-beers/recommended-beers.component';
-import { RatingComponent } from '../../components/rating/rating.component';
+
+import { RatingModule } from '../../components/rating/rating.module';
 
 import { routing } from './beer-detail.router';
 
@@ -13,12 +14,12 @@ import { routing } from './beer-detail.router';
   imports: [
     routing,
     CommonModule,
+    RatingModule,
   ],
   declarations: [
     BeerDetailComponent,
     SummarySectionComponent,
     RecommendedBeersComponent,
-    RatingComponent,
   ],
   providers: [BeerDetailResolver],
 })

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardComponent } from './dashboard.component';
-import { RatingComponent } from '../../components/rating/rating.component';
+import { RatingModule } from '../../components/rating/rating.module';
 
 import { routing } from './dashboard.router';
 
@@ -10,10 +10,10 @@ import { routing } from './dashboard.router';
   imports: [
     routing,
     CommonModule,
+    RatingModule,
   ],
   declarations: [
     DashboardComponent,
-    RatingComponent,
   ],
 })
 
