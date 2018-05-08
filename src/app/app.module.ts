@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -17,7 +16,6 @@ import { SummarySectionComponent } from './components/summary-section/summary-se
 import { BeerDetailComponent } from './pages/beer-detail/beer-detail.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { RecommendedBeersComponent } from './components/recommended-beers/recommended-beers.component';
-import { AddBeerComponent } from './pages/add-beer/add-beer.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { BeerSearchComponent } from './pages/beer-search/beer-search.component';
@@ -33,7 +31,6 @@ import { BeerSearchComponent } from './pages/beer-search/beer-search.component';
     BeerDetailComponent,
     RatingComponent,
     RecommendedBeersComponent,
-    AddBeerComponent,
     FooterComponent,
     SearchBarComponent,
     BeerSearchComponent,
@@ -42,8 +39,6 @@ import { BeerSearchComponent } from './pages/beer-search/beer-search.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
   ],
   providers: [
     AppService,
