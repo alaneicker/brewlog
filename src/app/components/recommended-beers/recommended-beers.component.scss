@@ -33,5 +33,9 @@
     @media(min-width: $breakpoint-medium) {
         display: flex;
         justify-content: center;
+
+        &__photo {
+            background-size: 98%;
+        }
     }
 }

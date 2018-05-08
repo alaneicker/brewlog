@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-    <div class="u-align-center padding padding--16">
+    <div class="c-footer">
       &copy; {{copyrightDate}} Brewlog. All rights reserved.
     </div>
   `,
