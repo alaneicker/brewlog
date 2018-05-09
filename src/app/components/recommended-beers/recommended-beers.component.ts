@@ -4,6 +4,7 @@ import { HttpService } from '../../services/http.service';
 import { BeerStyleService } from '../../services/beer-styles.service';
 
 @Component({
+    providers: [BeerStyleService],
     selector: 'app-recommended-beers',
     templateUrl: './recommended-beers.component.html',
     styleUrls: ['./recommended-beers.component.scss']
