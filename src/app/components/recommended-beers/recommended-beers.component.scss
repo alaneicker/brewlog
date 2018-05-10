@@ -7,7 +7,7 @@
         position: relative;
 
         &:hover > * {
-            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            box-shadow: 0 0 rem(5) rgba(0,0,0,0.2);
         }
     }
 
@@ -19,9 +19,9 @@
     }   
     
     &__details {
-        display: block;
         line-height: 1.4;
         padding: rem(16);
+        text-align: center;
     }
 
     &__inner {

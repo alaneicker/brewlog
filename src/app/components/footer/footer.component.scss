@@ -1,7 +1,9 @@
 @import '../../../assets/styles/_tools.scss';
 
 .c-footer {
-    background: $gray-4;
-    padding: rem(8);
+    background: $gray-1;
+    color: $white;
+    font-size: rem(12);
+    padding: rem(12);
     text-align: center;
 }

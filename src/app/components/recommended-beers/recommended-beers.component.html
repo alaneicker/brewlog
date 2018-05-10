@@ -1,6 +1,6 @@
 <ng-container *ngIf="recommendedBeers.length">
     <h3 class="u-text-lg u-vr-top u-vr-3 u-align-center--medium">
-        Other {{ beerStyle }}s You May Like
+        Other Beers You May Like
     </h3>
     <ul class="c-recommended-beers-list">
         <li *ngFor="let beer of recommendedBeers" class="u-vr-2">
@@ -10,8 +10,10 @@
                     [style.backgroundImage]="'url('+ beer.photoUrl +')'">
                 </div>
                 <div class="c-recommended-beers-list__details">
-                    <h3>{{ beer.name }}</h3>
-                    <h4 class="u-text-normal">{{ beer.brewery }}</h4>
+                    <div>
+                        <h3>{{ beer.name }}</h3>
+                        <h4 class="u-text-normal">{{ beer.brewery }}</h4>
+                    </div>
                 </div>
             </a>
         </li>

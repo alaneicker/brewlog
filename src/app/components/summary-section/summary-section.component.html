@@ -4,24 +4,45 @@
 		[style.backgroundImage]="'url('+ summaryContent.photoUrl +')'">
 	</div>
 	<div class="summary__details">
-		<h1 class="summary__beer-name u-vr">
+		<h1 class="summary__beer-name u-vr" *ngIf="summaryContent.beerName">
 			{{ summaryContent.beerName }}
 		</h1>
 		<h2 class="summary__brewery">
-			{{ summaryContent.brewery }}, {{summaryContent.location}}
+			<ng-container *ngIf="summaryContent.brewery">
+				{{ summaryContent.brewery }} &bull;
+			</ng-container>
+			<ng-container *ngIf="summaryContent.city">
+				{{ summaryContent.city }}<ng-container *ngIf="!summaryContent.state && summaryContent.country">,</ng-container>
+			</ng-container>
+			<ng-container *ngIf="summaryContent.state">
+				{{ summaryContent.state }},
+			</ng-container>
+			<ng-container *ngIf="summaryContent.country">
+				{{ summaryContent.country }}
+			</ng-container>
 		</h2>
-		<div class="u-vr-1-top">
+		<div class="u-vr-1-top" *ngIf="summaryContent.rating">
 			<app-rating
 				[rating]="summaryContent.rating">
 			</app-rating>
 		</div>
 		<ul class="u-vr-3-top u-flex--medium u-flex--hr">
-			<li><b>Style:</b> {{ summaryContent.style }}</li>
-			<li><b>ABV:</b> {{ summaryContent.abv | number : '1.1' }}%</li>
-			<li><b>IBU:</b> {{ summaryContent.ibu }}</li>
-			<li><b>Glassware:</b> {{ summaryContent.glassware }}</li>
+			<li *ngIf="summaryContent.style">
+				<b>Style:</b> {{ summaryContent.style }}
+			</li>
+			<li *ngIf="summaryContent.abv">
+				<b>ABV:</b> {{ summaryContent.abv | number : '1.1' }}%
+			</li>
+			<li *ngIf="summaryContent.ibu">
+				<b>IBU:</b> {{ summaryContent.ibu }}
+			</li>
+			<li *ngIf="summaryContent.glassware">
+				<b>Glassware:</b> {{ summaryContent.glassware }}
+			</li>
 		</ul>
-		<p class="u-vr-3-top u-vr-3">{{ summaryContent.comments }}</p>
+		<p class="u-vr-3-top u-vr-3" *ngIf="summaryContent.comments">
+			{{ summaryContent.comments }}
+		</p>
 		<button *ngIf="isLoggedIn == true" class="c-btn">Edit</button>
 	</div>
 </section>
