@@ -10,7 +10,7 @@ import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 })
 export class SummarySectionComponent implements OnInit {
     @Input() summaryContent: IBeerDetail;
-    @Input() isLoggedIn: boolean;
+    isLoggedIn: boolean;
 
     constructor(
         private appService: AppService,

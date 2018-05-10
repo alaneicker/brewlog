@@ -15,7 +15,6 @@ export class AppComponent {
       { text: 'My Beers', url: '/' },
       { text: 'Discover Beers', url: '/beer-search' },
       { text: 'Add Beer', url: '/add-beer' },
-      { text: 'Settings', url: '/settings' },
     ],
   };
 }

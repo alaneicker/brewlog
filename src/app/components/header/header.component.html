@@ -1,10 +1,16 @@
 <header class="c-header">
-  <a class="c-header__logo" routerLink="/">{{ headerContent.logoText }}</a>
-  <nav class="c-header__nav is-hidden is-visible--medium">
-    <ul class="c-header__nav-list">
-      <li *ngFor="let item of headerContent.navItems">
-        <a routerLink="{{ item.url }}">{{ item.text }}</a>
-      </li>
-    </ul>
-  </nav>
+    <a class="c-header__logo" routerLink="/">{{ headerContent.logoText }}</a>
+    <nav class="c-header__nav is-hidden is-visible--medium">
+        <ul class="c-header__nav-list">
+            <li *ngFor="let item of headerContent.navItems">
+                <a routerLink="{{ item.url }}">{{ item.text }}</a>
+            </li>
+            <li *ngIf="!isLoggedIn">
+                <a routerLink="">Log In</a>
+            </li>
+            <li *ngIf="isLoggedIn">
+                <a routerLink="">Log Out</a>
+            </li>
+        </ul>
+    </nav>
 </header>
