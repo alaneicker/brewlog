@@ -12,10 +12,10 @@ import { IHeader } from './interfaces/header.interface';
 })
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribe$: Subject<void> = new Subject();
-  title = 'Brelog';
+  title = 'Brew Journal';
 
   headerContent: IHeader = {
-    logoText: 'Brewlog',
+    logoText: 'Brew Journal',
     navItems: [
       { text: 'My Beers', url: '/' },
       { text: 'Discover Beers', url: '/beer-search' },
