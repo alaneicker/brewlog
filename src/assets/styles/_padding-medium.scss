@@ -1,0 +1,18 @@
+.padding {
+    
+    &\@medium {
+        padding: rem(8);
+    }
+
+    &--16\@medium {
+        padding: rem(16);
+    }
+
+    &--24\@medium {
+        padding: rem(24);
+    }
+
+    &--32\@medium {
+        padding: rem(32);
+    }
+}

@@ -2,21 +2,17 @@
     [summaryContent]="summaryContent">
 </app-summary-section>
 
+<section class="padding padding--16">
+    <app-google-map 
+        [brewery]="summaryContent.brewery"
+        [city]="summaryContent.city"
+        [state]="summaryContent.state"
+        [country]="summaryContent.country"
+        [zoom]="13"></app-google-map>
+</section>
+
 <section class="padding padding--16 wrapper">
-
-    <div class="u-vr-4 u-vr-2-top">
-        <h2 *ngIf="summaryContent.brewery" class="u-align-center u-vr-2 u-text-lg">
-            {{ summaryContent.brewery }} Locations
-        </h2>
-        <app-google-map 
-            [location]="
-                summaryContent.brewery + ' ' + summaryContent.city + ' ' + summaryContent.country
-            "
-            [zoom]="13"></app-google-map>
-    </div>
-
     <app-recommended-beers
         [beerStyle]="summaryContent.style">
     </app-recommended-beers>
-    
 </section>
