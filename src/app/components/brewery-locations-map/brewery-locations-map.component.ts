@@ -9,23 +9,10 @@ export interface ILocation {
 
 @Component({
     selector: 'app-google-map',
-    styles: [`
-        agm-map {
-            height: 300px;
-        }
-    `],
-    template: `
-        <div class="u-flex--medium u-flex--hr">
-            <div class="u-flex__item--grow u-vr-1" *ngFor="let l of locations">
-                <h5 class="u-vr u-align-center">{{ l.formattedAddress }}</h5>
-                <agm-map [zoom]="zoom" [latitude]="l.lat" [longitude]="l.lng">
-                    <agm-marker [latitude]="l.lat" [longitude]="l.lng"></agm-marker>
-                </agm-map>
-            </div>
-        </div>
-    `,
+    templateUrl: './brewery-location-map.component.html',
 })
 export class BreweryLocationMapsComponent implements OnInit {
+    @Input() mapHeight: string;
     @Input() brewery: string;
     @Input() city: string;
     @Input() state: string;

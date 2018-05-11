@@ -1,0 +1,17 @@
+<div class="u-flex--medium u-flex--hr">
+    <div class="u-flex__item--grow u-vr-2" *ngFor="let l of locations">
+        <h5 class="u-vr u-align-center u-text-normal">
+            {{ l.formattedAddress }}
+        </h5>
+        <agm-map 
+            [style.height]="mapHeight + 'px'" 
+            [zoom]="zoom" 
+            [latitude]="l.lat" 
+            [longitude]="l.lng">
+            <agm-marker 
+                [latitude]="l.lat" 
+                [longitude]="l.lng">
+            </agm-marker>
+        </agm-map>
+    </div>
+</div>

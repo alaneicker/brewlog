@@ -1,7 +1,4 @@
 <ng-container *ngIf="recommendedBeers.length">
-    <h3 class="u-text-lg u-vr-2 u-align-center--medium">
-        Other Beers You May Like
-    </h3>
     <ul class="c-recommended-beers-list">
         <li *ngFor="let beer of recommendedBeers" class="u-vr-2">
             <a class="c-recommended-beers-list__inner anchor anchor--inverse" target="_blank" [href]="beer.breweryWebsite">
