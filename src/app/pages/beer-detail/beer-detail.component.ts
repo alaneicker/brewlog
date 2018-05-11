@@ -22,6 +22,7 @@ export class BeerDetailComponent implements OnInit {
     ) {}
 
     ngOnInit() {
+        window.scrollTo(0, 0);
         this.summaryContent = this.route.snapshot.data.beerDetailSummary;
     }
 

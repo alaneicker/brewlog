@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
+import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/takeUntil';
 
 import { IHeader } from './interfaces/header.interface';
 
@@ -6,7 +10,8 @@ import { IHeader } from './interfaces/header.interface';
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
+  private unsubscribe$: Subject<void> = new Subject();
   title = 'Brelog';
 
   headerContent: IHeader = {
@@ -17,4 +22,24 @@ export class AppComponent {
       { text: 'Add Beer', url: '/add-beer' },
     ],
   };
+
+  constructor(
+    private router: Router,
+  ) {}
+
+  ngOnInit() {
+    this.router.events
+      .takeUntil(this.unsubscribe$)
+      .subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0);
+    });
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
 }
