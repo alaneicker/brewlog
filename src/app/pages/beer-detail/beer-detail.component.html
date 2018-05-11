@@ -4,22 +4,13 @@
 
 <section class="padding padding--16 wrapper">
 
-    <div class="u-vr-6 u-vr-2-top">
-        <h2 class="u-align-center u-vr-2 u-text-lg">
-            <ng-container *ngIf="summaryContent.brewery">
-                {{ summaryContent.brewery }},
-            </ng-container>
-            <ng-container *ngIf="summaryContent.city">
-                {{ summaryContent.city }}<ng-container *ngIf="!summaryContent.state && summaryContent.country">,</ng-container>
-            </ng-container>
-            <ng-container *ngIf="summaryContent.state">
-                {{ summaryContent.state }},
-            </ng-container>
-            <ng-container *ngIf="summaryContent.country">
-                {{ summaryContent.country }}
-            </ng-container>
+    <div class="u-vr-4 u-vr-2-top">
+        <h2 *ngIf="summaryContent.brewery" class="u-align-center u-vr-2 u-text-lg">
+            {{ summaryContent.brewery }} Locations
         </h2>
-        <app-google-map></app-google-map>
+        <app-google-map 
+            [brewery]="summaryContent.brewery"
+            [zoom]="13"></app-google-map>
     </div>
 
     <app-recommended-beers

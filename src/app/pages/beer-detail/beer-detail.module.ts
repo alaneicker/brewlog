@@ -7,7 +7,7 @@ import { BeerDetailResolver } from './beer-detail.resolver';
 import { BeerDetailComponent } from './beer-detail.component';
 import { SummarySectionComponent } from '../../components/summary-section/summary-section.component';
 import { RecommendedBeersComponent } from '../../components/recommended-beers/recommended-beers.component';
-import { GoogleMapComponent } from '../../components/google-map/google-map.component';
+import { BreweryLocationMapsComponent } from '../../components/brewery-locations-map/brewery-locations-map.component';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -26,7 +26,7 @@ import { routing } from './beer-detail.router';
         BeerDetailComponent,
         SummarySectionComponent,
         RecommendedBeersComponent,
-        GoogleMapComponent,
+        BreweryLocationMapsComponent,
     ],
     providers: [
         BeerDetailResolver,
