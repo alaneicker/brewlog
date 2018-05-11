@@ -15,7 +15,7 @@
     &__logo {
         color: $white;
         font-size: rem(22);
-        font-weight: 600;
+        font-weight: $font-bold;
         text-decoration: none;
     }
 
@@ -35,6 +35,7 @@
         & > * > a {
             color: $white;
             text-decoration: none;
+            text-transform: uppercase;
         }
     }
 

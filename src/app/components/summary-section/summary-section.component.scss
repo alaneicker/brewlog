@@ -20,12 +20,12 @@
 
     &__beer-name {
         font-size: rem(30);
-        font-weight: 800;
+        font-weight: $font-black;
     }
 
     &__brewery {
         font-size: rem(20);
-        font-weight: 500;
+        font-weight: $font-semibold;
     }
 
     @media(min-width: $breakpoint-medium) {
