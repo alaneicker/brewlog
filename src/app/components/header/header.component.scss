@@ -36,6 +36,11 @@
             color: $white;
             text-decoration: none;
             text-transform: uppercase;
+            transition: color 0.2s linear;
+
+            &:hover {
+                color: $blue-2;
+            }
         }
     }
 
