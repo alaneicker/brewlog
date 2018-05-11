@@ -1,5 +1,7 @@
-import { Component, ChangeDetectorRef, OnInit } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, HostBinding } from '@angular/core';
 import FileReader from 'filereader';
+
+import { fadeAnimation } from '../../animations/fade';
 
 import {
     FormBuilder,
@@ -11,11 +13,13 @@ import {
 } from '@angular/forms';
 
 @Component({
+    animations: [fadeAnimation],
     selector: 'app-add-beer',
     templateUrl: './add-beer.component.html',
     styleUrls: ['./add-beer.component.scss']
 })
 export class AddBeerComponent implements OnInit {
+    @HostBinding('@fadeAnimation')
     addBeerForm: FormGroup;
 
     constructor(
