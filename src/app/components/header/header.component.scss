@@ -39,6 +39,8 @@
     }
 
     @media(min-width: $breakpoint-medium) {
+        position: static;
+
         &__nav {
             font-size: inherit;
         }

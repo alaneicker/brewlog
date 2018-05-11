@@ -18,6 +18,7 @@
 
 @media (min-width: $breakpoint-medium) {
     @import 
+        '_base-medium',
         '_forms-medium',
         '_alinment-medium',
         '_padding-medium';
