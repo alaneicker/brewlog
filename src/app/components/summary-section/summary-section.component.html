@@ -9,7 +9,7 @@
 		</h1>
 		<h2 class="summary__brewery">
 			<ng-container *ngIf="summaryContent.brewery">
-				{{ summaryContent.brewery }} &bull;
+				{{ summaryContent.brewery }},
 			</ng-container>
 			<ng-container *ngIf="summaryContent.city">
 				{{ summaryContent.city }}<ng-container *ngIf="!summaryContent.state && summaryContent.country">,</ng-container>
