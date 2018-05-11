@@ -19,19 +19,17 @@ export class BreweryLocationMapsComponent implements OnInit {
     @Input() country: string;
     @Input() zoom: number;
 
-    locations: ILocation[] = [];
+    location: ILocation;
 
     constructor() {}
 
     ngOnInit() {
         geocoder.geocode(this.formattedLocationString, ( err, data ) => {
-            data.results.forEach(location => {
-                this.locations.push({
-                    formattedAddress: location.formatted_address,
-                    lat: location.geometry.location.lat,
-                    lng: location.geometry.location.lng,
-                });
-            });
+            this.location = {
+                formattedAddress: data.results[0].formatted_address,
+                lat: data.results[0].geometry.location.lat,
+                lng: data.results[0].geometry.location.lng,
+            };
         });
     }
 
