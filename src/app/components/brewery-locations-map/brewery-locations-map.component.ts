@@ -9,7 +9,18 @@ export interface ILocation {
 
 @Component({
     selector: 'app-google-map',
-    templateUrl: './brewery-location-map.component.html',
+    template: `
+        <agm-map
+            [style.height]="mapHeight + 'px'"
+            [zoom]="zoom"
+            [latitude]="location?.lat"
+            [longitude]="location?.lng">
+            <agm-marker
+                [latitude]="location?.lat"
+                [longitude]="location?.lng">
+            </agm-marker>
+        </agm-map>
+    `,
 })
 export class BreweryLocationMapsComponent implements OnInit {
     @Input() mapHeight: string;
