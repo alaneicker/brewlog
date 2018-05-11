@@ -2,24 +2,28 @@
     [summaryContent]="summaryContent">
 </app-summary-section>
 
-<section class="padding padding--16 padding--24@medium">
-    <h3 class="u-text-lg u-vr-3 u-align-center">
-        {{ summaryContent.brewery }} Locations
-    </h3>
-    <app-google-map 
-        [mapHeight]="'300'"
-        [brewery]="summaryContent.brewery"
-        [city]="summaryContent.city"
-        [state]="summaryContent.state"
-        [country]="summaryContent.country"
-        [zoom]="13"></app-google-map>
+<section class="padding padding--16 padding--24@medium bg-white">
+    <div class="wrapper">
+        <h3 class="u-text-lg u-vr-1 u-align-center">
+            {{ summaryContent.brewery }} Locations
+        </h3>
+        <app-google-map 
+            [mapHeight]="'300'"
+            [brewery]="summaryContent.brewery"
+            [city]="summaryContent.city"
+            [state]="summaryContent.state"
+            [country]="summaryContent.country"
+            [zoom]="13"></app-google-map>
+    </div>
 </section>
 
-<section class="padding padding--16 wrapper">
-    <h3 class="u-text-lg u-vr-3 u-align-center">
-        Other Beers You May Like
-    </h3>
-    <app-recommended-beers
-        [beerStyle]="summaryContent.style">
-    </app-recommended-beers>
+<section class="padding padding--16 padding--24@medium">
+    <div class="wrapper">
+        <h3 class="u-text-lg u-vr-1 u-align-center">
+            Similar Beers You May Like
+        </h3>
+        <app-recommended-beers
+            [beerStyle]="summaryContent.style">
+        </app-recommended-beers>
+    </div>
 </section>

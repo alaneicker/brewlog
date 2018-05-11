@@ -1,6 +1,6 @@
 <div class="u-flex--medium u-flex--hr">
-    <div class="u-flex__item--grow u-vr-2" *ngFor="let l of locations">
-        <h5 class="u-vr u-align-center u-text-normal">
+    <div class="u-flex__item--grow" *ngFor="let l of locations">
+        <h5 class="u-vr u-align-center u-text-normal u-vr-2-top">
             {{ l.formattedAddress }}
         </h5>
         <agm-map 
