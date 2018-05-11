@@ -9,7 +9,9 @@
             {{ summaryContent.brewery }} Locations
         </h2>
         <app-google-map 
-            [brewery]="summaryContent.brewery"
+            [location]="
+                summaryContent.brewery + ' ' + summaryContent.city + ' ' + summaryContent.country
+            "
             [zoom]="13"></app-google-map>
     </div>
 

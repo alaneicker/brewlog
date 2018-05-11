@@ -25,14 +25,13 @@ export interface ILocation {
 })
 export class BreweryLocationMapsComponent implements OnInit {
     @Input() location: string;
-    @Input() brewery: string;
     @Input() zoom: number;
     locations: ILocation[] = [];
 
     constructor() { }
 
     ngOnInit() {
-        geocoder.geocode(this.brewery, ( err, data ) => {
+        geocoder.geocode(this.location, ( err, data ) => {
             data.results.forEach(location => {
                 this.locations.push({
                     lat: location.geometry.location.lat,
