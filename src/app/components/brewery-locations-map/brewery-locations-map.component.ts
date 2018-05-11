@@ -18,6 +18,10 @@ export interface ILocation {
             <agm-marker
                 [latitude]="location?.lat"
                 [longitude]="location?.lng">
+                <agm-info-window>
+                    <h5>{{brewery}}</h5>
+                    {{ formattedLocationString }}
+                </agm-info-window>
             </agm-marker>
         </agm-map>
     `,
