@@ -10,11 +10,11 @@ input[type=number],
 input[type=email],
 input[type=password],
 textarea {
-    background: $white;
+    background: $gray-6;
     border: 1px solid $gray-4;
     font-family: inherit;
     font-size: inherit;
-    padding: rem(12);
+    padding: rem(16);
     width: 100%;
 
     &.has-error {

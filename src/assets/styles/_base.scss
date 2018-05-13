@@ -29,3 +29,12 @@ p, li {
 h1,h2,h3,h4,h5 {
     font-weight: $font-bold;
 }
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed $gray-4;
+    margin: rem(36) 0;
+    padding: 0;
+}

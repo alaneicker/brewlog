@@ -1,6 +1,9 @@
-<section class="padding padding--24 wrapper">
-    <h1 class="u-text-xl u-vr-5">Add a Beer</h1>
-    <form class="add-beer-form" method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
+<section class="padding padding--24 wrapper bg-white page">
+    
+    <h1 class="u-text-lg u-vr-5">Add a Beer</h1>
+    
+    <form method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
+        
         <div class="u-vr-2">
             <label for="upload">Upload Image</label>
             <input id="upload" type="file" formControlName="photoUrl" #file (change)="onFileChange(file.files)">
@@ -9,6 +12,27 @@
             <label for="beer-name">Beer Name</label>
             <input id="beer-name" type="text" formControlName="beerName">
         </div>
+        <div class="u-vr-2">
+            <label for="style">Style</label>
+            <input id="style" type="text" formControlName="style">
+        </div>
+        <div class="u-flex--medium u-flex--hr">
+            <div class="u-flex__item u-vr-2">
+                <label for="abv">ABV (%)</label>
+                <input id="abv" class="input-sm" type="text" formControlName="abv">
+            </div>
+            <div class="u-flex__item u-vr-2">
+                <label for="ibu">IBU</label>
+                <input id="ibu" class="input-sm" type="text" formControlName="ibu">
+            </div>
+            <div class="u-flex__item">
+                <label for="glassware">Glassware</label>
+                <input id="glassware" type="text" formControlName="glassware">
+            </div>
+        </div>
+
+        <hr>
+
         <div class="u-vr-2">
             <label for="brewery">Brewery</label>
             <input id="brewery" type="text" formControlName="brewery">
@@ -22,29 +46,14 @@
                 <label for="state">State</label>
                 <input id="state" class="u-vr" type="text" formControlName="state">
             </div>
-            <div class="u-flex__item u-flex__item--grow u-vr-2">
+            <div class="u-flex__item u-flex__item--grow">
                 <label for="country">Country</label>
                 <input id="country" class="u-vr" type="text" formControlName="country">
             </div>
         </div>
-        <div class="u-vr-2">
-            <label for="style">Style</label>
-            <input id="style" type="text" formControlName="style">
-        </div>
-        <div class="u-vr-2">
-            <label for="glassware">Glassware</label>
-            <input id="glassware" type="text" formControlName="glassware">
-        </div>
-        <div class="u-flex--medium u-flex--hr">
-            <div class="u-flex__item u-vr-2">
-                <label for="abv">ABV (%)</label>
-                <input id="abv" class="input-sm" type="text" formControlName="abv">
-            </div>
-            <div class="u-flex__item u-vr-2">
-                <label for="ibu">IBU</label>
-                <input id="ibu" class="input-sm" type="text" formControlName="ibu">
-            </div>
-        </div>
+        
+        <hr>
+
         <div class="u-vr-2">
             <span class="label">Rating</span>
             <div class="u-flex u-flex--hr u-vr">
@@ -66,6 +75,9 @@
             </div>
             <div class="u-text-xs">1 = worst, 5 = Best</div>
         </div>
+
+        <hr>
+
         <div class="u-vr-2">
             <label for="comments">Comments</label>
             <textarea id="comments"></textarea>
