@@ -15,7 +15,7 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'Brew Journal';
 
   headerContent: IHeader = {
-    logoText: 'Brew Journal',
+    appName: 'Brew Journal',
     navItems: [
       { text: 'My Beers', url: '/' },
       { text: 'Discover Beers', url: '/beer-search' },

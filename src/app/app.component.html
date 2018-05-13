@@ -1,7 +1,11 @@
 <!-- Header -->
-<app-header [headerContent]="headerContent"></app-header>
+<app-header 
+    [headerContent]="headerContent">
+</app-header>
 
 <!-- Router Outlet -->
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<app-footer 
+    [appName]="headerContent.appName">
+</app-footer>

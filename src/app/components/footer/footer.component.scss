@@ -1,9 +1,11 @@
 @import '../../../assets/styles/_tools.scss';
 
 .c-footer {
-    background: $gray-1;
-    color: $white;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: rem(12);
-    padding: rem(12);
+    height: rem(40);
     text-align: center;
 }

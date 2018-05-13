@@ -1,5 +1,5 @@
 export interface IHeader {
-    logoText: string;
+    appName: string;
     navItems: INavItem[];
   }
 

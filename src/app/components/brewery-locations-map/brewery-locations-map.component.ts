@@ -20,7 +20,7 @@ export interface ILocation {
                 [longitude]="location?.lng">
                 <agm-info-window>
                     <h5>{{brewery}}</h5>
-                    {{ formattedLocationString }}
+                    {{ location?.formattedAddress }}
                 </agm-info-window>
             </agm-marker>
         </agm-map>
