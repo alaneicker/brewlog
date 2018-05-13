@@ -21,6 +21,7 @@ import {
 export class AddBeerComponent implements OnInit {
     @HostBinding('@fadeAnimation')
     addBeerForm: FormGroup;
+    selectedFiles: string;
 
     constructor(
         private fb: FormBuilder,
@@ -49,6 +50,8 @@ export class AddBeerComponent implements OnInit {
 
         if (files) {
             const [file] = files;
+
+            this.selectedFiles = files[0].name;
 
             reader.readAsDataURL(file);
 
