@@ -52,14 +52,14 @@
             <label for="brewery">Brewery</label>
             <input id="brewery" type="text" formControlName="brewery">
         </div>
-        <div class="u-vr-2">
-            <label for="city">City</label>
-            <input id="city" class="u-vr" type="text" formControlName="city">
-        </div>
         <div class="u-flex--medium u-flex--hr">
-            <div class="u-flex__item u-flex__item--grow u-vr-2">
+            <div class="u-flex__item u-vr-2 u-flex__item--grow">
+                <label for="city">City</label>
+                <input id="city" class="u-vr" type="text" formControlName="city">
+            </div>
+            <div class="u-flex__item u-vr-2">
                 <label for="state">State</label>
-                <input id="state" class="u-vr" type="text" formControlName="state">
+                <input id="state" class="u-vr input-sm" type="text" formControlName="state">
             </div>
             <div class="u-flex__item u-flex__item--grow">
                 <label for="country">Country</label>
@@ -71,21 +71,31 @@
 
         <div class="u-vr-2">
             <span class="label">Rating</span>
-            <div class="u-flex u-flex--hr u-vr">
-                <label class="u-text-normal">
-                    1 <input class="input-xl u-vr" type="radio" name="rating" value="1" formControlName="rating">
+            <div class="u-flex u-flex--hr u-vr u-vr-1-top">
+                <label for="rating-radio-1" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-1" class="c-radio-btn__input u-vr" type="radio" name="rating" value="1" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">1</span>
                 </label>
-                <label class="u-text-normal">
-                    2 <input class="input-xl u-vr" type="radio" name="rating" value="2" formControlName="rating">
+                <label for="rating-radio-2" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-2" class="c-radio-btn__input u-vr" type="radio" name="rating" value="2" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">2</span>
                 </label>
-                <label class="u-text-normal">
-                    3 <input class="input-xl u-vr" type="radio" name="rating" value="3" formControlName="rating">
+                <label for="rating-radio-3" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-3" class="c-radio-btn__input u-vr" type="radio" name="rating" value="3" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">3</span>
                 </label>
-                <label class="u-text-normal">
-                    4 <input class="input-xl u-vr" type="radio" name="rating" value="4" formControlName="rating">
+                <label for="rating-radio-4" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-4" class="c-radio-btn__input u-vr" type="radio" name="rating" value="4" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">4</span>
                 </label>
-                <label class="u-text-normal">
-                    5 <input class="input-xl u-vr" type="radio" name="rating" value="5" formControlName="rating">
+                <label for="rating-radio-5" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-5" class="c-radio-btn__input u-vr" type="radio" name="rating" value="5" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">5</span>
                 </label>
             </div>
             <div class="u-text-xs">1 = worst, 5 = Best</div>

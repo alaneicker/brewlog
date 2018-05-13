@@ -12,6 +12,40 @@
     }
 }
 
+.c-radio-btn {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        display: inline-block;
+        height: rem(22);
+        width: rem(22);
+        border-radius: 50%;
+        background: $gray-6;
+        border: 0;
+        box-shadow: inset 0 0 0 rem(1) $gray-4;
+    }
+
+    & > input:checked ~ &__icon {
+        background: $blue-1;
+        //box-shadow: 0 0 0 rem(3) $blue-2;
+    }
+
+    & > input:focus ~ &__icon {
+        outline: 0;
+        display: none;
+        
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        margin-left: rem(10);
+    }
+}
+
 @media(min-width: $breakpoint-medium) {
     .add-beer-form {
         max-width: 60%;
