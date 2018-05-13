@@ -6,7 +6,7 @@
         
         <div class="c-image-upload u-flex--medium u-flex--middle u-flex--hr">
             <div class="u-flex__item">
-                <label class="c-image-upload__label c-btn" for="upload">Upload Image
+                <label class="c-image-upload__label" for="upload" role="button">
                     <input 
                         id="upload" 
                         class="c-image-upload__input" 
@@ -14,6 +14,7 @@
                         formControlName="photoUrl" 
                         (change)="onFileChange(file.files)"
                         #file>
+                    <span class="c-btn c-image-upload__btn">Upload Image</span>
                 </label>
             </div>
             <div class="u-flex__item">

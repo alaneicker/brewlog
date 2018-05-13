@@ -14,10 +14,11 @@
 
     &:hover,
     &:focus {
-        background: lighten($blue-1, 5%);
+        background: darken($blue-1, 7%);
     }
 
     &:focus {
         outline: 0;
+        box-shadow: 0 0 0 rem(3) $blue-2;
     }
 }
