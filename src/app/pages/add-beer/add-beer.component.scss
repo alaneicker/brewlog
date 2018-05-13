@@ -1,0 +1,7 @@
+@import '../../../assets/styles/_tools.scss';
+
+@media(min-width: $breakpoint-medium) {
+    .add-beer-form {
+        max-width: 50%;
+    }
+}

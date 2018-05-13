@@ -5,6 +5,10 @@
     &--wrap {
       flex-wrap: wrap;
     }
+
+    &--full-width {
+      width: 100%;
+    }
   
     &--hr > * + * {
       margin-left: rem(16);
