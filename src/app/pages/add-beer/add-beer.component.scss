@@ -1,5 +1,17 @@
 @import '../../../assets/styles/_tools.scss';
 
+.c-image-upload {
+    
+    &__label {
+        position: relative;
+    }
+
+    &__input {
+        position: absolute;
+        left: rem(-10000);
+    }
+}
+
 @media(min-width: $breakpoint-medium) {
     .add-beer-form {
         max-width: 60%;

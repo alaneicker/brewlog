@@ -4,10 +4,25 @@
     
     <form method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
         
-        <div class="u-vr-2">
-            <label for="upload">Upload Image</label>
-            <input id="upload" type="file" formControlName="photoUrl" #file (change)="onFileChange(file.files)">
+        <div class="c-image-upload u-flex--medium u-flex--middle u-flex--hr">
+            <div class="u-flex__item">
+                <label class="c-image-upload__label c-btn" for="upload">Upload Image
+                    <input 
+                        id="upload" 
+                        class="c-image-upload__input" 
+                        type="file" 
+                        formControlName="photoUrl" 
+                        (change)="onFileChange(file.files)"
+                        #file>
+                </label>
+            </div>
+            <div class="u-flex__item">
+                No image selected
+            </div>
         </div>
+
+        <hr>
+
         <div class="u-vr-2"> 
             <label for="beer-name">Beer Name</label>
             <input id="beer-name" type="text" formControlName="beerName">
