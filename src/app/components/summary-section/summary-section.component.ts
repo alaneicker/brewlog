@@ -17,8 +17,8 @@ export class SummarySectionComponent implements OnInit {
     @Input() ibu: string;
     @Input() rating: number;
     @Input() brewery: string;
-    @Input() locationCity: string;
-    @Input() locationState: string;
+    @Input() breweryCity: string;
+    @Input() breweryState: string;
 
     isLoggedIn: boolean;
 
