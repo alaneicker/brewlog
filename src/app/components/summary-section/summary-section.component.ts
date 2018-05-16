@@ -9,9 +9,16 @@ import { IBeerDetail } from '../../interfaces/beer-detail.interface';
     styleUrls: ['./summary-section.component.scss']
 })
 export class SummarySectionComponent implements OnInit {
-    @Input() userBeerData: IBeerDetail;
-    @Input() untappdSelectedBeer: any;
-    @Input() untappdAllOtherBeers: any;
+    @Input() photoUrl: string;
+    @Input() title: string;
+    @Input() comments: string;
+    @Input() style: string;
+    @Input() abv: string;
+    @Input() ibu: string;
+    @Input() rating: number;
+    @Input() brewery: string;
+    @Input() locationCity: string;
+    @Input() locationState: string;
 
     isLoggedIn: boolean;
 

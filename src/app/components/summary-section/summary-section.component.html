@@ -1,47 +1,41 @@
 <section class="summary">
 	<div 
 		class="summary__photo" 
-		[style.backgroundImage]="'url('+ userBeerData.photoUrl +')'">
+		[style.backgroundImage]="'url('+ photoUrl +')'">
 	</div>
 	<div class="summary__details">
-		<h1 class="summary__beer-name u-vr" *ngIf="userBeerData.beerName">
-			{{ userBeerData.beerName }}
+		<h1 class="summary__beer-name u-vr" *ngIf="title">
+			{{ title }}
 		</h1>
 		<h2 class="summary__brewery">
-			<ng-container *ngIf="userBeerData.brewery">
-				{{ userBeerData.brewery }},
+			<ng-container *ngIf="brewery">
+				{{ brewery }} &bull;
 			</ng-container>
-			<ng-container *ngIf="userBeerData.city">
-				{{ userBeerData.city }}<ng-container *ngIf="!userBeerData.state && userBeerData.country">,</ng-container>
+			<ng-container *ngIf="locationCity">
+				{{ locationCity }}
 			</ng-container>
-			<ng-container *ngIf="userBeerData.state">
-				{{ userBeerData.state }},
-			</ng-container>
-			<ng-container *ngIf="userBeerData.country">
-				{{ userBeerData.country }}
+			<ng-container *ngIf="locationState">
+				{{ locationState }}
 			</ng-container>
 		</h2>
-		<div class="u-vr-1-top" *ngIf="userBeerData.rating">
+		<div class="u-vr-1-top" *ngIf="rating">
 			<app-rating
-				[rating]="userBeerData.rating">
+				[rating]="rating">
 			</app-rating>
 		</div>
 		<ul class="u-vr-3-top u-flex--medium u-flex--hr">
-			<li *ngIf="userBeerData.style">
-				<b>Style:</b> {{ userBeerData.style }}
+			<li *ngIf="style">
+				<b>Style:</b> {{ style }}
 			</li>
-			<li *ngIf="userBeerData.abv">
-				<b>ABV:</b> {{ userBeerData.abv | number : '1.1' }}%
+			<li *ngIf="abv">
+				<b>ABV:</b> {{ abv | number : '1.1' }}%
 			</li>
-			<li *ngIf="userBeerData.ibu">
-				<b>IBU:</b> {{ userBeerData.ibu }}
-			</li>
-			<li *ngIf="userBeerData.glassware">
-				<b>Glassware:</b> {{ userBeerData.glassware }}
+			<li *ngIf="ibu">
+				<b>IBU:</b> {{ ibu }}
 			</li>
 		</ul>
-		<p class="u-vr-3-top u-vr-3" *ngIf="userBeerData.comments">
-			{{ userBeerData.comments }}
+		<p class="u-vr-3-top u-vr-3" *ngIf="comments">
+			{{ comments }}
 		</p>
 		<button *ngIf="isLoggedIn == true" class="c-btn">Edit</button>
 	</div>

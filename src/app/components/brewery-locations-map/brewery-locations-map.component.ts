@@ -13,14 +13,14 @@ export interface ILocation {
         <agm-map
             [style.height]="mapHeight + 'px'"
             [zoom]="zoom"
-            [latitude]="location?.lat"
-            [longitude]="location?.lng">
+            [latitude]="locationData.brewery_lat"
+            [longitude]="locationData.brewery_lng">
             <agm-marker
-                [latitude]="location?.lat"
-                [longitude]="location?.lng">
+                [latitude]="locationData.brewery_lat"
+                [longitude]="locationData.brewery_lng">
                 <agm-info-window>
                     <h5>{{brewery}}</h5>
-                    {{ location?.formattedAddress }}
+                    {{ locationData.brewery_address }}, {{ locationData.brewery_city }} {{ locationData.brewery_state }}
                 </agm-info-window>
             </agm-marker>
         </agm-map>
@@ -28,10 +28,8 @@ export interface ILocation {
 })
 export class BreweryLocationMapsComponent implements OnInit {
     @Input() mapHeight: string;
+    @Input() locationData: any;
     @Input() brewery: string;
-    @Input() city: string;
-    @Input() state: string;
-    @Input() country: string;
     @Input() zoom: number;
 
     location: ILocation;
@@ -39,16 +37,5 @@ export class BreweryLocationMapsComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {
-        geocoder.geocode(this.formattedLocationString, ( err, data ) => {
-            this.location = {
-                formattedAddress: data.results[0].formatted_address,
-                lat: data.results[0].geometry.location.lat,
-                lng: data.results[0].geometry.location.lng,
-            };
-        });
-    }
-
-    get formattedLocationString(): string {
-        return [this.brewery, this.city, this.state, this.country].join(', ');
     }
 }

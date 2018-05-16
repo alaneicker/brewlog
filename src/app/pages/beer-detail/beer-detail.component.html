@@ -1,26 +1,40 @@
 <app-summary-section
-    [userBeerData]="summaryContent"
-    [untappdSelectedBeer]="untappdSelectedBeer"
-    [untappdAllOtherBeers]="untappdAllOtherBeers">
+    [photoUrl]="userBeerData.photoUrl"
+    [title]="userBeerData.beerName"
+    [comments]="userBeerData.comments"
+    [style]="userBeerData.style"
+    [rating]="userBeerData.rating"
+    [abv]="untappdBeerAbv"
+    [ibu]="untappdBeerIbu"
+    [brewery]="untappdBrewery"
+    [locationCity]="untappdBreweryCity"
+    [locationState]="untappdBreweryState">
 </app-summary-section>
+
+<section class="padding padding--16 padding--24@medium">
+    <div class="wrapper">
+        <h3 class="u-text-lg u-vr-1 u-align-center">
+            About This Beer
+        </h3>
+        <p>{{ untappdBeerDescription }}</p>
+    </div>
+</section>
 
 <div class="u-vr-1">
     <app-google-map 
         [mapHeight]="'300'"
-        [brewery]="summaryContent.brewery"
-        [city]="summaryContent.city"
-        [state]="summaryContent.state"
-        [country]="summaryContent.country"
+        [brewery]="untappdBrewery"
+        [locationData]="untappdLocationData"
         [zoom]="14"></app-google-map>
 </div>
 
 <section class="padding padding--16 padding--24@medium">
     <div class="wrapper">
         <h3 class="u-text-lg u-vr-1 u-align-center">
-            Other {{ summaryContent.brewery }} Beers You May Like
+            Other {{ userBeerData.brewery }} Beers You May Like
         </h3>
         <app-recommended-beers
-            [beerStyle]="summaryContent.style">
+            [beerStyle]="userBeerData.style">
         </app-recommended-beers>
     </div>
 </section>
