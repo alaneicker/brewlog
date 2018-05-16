@@ -22,6 +22,8 @@ export class BeerDetailComponent implements OnInit {
     untappdBeerDescription: string;
     untappdBeerAbv: string;
     untappdBeerIbu: string;
+    untappdBeerStyle: string;
+
     untappdBrewery: string;
     untappdBreweryCity: string;
     untappdBreweryState: string;
@@ -51,6 +53,7 @@ export class BeerDetailComponent implements OnInit {
             this.untappdBeerDescription = allUntappdBeers[0].beer.beer_description;
             this.untappdBeerAbv = beer.beer_abv;
             this.untappdBeerIbu = beer.beer_ibu;
+            this.untappdBeerStyle = beer.beer_style;
 
             this.untappdBrewery = brewery.brewery_name;
             this.untappdBreweryCity = brewery.location.brewery_city;
