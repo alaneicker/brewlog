@@ -15,7 +15,7 @@ export class BeerSearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.searchPlaceholder = 'Search for Beers...';
+    this.searchPlaceholder = 'Search for Beer, Brewery or Beer Style';
   }
 
 }

@@ -62,10 +62,6 @@ app.route('/api/get-beers-by-style').get((req, res) => {
     });
 });
 
-app.route('/api/get-style-info/:styleIds').get((req, res) => {
-
-});
-
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => res.send(data))

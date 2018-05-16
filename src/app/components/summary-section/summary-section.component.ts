@@ -9,7 +9,10 @@ import { IBeerDetail } from '../../interfaces/beer-detail.interface';
     styleUrls: ['./summary-section.component.scss']
 })
 export class SummarySectionComponent implements OnInit {
-    @Input() summaryContent: IBeerDetail;
+    @Input() userBeerData: IBeerDetail;
+    @Input() untappdSelectedBeer: any;
+    @Input() untappdAllOtherBeers: any;
+
     isLoggedIn: boolean;
 
     constructor(

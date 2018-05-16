@@ -1,47 +1,47 @@
 <section class="summary">
 	<div 
 		class="summary__photo" 
-		[style.backgroundImage]="'url('+ summaryContent.photoUrl +')'">
+		[style.backgroundImage]="'url('+ userBeerData.photoUrl +')'">
 	</div>
 	<div class="summary__details">
-		<h1 class="summary__beer-name u-vr" *ngIf="summaryContent.beerName">
-			{{ summaryContent.beerName }}
+		<h1 class="summary__beer-name u-vr" *ngIf="userBeerData.beerName">
+			{{ userBeerData.beerName }}
 		</h1>
 		<h2 class="summary__brewery">
-			<ng-container *ngIf="summaryContent.brewery">
-				{{ summaryContent.brewery }},
+			<ng-container *ngIf="userBeerData.brewery">
+				{{ userBeerData.brewery }},
 			</ng-container>
-			<ng-container *ngIf="summaryContent.city">
-				{{ summaryContent.city }}<ng-container *ngIf="!summaryContent.state && summaryContent.country">,</ng-container>
+			<ng-container *ngIf="userBeerData.city">
+				{{ userBeerData.city }}<ng-container *ngIf="!userBeerData.state && userBeerData.country">,</ng-container>
 			</ng-container>
-			<ng-container *ngIf="summaryContent.state">
-				{{ summaryContent.state }},
+			<ng-container *ngIf="userBeerData.state">
+				{{ userBeerData.state }},
 			</ng-container>
-			<ng-container *ngIf="summaryContent.country">
-				{{ summaryContent.country }}
+			<ng-container *ngIf="userBeerData.country">
+				{{ userBeerData.country }}
 			</ng-container>
 		</h2>
-		<div class="u-vr-1-top" *ngIf="summaryContent.rating">
+		<div class="u-vr-1-top" *ngIf="userBeerData.rating">
 			<app-rating
-				[rating]="summaryContent.rating">
+				[rating]="userBeerData.rating">
 			</app-rating>
 		</div>
 		<ul class="u-vr-3-top u-flex--medium u-flex--hr">
-			<li *ngIf="summaryContent.style">
-				<b>Style:</b> {{ summaryContent.style }}
+			<li *ngIf="userBeerData.style">
+				<b>Style:</b> {{ userBeerData.style }}
 			</li>
-			<li *ngIf="summaryContent.abv">
-				<b>ABV:</b> {{ summaryContent.abv | number : '1.1' }}%
+			<li *ngIf="userBeerData.abv">
+				<b>ABV:</b> {{ userBeerData.abv | number : '1.1' }}%
 			</li>
-			<li *ngIf="summaryContent.ibu">
-				<b>IBU:</b> {{ summaryContent.ibu }}
+			<li *ngIf="userBeerData.ibu">
+				<b>IBU:</b> {{ userBeerData.ibu }}
 			</li>
-			<li *ngIf="summaryContent.glassware">
-				<b>Glassware:</b> {{ summaryContent.glassware }}
+			<li *ngIf="userBeerData.glassware">
+				<b>Glassware:</b> {{ userBeerData.glassware }}
 			</li>
 		</ul>
-		<p class="u-vr-3-top u-vr-3" *ngIf="summaryContent.comments">
-			{{ summaryContent.comments }}
+		<p class="u-vr-3-top u-vr-3" *ngIf="userBeerData.comments">
+			{{ userBeerData.comments }}
 		</p>
 		<button *ngIf="isLoggedIn == true" class="c-btn">Edit</button>
 	</div>

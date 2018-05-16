@@ -1,19 +1,23 @@
 <app-summary-section
-    [summaryContent]="summaryContent">
+    [userBeerData]="summaryContent"
+    [untappdSelectedBeer]="untappdSelectedBeer"
+    [untappdAllOtherBeers]="untappdAllOtherBeers">
 </app-summary-section>
 
-<app-google-map 
-    [mapHeight]="'300'"
-    [brewery]="summaryContent.brewery"
-    [city]="summaryContent.city"
-    [state]="summaryContent.state"
-    [country]="summaryContent.country"
-    [zoom]="14"></app-google-map>
+<div class="u-vr-1">
+    <app-google-map 
+        [mapHeight]="'300'"
+        [brewery]="summaryContent.brewery"
+        [city]="summaryContent.city"
+        [state]="summaryContent.state"
+        [country]="summaryContent.country"
+        [zoom]="14"></app-google-map>
+</div>
 
 <section class="padding padding--16 padding--24@medium">
     <div class="wrapper">
         <h3 class="u-text-lg u-vr-1 u-align-center">
-            Similar Beers You May Like
+            Other {{ summaryContent.brewery }} Beers You May Like
         </h3>
         <app-recommended-beers
             [beerStyle]="summaryContent.style">
