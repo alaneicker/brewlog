@@ -73,7 +73,11 @@ export class BeerDetailComponent implements OnInit {
                     this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?&${UntappdApiAuth.clientAuthStr}`),
                 ])
                 .then((data) => {
-                    this.beerCheckins = data[0];
+                    this.beerCheckins = data[0].response.checkins.items.filter(item => {
+                        if (item.checkin_comment !== '') {
+                            return item;
+                        }
+                    });
                     this.untappdLocationData = data[1].response.brewery.location;
                 });
             });

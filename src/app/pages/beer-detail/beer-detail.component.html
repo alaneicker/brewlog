@@ -15,7 +15,7 @@
 <section class="padding padding--16 padding--24@medium bg-white">
     <div class="wrapper">
         <h3 class="u-text-lg u-vr-1 u-align-center">
-            About This Beer
+            About {{ userBeerData.beerName }}
         </h3>
         <p>{{ untappdBeerDescription }}</p>
     </div>
@@ -33,7 +33,7 @@
     <div class="wrapper">
         <div class="u-flex--medium u-flex--hr">
             <div class="u-flex__item--grow bg-white padding--24">
-                <h3 class="u-text-lg u-vr-4">
+                <h3 class="u-text-md u-vr-4">
                     Similar Beers You May Like
                 </h3>
                 <ul class="c-recommended-beers-list">
@@ -49,8 +49,22 @@
                     </app-recommended-beers>
                 </ul>
             </div>
-            <div class="padding--24">
-                {{ beerCheckins | json }}
+            <div class="bg-white padding--24 c-untappd-checkins">
+                <h3 class="u-text-md u-vr-4">
+                    Other People Who Enjoyed {{ userBeerData.beerName }}
+                </h3>
+                <ul>
+                    <li class="u-vr-2" *ngFor="let checkin of beerCheckins">
+                        <app-untappd-checkins
+                            [userAvatar]="checkin.user.user_avatar"
+                            [userName]="checkin.user.user_name"
+                            [createdAt]="checkin.created_at"
+                            [beerName]="checkin.beer.beer_name"
+                            [rating]="checkin.rating_score"
+                            [comment]="checkin.checkin_comment">
+                        </app-untappd-checkins>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
