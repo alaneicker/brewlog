@@ -96,21 +96,24 @@ export class BeerDetailComponent implements OnInit {
         // Get/Set brewery and check in data
         if (this.untappdCheckinData !== null && this.untappdBreweryLocationData !== null) {
             this.untappdLocationData = this.untappdBreweryLocationData.response.brewery.location;
-
             this.beerCheckins = this.untappdCheckinData.response.checkins.items.filter(item => item.checkin_comment !== '');
         } else {
-            Promise.all([
-                this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beer.bid}?&${UntappdApiAuth.clientAuthStr}`),
-                this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?&${UntappdApiAuth.clientAuthStr}`),
-            ])
-            .then((data) => {
-                this.beerCheckins = data[0].response.checkins.items.filter(item => item.checkin_comment !== '');
-                this.untappdLocationData = data[1].response.brewery.location;
-
-                this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdCheckinKey, data[1]);
-                this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdBreweryKey, data[0]);
-            });
+            this.setBreweryAndCheckinContent(beer.bid, brewery.brewery_id);
         }
+    }
+
+    setBreweryAndCheckinContent(beerId, breweryId) {
+        Promise.all([
+            this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beerId}?&${UntappdApiAuth.clientAuthStr}`),
+            this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${breweryId}?&${UntappdApiAuth.clientAuthStr}`),
+        ])
+        .then((data) => {
+            this.beerCheckins = data[0].response.checkins.items.filter(item => item.checkin_comment !== '');
+            this.untappdLocationData = data[1].response.brewery.location;
+
+            this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdCheckinKey, data[1]);
+            this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdBreweryKey, data[0]);
+        });
     }
 
     getUntappdContent() {
