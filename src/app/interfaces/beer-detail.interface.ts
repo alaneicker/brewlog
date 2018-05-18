@@ -1,4 +1,5 @@
 export interface IBeerDetail {
+    routeId: string;
     id: number;
     beerName: string;
     photoUrl?: string;

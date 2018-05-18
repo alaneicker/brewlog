@@ -10,7 +10,7 @@ export class DataStorageService {
     getFromSessionStorage(key: string): any {
         const data = sessionStorage.getItem(key);
         if (data !== null) {
-            return JSON.parse(data);
+            return data;
         }
         return null;
     }
