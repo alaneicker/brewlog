@@ -40,6 +40,8 @@ export class BeerDetailComponent implements OnInit {
     untappdCheckinData: any;
     untappdBreweryLocationData: any;
 
+    sessionStorageKeys: any;
+
     constructor(
         private httpService: HttpService,
         private route: ActivatedRoute,
@@ -47,17 +49,26 @@ export class BeerDetailComponent implements OnInit {
     ) {
         this.userBeerData = this.route.snapshot.data.beerDetailSummary;
         this.routeId = this.userBeerData.routeId;
-        this.storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-beer-data-${this.routeId}`));
-        this.untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-checkin-data-${this.routeId}`));
-        this.untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-brewery-data-${this.routeId}`));
+
+        this.sessionStorageKeys = {
+            untappdBeerKey: `untappd-beer-data-${this.routeId}`,
+            untappdBreweryKey: `untappd-brewery-data-${this.routeId}`,
+            untappdCheckinKey: `untappd-checkin-data-${this.routeId}`,
+        };
+
+        this.storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBeerKey));
+        this.untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBreweryKey));
+        this.untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdCheckinKey));
     }
 
     ngOnInit() {
         window.scrollTo(0, 0);
 
         if (this.storedBeerDetail === null) {
+            console.log('From api');
             this.getUntappdContent();
         } else {
+            console.log('From storage');
             this.setUntappdContent(this.storedBeerDetail);
         }
     }
@@ -86,26 +97,18 @@ export class BeerDetailComponent implements OnInit {
         if (this.untappdCheckinData !== null && this.untappdBreweryLocationData !== null) {
             this.untappdLocationData = this.untappdBreweryLocationData.response.brewery.location;
 
-            this.beerCheckins = this.untappdCheckinData.response.checkins.items.filter(item => {
-                if (item.checkin_comment !== '') {
-                    return item;
-                }
-            });
+            this.beerCheckins = this.untappdCheckinData.response.checkins.items.filter(item => item.checkin_comment !== '');
         } else {
             Promise.all([
                 this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beer.bid}?&${UntappdApiAuth.clientAuthStr}`),
                 this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?&${UntappdApiAuth.clientAuthStr}`),
             ])
             .then((data) => {
-                this.beerCheckins = data[0].response.checkins.items.filter(item => {
-                    if (item.checkin_comment !== '') {
-                        return item;
-                    }
-                });
+                this.beerCheckins = data[0].response.checkins.items.filter(item => item.checkin_comment !== '');
                 this.untappdLocationData = data[1].response.brewery.location;
 
-                this.dataStorageService.setInSessionStorage(`untappd-brewery-data-${this.routeId}`, data[1]);
-                this.dataStorageService.setInSessionStorage(`untappd-checkin-data-${this.routeId}`, data[0]);
+                this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdCheckinKey, data[1]);
+                this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdBreweryKey, data[0]);
             });
         }
     }
@@ -116,7 +119,7 @@ export class BeerDetailComponent implements OnInit {
         this.httpService
             .request(`${UntappdApiUrls.BeerSearch}?q=${beerName}&${UntappdApiAuth.clientAuthStr}`)
             .then(res => {
-                this.dataStorageService.setInSessionStorage(`untappd-beer-data-${this.routeId}`, res);
+                this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdBeerKey, res);
                 this.setUntappdContent(res);
             });
     }
