@@ -2,6 +2,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { HttpService } from '../../services/http.service';
+import { DataStorageService } from '../../services/data-storage.service';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 
 import { fadeAnimation } from '../../animations/fade';
@@ -36,15 +37,56 @@ export class BeerDetailComponent implements OnInit {
     constructor(
         private httpService: HttpService,
         private route: ActivatedRoute,
+        private dataStorageService: DataStorageService,
     ) {}
 
     ngOnInit() {
+        const dataFromSessionStorage = this.dataStorageService.getFromSessionStorage('untappdBeerData');
+
         window.scrollTo(0, 0);
         this.userBeerData = this.route.snapshot.data.beerDetailSummary;
-        this.getUntappdContent();
+
+        if (dataFromSessionStorage === null) {
+            this.getUntappdContent();
+        } else {
+            this.setUntappdContent(dataFromSessionStorage);
+        }
     }
 
-    getUntappdContent(): void {
+    setUntappdContent(res: any) {
+        const allUntappdBeers = res.response.beers.items;
+        const beer = allUntappdBeers[0].beer;
+        const brewery = allUntappdBeers[0].brewery;
+
+        this.untappdBeerDescription = allUntappdBeers[0].beer.beer_description;
+        this.untappdBeerAbv = beer.beer_abv;
+        this.untappdBeerIbu = beer.beer_ibu;
+        this.untappdBeerStyle = beer.beer_style;
+        this.untappdBeerLabel = beer.beer_label;
+
+        this.untappdBrewery = brewery.brewery_name;
+        this.untappdBreweryCity = brewery.location.brewery_city;
+        this.untappdBreweryState = brewery.location.brewery_state;
+        this.untappdBreweryWebsite = brewery.contact.url;
+
+        allUntappdBeers.shift();
+        this.untappdAllOtherBeers = allUntappdBeers;
+
+        Promise.all([
+            this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beer.bid}?&${UntappdApiAuth.clientAuthStr}`),
+            this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?&${UntappdApiAuth.clientAuthStr}`),
+        ])
+        .then((data) => {
+            this.beerCheckins = data[0].response.checkins.items.filter(item => {
+                if (item.checkin_comment !== '') {
+                    return item;
+                }
+            });
+            this.untappdLocationData = data[1].response.brewery.location;
+        });
+    }
+
+    getUntappdContent() {
         const beerName = this.userBeerData.beerName.replace(/\s/g, '+');
 
         this.httpService

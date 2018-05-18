@@ -3,5 +3,6 @@
 .c-untappd-checkins {
     @media (min-width: $breakpoint-medium) {
         max-width: rem(400);
+        min-width: rem(400);
     }
 }
