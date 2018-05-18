@@ -1,3 +1,3 @@
-# Brewlog
+# Brew Journal - Powered by the Utappd API
 
-An Angular 5 Progress Web App for documenting and discovering great beer.
+An Angular 5 app for documenting and discovering great beer.
