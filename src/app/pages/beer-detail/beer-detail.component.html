@@ -32,11 +32,11 @@
 <section class="padding padding--16 padding--24@medium">
     <div class="wrapper">
         <div class="u-flex--medium u-flex--hr">
-            <div class="u-flex__item--grow bg-white padding--24">
-                <h3 class="u-text-md u-vr-4">
+            <div class="u-flex__item--grow bg-white">
+                <h3 class="u-text-md padding--16 bg-blue u-text-white u-text-normal">
                     Similar Beers You May Like
                 </h3>
-                <ul class="c-recommended-beers-list">
+                <ul class="c-recommended-beers-list padding--24">
                     <app-recommended-beers
                         *ngFor="let otherBeer of untappdAllOtherBeers"
                         [title]="otherBeer.beer.beer_name"
@@ -49,11 +49,11 @@
                     </app-recommended-beers>
                 </ul>
             </div>
-            <div class="bg-white padding--24 c-untappd-checkins">
-                <h3 class="u-text-md u-vr-4">
-                    Other People Who Enjoyed {{ userBeerData.beerName }}
+            <div class="bg-white c-untappd-checkins">
+                <h3 class="u-text-md padding--16 bg-green u-text-white u-text-normal">
+                    Untappd Check-ins
                 </h3>
-                <ul>
+                <ul class="padding--24">
                     <li class="u-vr-2" *ngFor="let checkin of beerCheckins">
                         <app-untappd-checkins
                             [userAvatar]="checkin.user.user_avatar"

@@ -2,6 +2,7 @@
 
 .c-untappd-avatar {
     border-radius: 50%;
+    display: block;
     height: rem(60);
-    width: rem(60);
+    min-width: rem(60);
 }

@@ -1,3 +1,7 @@
+@import '../../../assets/styles/_tools.scss';
+
 .c-untappd-checkins {
-    max-width: rem(400);
+    @media (min-width: $breakpoint-medium) {
+        max-width: rem(400);
+    }
 }
