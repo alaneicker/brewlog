@@ -13,14 +13,14 @@ export interface ILocation {
         <agm-map
             [style.height]="mapHeight + 'px'"
             [zoom]="zoom"
-            [latitude]="locationData.brewery_lat"
-            [longitude]="locationData.brewery_lng">
+            [latitude]="locationData?.brewery_lat"
+            [longitude]="locationData?.brewery_lng">
             <agm-marker
-                [latitude]="locationData.brewery_lat"
-                [longitude]="locationData.brewery_lng">
+                [latitude]="locationData?.brewery_lat"
+                [longitude]="locationData?.brewery_lng">
                 <agm-info-window>
                     <h5>{{brewery}}</h5>
-                    {{ locationData.brewery_address }}, {{ locationData.brewery_city }} {{ locationData.brewery_state }}
+                    {{ locationData?.brewery_address }}, {{ locationData?.brewery_city }} {{ locationData?.brewery_state }}
                 </agm-info-window>
             </agm-marker>
         </agm-map>

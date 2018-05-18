@@ -1,37 +1,7 @@
 @import '../../../assets/styles/_tools.scss';
 
 .c-recommended-beers-list {
-    & > * {
-        flex: 0 25%;
-        padding: rem(8);
-        position: relative;
-
-        &:hover > * {
-            box-shadow: 0 0 rem(5) rgba(0,0,0,0.2);
-        }
-    }
-
-    &__photo {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat; 
-        height: rem(250);
-    }   
-    
-    &__details {
-        line-height: 1.4;
-        padding: rem(16);
-        text-align: center;
-    }
-
-    &__inner {
-        background: $white;
-        display: block;
-        height: 100%;
-    }
-
-    @media(min-width: $breakpoint-medium) {
-        display: flex;
-        justify-content: center;
+    &__img {
+        width: rem(100);
     }
 }

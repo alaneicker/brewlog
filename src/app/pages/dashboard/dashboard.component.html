@@ -5,7 +5,7 @@
             <a class="anchor anchor--inverse" routerLink="/beer-detail/{{beer.id}}">
                 <div 
                     class="c-beer-list__photo"
-                    [style.backgroundImage]="'url('+ beer.photoUrl +')'"></div>
+                    [style.backgroundImage]="'url('+ (beer.photoUrl || 'assets/images/no-beer-image.jpg') +')'"></div>
                 <div class="c-beer-list__details">
                     <h3>{{ beer.beerName }}</h3>
                     <app-rating [rating]="beer.rating"></app-rating>

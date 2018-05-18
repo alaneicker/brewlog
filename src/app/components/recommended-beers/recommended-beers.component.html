@@ -1,18 +1,22 @@
-<ng-container *ngIf="recommendedBeers.length">
-    <ul class="c-recommended-beers-list">
-        <li *ngFor="let beer of recommendedBeers" class="u-vr-2">
-            <a class="c-recommended-beers-list__inner anchor anchor--inverse" target="_blank" [href]="beer.breweryWebsite">
-                <div 
-                    class="c-recommended-beers-list__photo"
-                    [style.backgroundImage]="'url('+ beer.photoUrl +')'">
-                </div>
-                <div class="c-recommended-beers-list__details">
-                    <div>
-                        <h3>{{ beer.name }}</h3>
-                        <h4 class="u-text-normal">{{ beer.brewery }}</h4>
-                    </div>
-                </div>
-            </a>
-        </li>
-    </ul>
-</ng-container>
+<li class="u-vr-2">
+    <a class="u-flex u-flex--hr anchor anchor--inverse" target="_blank" [href]="breweryWebsite">
+        <div *ngIf="label" class="u-flex__item">
+            <img class="c-recommended-beers-list__img" [src]="label">
+        </div>
+        <div class="u-flex__item">
+            <div>
+                <h3 *ngIf="title">{{ title }}</h3>
+                <h4 *ngIf="brewery" class="u-text-normal">{{ brewery }}</h4>
+                <ng-container *ngIf="style">
+                    <b>Style:</b> {{ style }}
+                </ng-container>
+                <ng-container *ngIf="abv">
+                    <b>ABV:</b> {{ abv }}
+                </ng-container>
+                <ng-container *ngIf="ibu">
+                    <b>IBU:</b> {{ ibu }}
+                </ng-container>
+            </div>
+        </div>
+    </a>
+</li>

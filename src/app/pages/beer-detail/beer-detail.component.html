@@ -1,5 +1,5 @@
 <app-summary-section
-    [photoUrl]="userBeerData.photoUrl"
+    [photoUrl]="userBeerData.photoUrl || 'assets/images/no-beer-image.jpg'"
     [title]="userBeerData.beerName"
     [comments]="userBeerData.comments"
     [rating]="userBeerData.rating"
@@ -8,7 +8,8 @@
     [style]="untappdBeerStyle"
     [brewery]="untappdBrewery"
     [breweryCity]="untappdBreweryCity"
-    [breweryState]="untappdBreweryState">
+    [breweryState]="untappdBreweryState"
+    [breweryWebsite]="untappdBreweryWebsite">
 </app-summary-section>
 
 <section class="padding padding--16 padding--24@medium">
@@ -31,10 +32,20 @@
 <section class="padding padding--16 padding--24@medium">
     <div class="wrapper">
         <h3 class="u-text-lg u-vr-1 u-align-center">
-            Other {{ userBeerData.brewery }} Beers You May Like
+            Other Beers You May Like
         </h3>
-        <app-recommended-beers
-            [beerStyle]="userBeerData.style">
-        </app-recommended-beers>
+
+        <ul class="c-recommended-beers-list">
+            <app-recommended-beers
+                *ngFor="let otherBeer of untappdAllOtherBeers"
+                [title]="otherBeer.beer.beer_name"
+                [label]="otherBeer.beer.beer_label"
+                [abv]="otherBeer.beer.beer_abv"
+                [ibu]="otherBeer.beer.beer_ibu"
+                [style]="otherBeer.beer.beer_style"
+                [brewery]="otherBeer.brewery.brewery_name"
+                [breweryWebsite]="otherBeer.brewery.contact.url">
+            </app-recommended-beers>
+        </ul>
     </div>
 </section>

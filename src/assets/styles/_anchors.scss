@@ -2,6 +2,10 @@
     color: $blue-1;
     text-decoration: none;
 
+    &--light {
+        color: $blue-2;
+    }
+
     &--inverse {
         color: inherit;
 

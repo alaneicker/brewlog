@@ -17,17 +17,20 @@ import { UntappdApiKeys, UntappdApiUrls } from '../../enums/untappd';
 export class BeerDetailComponent implements OnInit {
     @HostBinding('@fadeAnimation')
     userBeerData: IBeerDetail;
-    untappdAllOtherBeers: any;
 
     untappdBeerDescription: string;
     untappdBeerAbv: string;
     untappdBeerIbu: string;
     untappdBeerStyle: string;
+    untappdBeerLabel: string;
 
     untappdBrewery: string;
     untappdBreweryCity: string;
     untappdBreweryState: string;
     untappdLocationData: string;
+    untappdBreweryWebsite: string;
+
+    untappdAllOtherBeers: any;
 
     constructor(
         private httpService: HttpService,
@@ -54,15 +57,18 @@ export class BeerDetailComponent implements OnInit {
             this.untappdBeerAbv = beer.beer_abv;
             this.untappdBeerIbu = beer.beer_ibu;
             this.untappdBeerStyle = beer.beer_style;
+            this.untappdBeerLabel = beer.beer_label;
 
             this.untappdBrewery = brewery.brewery_name;
             this.untappdBreweryCity = brewery.location.brewery_city;
             this.untappdBreweryState = brewery.location.brewery_state;
+            this.untappdBreweryWebsite = brewery.contact.url;
 
             allUntappdBeers.shift();
             this.untappdAllOtherBeers = allUntappdBeers;
 
-            this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?client_id=${UntappdApiKeys.UntappdClientId}&client_secret=${UntappdApiKeys.UntappdClientSecret}`)
+            this.httpService
+                .request(`${UntappdApiUrls.BreweryInfo}/${brewery.brewery_id}?client_id=${UntappdApiKeys.UntappdClientId}&client_secret=${UntappdApiKeys.UntappdClientSecret}`)
                 .then(breweryData => {
                     this.untappdLocationData = breweryData.response.brewery.location;
                 });
