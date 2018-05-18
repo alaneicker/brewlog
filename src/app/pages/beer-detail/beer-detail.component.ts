@@ -66,7 +66,7 @@ export class BeerDetailComponent implements OnInit {
 
         if (this.storedBeerDetail === null) {
             console.log('From api');
-            this.getUntappdContent();
+            this.getUntappdContentFromApi();
         } else {
             console.log('From storage');
             this.setUntappdContent(this.storedBeerDetail);
@@ -98,11 +98,11 @@ export class BeerDetailComponent implements OnInit {
             this.untappdLocationData = this.untappdBreweryLocationData.response.brewery.location;
             this.beerCheckins = this.untappdCheckinData.response.checkins.items.filter(item => item.checkin_comment !== '');
         } else {
-            this.setBreweryAndCheckinContent(beer.bid, brewery.brewery_id);
+            this.setBreweryAndCheckinContentFromApi(beer.bid, brewery.brewery_id);
         }
     }
 
-    setBreweryAndCheckinContent(beerId, breweryId) {
+    setBreweryAndCheckinContentFromApi(beerId, breweryId) {
         Promise.all([
             this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beerId}?&${UntappdApiAuth.clientAuthStr}`),
             this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${breweryId}?&${UntappdApiAuth.clientAuthStr}`),
@@ -116,7 +116,7 @@ export class BeerDetailComponent implements OnInit {
         });
     }
 
-    getUntappdContent() {
+    getUntappdContentFromApi() {
         const beerName = this.userBeerData.beerName.replace(/\s/g, '+');
 
         this.httpService
