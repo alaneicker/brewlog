@@ -36,26 +36,29 @@ export class BeerDetailComponent implements OnInit {
 
     routeId: string;
 
+    storedBeerDetail: any;
+    untappdCheckinData: any;
+    untappdBreweryLocationData: any;
+
     constructor(
         private httpService: HttpService,
         private route: ActivatedRoute,
         private dataStorageService: DataStorageService,
-    ) {}
+    ) {
+        this.userBeerData = this.route.snapshot.data.beerDetailSummary;
+        this.routeId = this.userBeerData.routeId;
+        this.storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-beer-data-${this.routeId}`));
+        this.untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-checkin-data-${this.routeId}`));
+        this.untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-brewery-data-${this.routeId}`));
+    }
 
     ngOnInit() {
         window.scrollTo(0, 0);
 
-        this.userBeerData = this.route.snapshot.data.beerDetailSummary;
-        this.routeId = this.userBeerData.routeId;
-
-        const storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-beer-data-${this.routeId}`));
-
-        if (storedBeerDetail === null) {
-            console.log('Data was retrieved from API!!');
+        if (this.storedBeerDetail === null) {
             this.getUntappdContent();
         } else {
-            console.log('Data was retrieved from session storage!!');
-            this.setUntappdContent(storedBeerDetail);
+            this.setUntappdContent(this.storedBeerDetail);
         }
     }
 
@@ -80,13 +83,10 @@ export class BeerDetailComponent implements OnInit {
         this.untappdAllOtherBeers = allUntappdBeers;
 
         // Get/Set brewery and check in data
-        const untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-checkin-data-${this.routeId}`));
-        const untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(`untappd-brewery-data-${this.routeId}`));
+        if (this.untappdCheckinData !== null && this.untappdBreweryLocationData !== null) {
+            this.untappdLocationData = this.untappdBreweryLocationData.response.brewery.location;
 
-        if (untappdCheckinData !== null && untappdBreweryLocationData !== null) {
-            this.untappdLocationData = untappdBreweryLocationData.response.brewery.location;
-
-            this.beerCheckins = untappdCheckinData.response.checkins.items.filter(item => {
+            this.beerCheckins = this.untappdCheckinData.response.checkins.items.filter(item => {
                 if (item.checkin_comment !== '') {
                     return item;
                 }
