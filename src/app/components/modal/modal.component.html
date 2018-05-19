@@ -1,7 +1,8 @@
-<div class="modal">
+<div class="modal" [class.is-open]="isOpen">
     <div class="modal__window">
         <div class="modal__header">
             <ng-content select=[modal-header]></ng-content>
+            <button (click)="handleClose()">Close</button>
         </div>
         <div class="modal__body">
             <ng-content select=[modal-body]></ng-content>

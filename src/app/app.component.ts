@@ -23,6 +23,10 @@ export class AppComponent implements OnInit, OnDestroy {
     ],
   };
 
+  modalStates = {
+    addBeer: false,
+  };
+
   constructor(
     private router: Router,
   ) {}
@@ -41,5 +45,14 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
+  }
+
+  openModal(modal) {
+    alert('foo');
+    this.modalStates[modal] = true;
+  }
+
+  closeModal(modal) {
+    this.modalStates[modal] = false;
   }
 }

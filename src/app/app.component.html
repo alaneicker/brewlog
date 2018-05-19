@@ -10,7 +10,10 @@
     [appName]="headerContent.appName">
 </app-footer>
 
-<app-modal>
+<app-modal 
+    [isOpen]="modalStates.addBeer" 
+    (open)="openModal('addBeer')" 
+    (close)="closeModal('addBeer')">
     <ng-container modal-header>
         <h3>Add A Beer</h3>
     </ng-container>
@@ -19,7 +22,7 @@
     </ng-container>
     <ng-container modal-footer>
         <div class="u-align-right">
-            <button class="c-btn c-btn--hollow">Cancel</button>
+            <button class="c-btn c-btn--hollow" (click)="closeModal('addBeer')">Cancel</button>
             <button class="c-btn">Done</button>
         </div>
     </ng-container>
