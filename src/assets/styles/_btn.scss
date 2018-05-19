@@ -21,4 +21,13 @@
         outline: 0;
         box-shadow: 0 0 0 rem(3) $blue-2;
     }
+
+    &--hollow {
+        background: transparent;
+        color: $blue-1;
+
+        &:hover {
+            background: $gray-5;
+        }
+    }
 }
