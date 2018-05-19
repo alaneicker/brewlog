@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, OnDestroy {
     navItems: [
       { text: 'My Beers', url: '/' },
       { text: 'Discover Beers', url: '/beer-search' },
-      { text: 'Add Beer', url: '/add-beer' },
+      { text: 'Add Beer', onClick: () => this.openModal('addBeer') },
     ],
   };
 
@@ -48,7 +48,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   openModal(modal) {
-    alert('foo');
     this.modalStates[modal] = true;
   }
 

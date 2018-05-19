@@ -5,5 +5,6 @@ export interface IHeader {
 
 export interface INavItem {
     text: string;
-    url: string;
+    url?: string;
+    onClick?: any;
 }
