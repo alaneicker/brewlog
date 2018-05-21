@@ -40,28 +40,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); 
 app.use(cors());
 
-app.route('/api/get-beers-by-style').get((req, res) => {
-    const response = res;
-    const styleIds = req.query.styleIds.split(',');
-    const queries = [];
-
-    styleIds.forEach(id => {
-        queries.push(`(
-            SELECT * 
-            FROM beers 
-            WHERE styleId = ${id} 
-            ORDER BY RAND() 
-            LIMIT 1
-        )`)
-    });
-
-    const combinedQueries = queries.join('UNION ALL');
-
-    query({ query: combinedQueries }).then(data => {
-        response.send(data);
-    });
-});
-
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => res.send(data))
