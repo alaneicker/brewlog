@@ -36,15 +36,9 @@
     }
 
     &__body {
-        padding: rem(24);
         flex: 1;
         overflow-y: auto;
         display: block;
-    }
-
-    &__footer {
-        border-top: rem(1) solid $gray-5;
-        padding: rem(24);
     }
 
     &__close {
@@ -64,8 +58,8 @@
         &__window {
             max-width: rem(800);
             width: 50%;
-            max-height: rem(750);
-            height: 85%;
+            max-height: 90%;
+            height: auto;
             display: flex;
             flex-direction: column;
         }

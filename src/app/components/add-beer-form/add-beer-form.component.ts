@@ -1,5 +1,10 @@
-import { Component, ChangeDetectorRef, OnInit, HostBinding } from '@angular/core';
-import FileReader from 'filereader';
+import {
+    Component,
+    ChangeDetectorRef,
+    OnInit,
+    ViewChild,
+    ElementRef,
+} from '@angular/core';
 
 import {
     FormBuilder,
@@ -10,12 +15,15 @@ import {
     NgForm
 } from '@angular/forms';
 
+// import FileReader from 'filereader';
+
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
   styleUrls: ['./add-beer-form.component.scss']
 })
 export class AddBeerFormComponent implements OnInit {
+    @ViewChild('fileInput') myFileInput: ElementRef;
     addBeerForm: FormGroup;
     selectedFiles: string;
 
@@ -26,38 +34,29 @@ export class AddBeerFormComponent implements OnInit {
 
     ngOnInit() {
         this.addBeerForm = this.fb.group({
-            photoUrl: new FormControl(null),
+            photoUrl: new FormControl(''),
             beerName: new FormControl('', Validators.required),
-            brewery: new FormControl('', Validators.required),
-            city: new FormControl(''),
-            state: new FormControl(''),
-            country: new FormControl(''),
-            style: new FormControl(''),
-            glassware: new FormControl(''),
-            abv: new FormControl(''),
-            ibu: new FormControl(''),
             rating: new FormControl('', Validators.required),
             comments: new FormControl('', Validators.required),
         });
     }
 
-    onFileChange(files: File[]) {
+    onFileChange(event) {
+        const file = event.target.files[0];
         const reader = new FileReader();
 
-        if (files) {
-            const [file] = files;
-
-            this.selectedFiles = files[0].name;
+        if (file) {
+            this.selectedFiles = file.name;
 
             reader.readAsDataURL(file);
 
-            reader.onload = () => {
+            reader.addEventListener('load', () => {
                 this.addBeerForm.patchValue({
                     photoUrl: reader.result
                 });
 
                 this.cd.markForCheck();
-            };
+              }, false);
         }
     }
 

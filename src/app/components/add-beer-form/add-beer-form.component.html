@@ -1,66 +1,76 @@
-<form method="post" enctype="multipart/form-data" #_addBeerForm="ngForm" (ngSubmit)="submitForm(_addBeerForm)" [formGroup]="addBeerForm" novalidate>
+<form 
+    method="post" 
+    enctype="multipart/form-data"  
+    (ngSubmit)="submitForm(_addBeerForm)" 
+    [formGroup]="addBeerForm" 
+    #_addBeerForm="ngForm"
+    novalidate>
     
-    <div class="c-image-upload u-flex--medium u-flex--middle u-flex--hr">
-        <div class="u-flex__item">
-            <label class="c-image-upload__label" for="upload" role="button">
-                <input 
-                    id="upload" 
-                    class="c-image-upload__input" 
-                    type="file" 
-                    formControlName="photoUrl" 
-                    (change)="onFileChange(file.files)"
-                    #file>
-                <span class="c-btn c-image-upload__btn">Upload Image</span>
-            </label>
+    <div class="padding--24">
+
+        <div class="c-image-upload u-flex--medium u-flex--middle u-flex--hr">
+            <div class="u-flex__item">
+                <label class="c-image-upload__label" for="upload" role="button">
+                    <input 
+                        #fileInput
+                        id="upload" 
+                        class="c-image-upload__input" 
+                        type="file" 
+                        (change)="onFileChange($event)">
+                    <span class="c-btn c-image-upload__btn">Upload Image</span>
+                </label>
+            </div>
+            <div class="u-flex__item">
+                {{ selectedFiles || 'No files selected' }}
+            </div>
         </div>
-        <div class="u-flex__item">
-            {{ selectedFiles || 'No files selected' }}
+
+        <hr>
+        
+
+        <div class="u-vr-2"> 
+            <label for="beer-name">Beer Name</label>
+            <input id="beer-name" type="text" formControlName="beerName">
         </div>
-    </div>
 
-    <hr>
-    
-
-    <div class="u-vr-2"> 
-        <label for="beer-name">Beer Name</label>
-        <input id="beer-name" type="text" formControlName="beerName">
-    </div>
-
-    <div class="u-vr-2">
-        <span class="label">Rating</span>
-        <div class="u-flex u-flex--hr u-vr u-vr-1-top">
-            <label for="rating-radio-1" class="u-text-normal c-radio-btn">
-                <input id="rating-radio-1" class="c-radio-btn__input u-vr" type="radio" name="rating" value="1" formControlName="rating">
-                <span class="c-radio-btn__icon"></span>
-                <span class="c-radio-btn__label">1</span>
-            </label>
-            <label for="rating-radio-2" class="u-text-normal c-radio-btn">
-                <input id="rating-radio-2" class="c-radio-btn__input u-vr" type="radio" name="rating" value="2" formControlName="rating">
-                <span class="c-radio-btn__icon"></span>
-                <span class="c-radio-btn__label">2</span>
-            </label>
-            <label for="rating-radio-3" class="u-text-normal c-radio-btn">
-                <input id="rating-radio-3" class="c-radio-btn__input u-vr" type="radio" name="rating" value="3" formControlName="rating">
-                <span class="c-radio-btn__icon"></span>
-                <span class="c-radio-btn__label">3</span>
-            </label>
-            <label for="rating-radio-4" class="u-text-normal c-radio-btn">
-                <input id="rating-radio-4" class="c-radio-btn__input u-vr" type="radio" name="rating" value="4" formControlName="rating">
-                <span class="c-radio-btn__icon"></span>
-                <span class="c-radio-btn__label">4</span>
-            </label>
-            <label for="rating-radio-5" class="u-text-normal c-radio-btn">
-                <input id="rating-radio-5" class="c-radio-btn__input u-vr" type="radio" name="rating" value="5" formControlName="rating">
-                <span class="c-radio-btn__icon"></span>
-                <span class="c-radio-btn__label">5</span>
-            </label>
+        <div class="u-vr-2">
+            <span class="label">Rating</span>
+            <div class="u-flex u-flex--hr u-vr u-vr-1-top">
+                <label for="rating-radio-1" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-1" class="c-radio-btn__input u-vr" type="radio" name="rating" value="1" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">1</span>
+                </label>
+                <label for="rating-radio-2" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-2" class="c-radio-btn__input u-vr" type="radio" name="rating" value="2" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">2</span>
+                </label>
+                <label for="rating-radio-3" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-3" class="c-radio-btn__input u-vr" type="radio" name="rating" value="3" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">3</span>
+                </label>
+                <label for="rating-radio-4" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-4" class="c-radio-btn__input u-vr" type="radio" name="rating" value="4" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">4</span>
+                </label>
+                <label for="rating-radio-5" class="u-text-normal c-radio-btn">
+                    <input id="rating-radio-5" class="c-radio-btn__input u-vr" type="radio" name="rating" value="5" formControlName="rating">
+                    <span class="c-radio-btn__icon"></span>
+                    <span class="c-radio-btn__label">5</span>
+                </label>
+            </div>
+            <div class="u-text-xs">1 = worst, 5 = Best</div>
         </div>
-        <div class="u-text-xs">1 = worst, 5 = Best</div>
-    </div>
 
-    <div class="u-vr-2">
-        <label for="comments">Comments</label>
-        <textarea id="comments" formControlName="comments"></textarea>
+        <div class="u-vr-2">
+            <label for="comments">Comments</label>
+            <textarea id="comments" formControlName="comments"></textarea>
+        </div>
+
+        <button type="submit" class="c-btn">Submit</button>
     </div>
 
 </form>

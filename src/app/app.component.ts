@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
     ],
   };
 
-  modalStates = {
+  modalActiveStates = {
     addBeer: false,
   };
 
@@ -48,10 +48,10 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   openModal(modal) {
-    this.modalStates[modal] = true;
+    this.modalActiveStates[modal] = true;
   }
 
   closeModal(modal) {
-    this.modalStates[modal] = false;
+    this.modalActiveStates[modal] = false;
   }
 }

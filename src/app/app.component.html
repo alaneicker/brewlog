@@ -11,7 +11,7 @@
 </app-footer>
 
 <app-modal 
-    [isOpen]="modalStates.addBeer" 
+    [isOpen]="modalActiveStates.addBeer" 
     (open)="openModal('addBeer')" 
     (close)="closeModal('addBeer')">
     <ng-container modal-header>
@@ -19,11 +19,5 @@
     </ng-container>
     <ng-container modal-body>
         <app-add-beer-form></app-add-beer-form>
-    </ng-container>
-    <ng-container modal-footer>
-        <div class="u-align-right">
-            <button class="c-btn c-btn--hollow" (click)="closeModal('addBeer')">Cancel</button>
-            <button class="c-btn">Done</button>
-        </div>
-    </ng-container>
+    </ng-container>   
 </app-modal>
