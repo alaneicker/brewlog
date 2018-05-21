@@ -4,6 +4,8 @@ import {
     OnInit,
     ViewChild,
     ElementRef,
+    Output,
+    EventEmitter,
 } from '@angular/core';
 
 import {
@@ -24,6 +26,7 @@ import {
 })
 export class AddBeerFormComponent implements OnInit {
     @ViewChild('fileInput') myFileInput: ElementRef;
+    @Output() submitted: EventEmitter<any> = new EventEmitter();
     addBeerForm: FormGroup;
     selectedFiles: string;
 
@@ -62,5 +65,6 @@ export class AddBeerFormComponent implements OnInit {
 
     submitForm(form: NgForm): void {
         console.log(this.addBeerForm.controls);
+        this.submitted.emit();
     }
 }
