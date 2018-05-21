@@ -17,8 +17,6 @@ import {
     NgForm
 } from '@angular/forms';
 
-// import FileReader from 'filereader';
-
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
