@@ -17,33 +17,6 @@
     }
 }
 
-.c-radio-btn {
-    display: flex;
-    align-items: center;
-
-    &__icon {
-        display: inline-block;
-        height: rem(24);
-        width: rem(24);
-        border-radius: 50%;
-        background: $gray-6;
-        border: 0;
-        box-shadow: inset 0 0 0 rem(1) $gray-4;
-    }
-
-    &__input {
-        display: none;
-    }
-
-    &__input:checked ~ &__icon {
-        background: $blue-1;
-    }
-
-    &__label {
-        margin-left: rem(10);
-    }
-}
-
 @media(min-width: $breakpoint-medium) {
     .add-beer-form {
         max-width: 60%;
