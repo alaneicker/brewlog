@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('file-system');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -36,8 +37,8 @@ const query = options => {
     });
 };
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json()); 
+app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000000 }));
+app.use(bodyParser.json({ limit: 1000000000000 })); 
 app.use(cors());
 
 app.route('/api/beers').get((req, res) => {
@@ -46,10 +47,45 @@ app.route('/api/beers').get((req, res) => {
         .catch(error => console.log(error));
 });
 
-app.route('/api/beer/:id').get((req, res) => {
+app.route('/api/beer/:imgId/:id').get((req, res) => {
     query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
-        .then(data => res.send(data))
+        .then(data => {
+
+            fs.readFile(`./uploads/user-image-${data.imgId}.txt`, 'utf8', (err, content) => {
+                if (err) {
+                    throw err;
+                }
+
+                data.imgDataUri = String(content);
+               
+                res.send(data);
+            });
+        })
         .catch(error => console.log(error));
+});
+
+app.route('/api/beer/add').post((req, res) => {
+
+    const randomId = Math.round(Math.random() * 100000);
+
+    fs.writeFile(`./uploads/user-image-${randomId}.txt`, req.body.upload, (err) => {
+        console.log('file written');
+    });
+
+    query({ 
+        query: `
+            INSERT INTO mybeers 
+            SET beerName = ?, rating = ?, comments = ?, imgId = ?
+        `,
+        data: [
+            req.body.beerName,
+            req.body.rating,
+            req.body.comments,
+            randomId
+        ]
+    })
+    .then(data => res.send(data))
+    .catch(error => console.log(error));
 });
 
 module.exports = app.listen(port, () => {

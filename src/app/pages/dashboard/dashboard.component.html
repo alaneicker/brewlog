@@ -1,8 +1,7 @@
 <section class="padding padding--24 wrapper">
- 
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">
-            <a class="anchor anchor--inverse" routerLink="/beer-detail/{{beer.id}}">
+            <a class="anchor anchor--inverse" routerLink="/beer-detail/{{beer.imgId}}/{{beer.id}}">
                 <div 
                     class="c-beer-list__photo"
                     [style.backgroundImage]="'url('+ (beer.photoUrl || 'assets/images/no-beer-image.jpg') +')'"></div>

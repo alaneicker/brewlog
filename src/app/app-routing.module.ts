@@ -19,7 +19,7 @@ const routes: Routes = [
         loadChildren: './pages/add-beer/add-beer.module#AdsBeerModule',
     },
     {
-        path: 'beer-detail/:id',
+        path: 'beer-detail/:imgId/:id',
         loadChildren: './pages/beer-detail/beer-detail.module#BeerDetailModule',
     },
     {

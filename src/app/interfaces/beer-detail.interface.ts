@@ -5,4 +5,5 @@ export interface IBeerDetail {
     photoUrl?: string;
     comments?: string;
     rating?: number;
+    imgDataUri?: string;
 }

@@ -1,11 +1,11 @@
 import {
     Component,
-    ChangeDetectorRef,
     OnInit,
     ViewChild,
     ElementRef,
     Output,
     EventEmitter,
+    ChangeDetectorRef,
 } from '@angular/core';
 
 import {
@@ -17,25 +17,28 @@ import {
     NgForm
 } from '@angular/forms';
 
+import { HttpService } from '../../services/http.service';
+
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
   styleUrls: ['./add-beer-form.component.scss']
 })
 export class AddBeerFormComponent implements OnInit {
-    @ViewChild('fileInput') myFileInput: ElementRef;
+    @ViewChild('fileInput') fileInput: ElementRef;
     @Output() submitted: EventEmitter<any> = new EventEmitter();
     addBeerForm: FormGroup;
     selectedFiles: string;
 
     constructor(
         private fb: FormBuilder,
-        private cd: ChangeDetectorRef
+        private httpService: HttpService,
+        private cd: ChangeDetectorRef,
     ) { }
 
     ngOnInit() {
         this.addBeerForm = this.fb.group({
-            photoUrl: new FormControl(''),
+            upload: new FormControl(''),
             beerName: new FormControl('', Validators.required),
             rating: new FormControl('', Validators.required),
             comments: new FormControl('', Validators.required),
@@ -53,7 +56,7 @@ export class AddBeerFormComponent implements OnInit {
 
             reader.addEventListener('load', () => {
                 this.addBeerForm.patchValue({
-                    photoUrl: reader.result
+                    upload: reader.result
                 });
 
                 this.cd.markForCheck();
@@ -62,7 +65,19 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        console.log(this.addBeerForm.controls);
-        this.submitted.emit();
+        this.httpService.request('http://localhost:8080/api/beer/add', {
+            upload: this.addBeerForm.get('upload').value,
+            beerName: this.addBeerForm.get('beerName').value,
+            rating: this.addBeerForm.get('rating').value,
+            comments: this.addBeerForm.get('comments').value,
+        }, 'post')
+            .then(res => {
+                if (res.affectedRows > 0) {
+                    this.submitted.emit();
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
 }

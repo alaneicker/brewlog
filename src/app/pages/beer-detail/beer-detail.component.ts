@@ -59,6 +59,8 @@ export class BeerDetailComponent implements OnInit {
         this.storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBeerKey));
         this.untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBreweryKey));
         this.untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdCheckinKey));
+
+        console.log(this.userBeerData.imgDataUri);
     }
 
     ngOnInit() {
