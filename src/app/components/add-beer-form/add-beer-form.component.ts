@@ -61,12 +61,16 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        this.httpService.request('http://localhost:8080/api/beer/add', {
-            upload: this.addBeerForm.get('upload').value,
-            beerName: this.addBeerForm.get('beerName').value,
-            rating: this.addBeerForm.get('rating').value,
-            comments: this.addBeerForm.get('comments').value,
-        }, 'post')
+        this.httpService.request({
+            url: 'http://localhost:8080/api/beer/add',
+            type: 'post',
+            data: {
+                upload: this.addBeerForm.get('upload').value,
+                beerName: this.addBeerForm.get('beerName').value,
+                rating: this.addBeerForm.get('rating').value,
+                comments: this.addBeerForm.get('comments').value,
+            },
+        })
             .then(res => {
                 if (res.affectedRows > 0) {
                     this.submitted.emit();

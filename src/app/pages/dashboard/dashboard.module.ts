@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardComponent } from './dashboard.component';
 import { RatingModule } from '../../components/rating/rating.module';
+import { BeerCardComponent } from '../../components/beer-card/beer-card.component';
 
 import { routing } from './dashboard.router';
 
@@ -14,6 +15,7 @@ import { routing } from './dashboard.router';
   ],
   declarations: [
     DashboardComponent,
+    BeerCardComponent,
   ],
 })
 

@@ -16,16 +16,8 @@ export class DashboardComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.httpService.request('http://localhost:8080/api/beers')
+        this.httpService.request({ url: 'http://localhost:8080/api/beers' })
             .then(res => this.beers = res)
             .catch(error => console.log(error));
-    }
-
-    getImageUrl(imgId: number) {
-        this.httpService.request(`http://localhost:8080/api/beer/image/${imgId}`, 'text')
-            .then(res => {
-                console.log(res);
-            })
-            .catch(err => console.log(err));
     }
 }

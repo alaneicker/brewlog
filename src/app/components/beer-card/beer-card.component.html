@@ -1,0 +1,11 @@
+<div class="c-beer-card">
+    <a class="anchor anchor--inverse" routerLink="/beer-detail/{{imgId}}/{{routeId}}">
+        <div 
+            class="c-beer-card__photo"
+            [style.backgroundImage]="'url('+ (photoUrl || 'assets/images/no-beer-image.jpg') +')'"></div>
+        <div class="c-beer-card__details">
+            <h3>{{ title }}</h3>
+            <app-rating [rating]="rating"></app-rating>
+        </div>
+    </a>
+</div>

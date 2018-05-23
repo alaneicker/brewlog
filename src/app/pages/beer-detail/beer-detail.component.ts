@@ -100,8 +100,8 @@ export class BeerDetailComponent implements OnInit {
 
     setBreweryAndCheckinContentFromApi(beerId, breweryId) {
         Promise.all([
-            this.httpService.request(`${UntappdApiUrls.BeerCheckins}/${beerId}?&${UntappdApiAuth.clientAuthStr}`),
-            this.httpService.request(`${UntappdApiUrls.BreweryInfo}/${breweryId}?&${UntappdApiAuth.clientAuthStr}`),
+            this.httpService.request({ url: `${UntappdApiUrls.BeerCheckins}/${beerId}?&${UntappdApiAuth.clientAuthStr}` }),
+            this.httpService.request({ url: `${UntappdApiUrls.BreweryInfo}/${breweryId}?&${UntappdApiAuth.clientAuthStr}` }),
         ])
         .then((data) => {
             this.beerCheckins = data[0].response.checkins.items.filter(item => item.checkin_comment !== '');
@@ -116,7 +116,7 @@ export class BeerDetailComponent implements OnInit {
         const beerName = this.userBeerData.beerName.replace(/\s/g, '+');
 
         this.httpService
-            .request(`${UntappdApiUrls.BeerSearch}?q=${beerName}&${UntappdApiAuth.clientAuthStr}`)
+            .request({ url: `${UntappdApiUrls.BeerSearch}?q=${beerName}&${UntappdApiAuth.clientAuthStr}` })
             .then(res => {
                 this.dataStorageService.setInSessionStorage(this.sessionStorageKeys.untappdBeerKey, res);
                 this.setUntappdContent(res);

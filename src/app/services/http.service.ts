@@ -7,9 +7,9 @@ export class HttpService {
 
   constructor(private http: HttpClient) {}
 
-  request(url: string, responseType = 'json', data?: any, type: string = 'get'): Promise<any> {
+  request(config): Promise<any> {
     return this.http
-      [type](url, { responseType }, data)
+      [config.type || 'get'](config.url, { responseType: config.responseType || 'json' }, config.data)
       .toPromise()
       .then(this.extractData)
       .catch(this.handleError);

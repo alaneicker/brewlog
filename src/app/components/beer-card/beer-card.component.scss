@@ -1,0 +1,16 @@
+@import '../../../assets/styles/_tools.scss';
+
+.c-beer-card {
+    &__photo {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: rem(250);
+    }
+
+    &__details {
+        background: $white;
+        padding: rem(10);
+    }
+}
