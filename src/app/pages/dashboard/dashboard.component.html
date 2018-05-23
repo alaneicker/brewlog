@@ -1,4 +1,11 @@
 <section *ngIf="beers" class="padding padding--24 wrapper">
+
+    <div class="u-vr-3">
+        <app-search-bar
+            [placeholder]="'Filter Beers'">
+        </app-search-bar>
+    </div>
+
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">
             <app-beer-card
