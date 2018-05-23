@@ -5,18 +5,14 @@ import { HttpService } from '../../services/http.service';
 import { DataStorageService } from '../../services/data-storage.service';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 
-import { fadeAnimation } from '../../animations/fade';
-
 import { UntappdApiAuth, UntappdApiUrls } from '../../enums/untappd';
 
 @Component({
-    animations: [fadeAnimation],
     selector: 'app-beer-detail',
     templateUrl: './beer-detail.component.html',
     styleUrls: ['./beer-detail.component.scss'],
 })
 export class BeerDetailComponent implements OnInit {
-    @HostBinding('@fadeAnimation')
     userBeerData: IBeerDetail;
 
     untappdBeerDescription: string;
@@ -59,8 +55,6 @@ export class BeerDetailComponent implements OnInit {
         this.storedBeerDetail = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBeerKey));
         this.untappdCheckinData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdBreweryKey));
         this.untappdBreweryLocationData = JSON.parse(this.dataStorageService.getFromSessionStorage(this.sessionStorageKeys.untappdCheckinKey));
-
-        console.log(this.userBeerData.imgDataUri);
     }
 
     ngOnInit() {

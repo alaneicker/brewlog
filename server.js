@@ -47,6 +47,18 @@ app.route('/api/beers').get((req, res) => {
         .catch(error => console.log(error));
 });
 
+app.route('/api/beer/image/:imgId').get((req, res) => {
+    fs.readFile(`./uploads/user-image-${req.params.imgId}.txt`, 'utf8', (err, content) => {
+        if (err) {
+            throw err;
+        }
+        
+        const data = String(content);
+
+        res.send(data);
+    });
+});
+
 app.route('/api/beer/:imgId/:id').get((req, res) => {
     query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
         .then(data => {

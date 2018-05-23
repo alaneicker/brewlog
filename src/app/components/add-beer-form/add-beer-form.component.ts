@@ -5,7 +5,6 @@ import {
     ElementRef,
     Output,
     EventEmitter,
-    ChangeDetectorRef,
 } from '@angular/core';
 
 import {
@@ -33,7 +32,6 @@ export class AddBeerFormComponent implements OnInit {
     constructor(
         private fb: FormBuilder,
         private httpService: HttpService,
-        private cd: ChangeDetectorRef,
     ) { }
 
     ngOnInit() {
@@ -58,8 +56,6 @@ export class AddBeerFormComponent implements OnInit {
                 this.addBeerForm.patchValue({
                     upload: reader.result
                 });
-
-                this.cd.markForCheck();
               }, false);
         }
     }
