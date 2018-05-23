@@ -20,7 +20,7 @@ export class BeerCardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-        this.httpService.request({
+        this.httpService.getFromApi({
             url: `http://localhost:8080/api/beer/image/${this.imgId}`,
             responseType: 'text',
         })

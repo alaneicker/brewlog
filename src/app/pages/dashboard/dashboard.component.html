@@ -1,4 +1,4 @@
-<section class="padding padding--24 wrapper">
+<section *ngIf="beers" class="padding padding--24 wrapper">
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">
             <app-beer-card

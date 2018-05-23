@@ -77,7 +77,6 @@ app.route('/api/beer/:imgId/:id').get((req, res) => {
 });
 
 app.route('/api/beer/add').post((req, res) => {
-
     const randomId = Math.round(Math.random() * 100000);
 
     fs.writeFile(`./uploads/user-image-${randomId}.txt`, req.body.upload, (err) => {
@@ -96,7 +95,10 @@ app.route('/api/beer/add').post((req, res) => {
             randomId
         ]
     })
-    .then(data => res.send(data))
+    .then(data => { 
+        data.imgId = randomId;
+        res.send(data)
+    })
     .catch(error => console.log(error));
 });
 

@@ -16,6 +16,8 @@ import {
     NgForm
 } from '@angular/forms';
 
+import { Router } from '@angular/router';
+
 import { HttpService } from '../../services/http.service';
 
 @Component({
@@ -32,6 +34,7 @@ export class AddBeerFormComponent implements OnInit {
     constructor(
         private fb: FormBuilder,
         private httpService: HttpService,
+        private router: Router,
     ) { }
 
     ngOnInit() {
@@ -61,9 +64,8 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        this.httpService.request({
+        this.httpService.postToAPI({
             url: 'http://localhost:8080/api/beer/add',
-            type: 'post',
             data: {
                 upload: this.addBeerForm.get('upload').value,
                 beerName: this.addBeerForm.get('beerName').value,
@@ -72,7 +74,10 @@ export class AddBeerFormComponent implements OnInit {
             },
         })
             .then(res => {
+                console.log(res.imgId);
+                console.log(res);
                 if (res.affectedRows > 0) {
+                    this.router.navigateByUrl(`/beer-detail/${res.imgId}/${res.insertId}`);
                     this.submitted.emit();
                 }
             })
