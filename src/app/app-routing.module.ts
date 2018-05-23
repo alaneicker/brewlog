@@ -15,10 +15,6 @@ const routes: Routes = [
         loadChildren: './pages/beer-search/beer-search.module#BeerSearchModule',
     },
     {
-        path: 'add-beer',
-        loadChildren: './pages/add-beer/add-beer.module#AdsBeerModule',
-    },
-    {
         path: 'beer-detail/:imgId/:id',
         loadChildren: './pages/beer-detail/beer-detail.module#BeerDetailModule',
     },
