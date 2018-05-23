@@ -18,7 +18,6 @@ export class AppComponent implements OnInit, OnDestroy {
     appName: 'Brew Journal',
     navItems: [
       { text: 'My Beers', url: '/' },
-      { text: 'Discover Beers', url: '/beer-search' },
       { text: 'Add Beer', onClick: () => this.openModal('addBeer') },
     ],
   };

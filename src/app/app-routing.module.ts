@@ -11,10 +11,6 @@ const routes: Routes = [
         loadChildren: './pages/dashboard/dashboard.module#DashboardModule',
     },
     {
-        path: 'beer-search',
-        loadChildren: './pages/beer-search/beer-search.module#BeerSearchModule',
-    },
-    {
         path: 'beer-detail/:imgId/:id',
         loadChildren: './pages/beer-detail/beer-detail.module#BeerDetailModule',
     },
