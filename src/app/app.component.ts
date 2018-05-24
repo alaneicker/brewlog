@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
   headerContent: IHeader = {
     appName: 'Brew Journal',
     navItems: [
-      { text: 'My Beers', url: '/' },
+      { text: 'Home', url: '/' },
       { text: 'Add Beer', onClick: () => this.openModal('addBeer') },
     ],
   };

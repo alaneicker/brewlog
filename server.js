@@ -86,13 +86,14 @@ app.route('/api/beer/add').post((req, res) => {
     query({ 
         query: `
             INSERT INTO mybeers 
-            SET beerName = ?, rating = ?, comments = ?, imgId = ?
+            SET beerName = ?, rating = ?, comments = ?, imgId = ?, datePosted = ?
         `,
         data: [
             req.body.beerName,
             req.body.rating,
             req.body.comments,
-            randomId
+            randomId,
+            new Date().toLocaleString("en-US")
         ]
     })
     .then(data => { 

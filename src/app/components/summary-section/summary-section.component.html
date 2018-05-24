@@ -4,6 +4,9 @@
 		[style.backgroundImage]="'url('+ (photoUrl || 'assets/images/no-beer-image.png') +')'">
 	</div>
 	<div class="summary__details">
+		<div class="u-vr-1 u-text-xs">
+			Posted on: {{ datePosted }}
+		</div>
 		<h1 class="summary__beer-name u-vr" *ngIf="title">
 			{{ title }}
 		</h1>

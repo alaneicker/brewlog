@@ -12,6 +12,7 @@ export class SummarySectionComponent implements OnInit {
     @Input() photoUrl: string;
     @Input() title: string;
     @Input() comments: string;
+    @Input() datePosted: string;
     @Input() style: string;
     @Input() abv: string;
     @Input() ibu: string;

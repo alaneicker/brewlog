@@ -4,11 +4,7 @@
 
 <section *ngIf="beers" class="padding padding--24 wrapper">
 
-    <div class="u-vr-3">
-        <app-search-bar
-            [placeholder]="'Filter Beers'">
-        </app-search-bar>
-    </div>
+    <h2 class="u-align-center u-text-xl hdg--border-underline u-vr-3">Beer Reviews</h2>
 
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">

@@ -29,6 +29,7 @@
 
     &__header {
         background: $blue-3;
+        border-bottom: rem(1) solid $gray-4;
         font-size: rem(24);
         padding: rem(24);
         text-transform: uppercase;
