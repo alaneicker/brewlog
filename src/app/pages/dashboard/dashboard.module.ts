@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 import { RatingModule } from '../../components/rating/rating.module';
 import { BeerCardComponent } from '../../components/beer-card/beer-card.component';
 import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
+import { HeroComponent } from '../../components/hero/hero.component';
 
 import { routing } from './dashboard.router';
 
@@ -18,6 +19,7 @@ import { routing } from './dashboard.router';
     DashboardComponent,
     BeerCardComponent,
     SearchBarComponent,
+    HeroComponent,
   ],
 })
 
