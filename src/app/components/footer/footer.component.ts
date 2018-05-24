@@ -5,6 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   template: `
     <div class="c-footer">
       <p>&copy; {{ copyrightDate }} {{ appName }}. All rights reserved.</p>
+      <img class="c-footer__img" src="assets/images/pbu_40_white.png">
     </div>
   `,
   styleUrls: ['./footer.component.scss']

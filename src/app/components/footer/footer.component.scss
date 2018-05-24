@@ -4,9 +4,15 @@
     background: $gray-1;
     color: $white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: rem(12);
-    height: rem(40);
+    padding: rem(16);
     text-align: center;
+
+    &__img {
+        margin-top: rem(8);
+        width: rem(130);
+    }
 }
