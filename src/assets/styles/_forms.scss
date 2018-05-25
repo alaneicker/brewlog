@@ -31,3 +31,31 @@ textarea {
 textarea {
     min-height: rem(100);
 }
+
+.c-radio-btn {
+    font-weight: normal;
+    display: inline-flex;
+
+    input {
+        position: absolute;
+        left: rem(-10000);
+    }
+
+    &__icon {
+        background: $gray-6;
+        box-shadow: inset 0 0 0 rem(1) $gray-4;
+        border-radius: 50%;
+        display: inline-block;
+        width: rem(22);
+        height: rem(22);
+    }
+
+    input:focus ~ &__icon,
+    input:checked ~ &__icon {
+        box-shadow:  inset 0 0 0 rem(7) $blue-1;
+    }
+
+    &__text {
+        padding-left: rem(8);
+    }
+}
