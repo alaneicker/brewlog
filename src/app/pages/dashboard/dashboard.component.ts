@@ -3,6 +3,8 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
 import { HttpService } from '../../services/http.service';
 
+import { environment as env } from '../../../environments/environment';
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -16,7 +18,7 @@ export class DashboardComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.httpService.getFromApi({ url: 'http://localhost:8080/api/beers' })
+        this.httpService.getFromApi({ url: `${env.baseApiUrl}/beers` })
             .then(res => this.beers = res)
             .catch(error => console.log(error));
     }

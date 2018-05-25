@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
+
 import { HttpService } from '../../services/http.service';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
+
+import { environment as env } from '../../../environments/environment';
 
 @Injectable()
 export class BeerDetailResolver implements Resolve<IBeerDetail> {
@@ -12,7 +15,7 @@ export class BeerDetailResolver implements Resolve<IBeerDetail> {
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<IBeerDetail> {
         return this.httpService.getFromApi({
-            url: `http://localhost:8080/api/beer/${route.params['imgId']}/${route.params['id']}`,
+            url: `${env.baseApiUrl}/beer/${route.params['imgId']}/${route.params['id']}`,
         })
             .then(res => {
                 if (res.id) {

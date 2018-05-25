@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { HttpService } from '../../services/http.service';
 
+import { environment as env } from '../../../environments/environment';
+
 @Component({
     selector: 'app-beer-card',
     templateUrl: './beer-card.component.html',
@@ -21,7 +23,7 @@ export class BeerCardComponent implements OnInit {
 
   ngOnInit() {
         this.httpService.getFromApi({
-            url: `http://localhost:8080/api/beer/image/${this.imgId}`,
+            url: `${env.baseApiUrl}/beer/image/${this.imgId}`,
             responseType: 'text',
         })
         .then(res => this.photoUrl = res)

@@ -20,6 +20,8 @@ import { Router } from '@angular/router';
 
 import { HttpService } from '../../services/http.service';
 
+import { environment as env } from '../../../environments/environment';
+
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
@@ -65,7 +67,7 @@ export class AddBeerFormComponent implements OnInit {
 
     submitForm(form: NgForm): void {
         this.httpService.postToAPI({
-            url: 'http://localhost:8080/api/beer/add',
+            url: `${env.baseApiUrl}/beer/add`,
             data: {
                 upload: this.addBeerForm.get('upload').value,
                 beerName: this.addBeerForm.get('beerName').value,

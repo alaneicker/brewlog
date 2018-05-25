@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+    production: true,
+    baseUrl: '/',
+    baseApiUrl: 'https://brewjournal.herokuapp.com/api',
 };
