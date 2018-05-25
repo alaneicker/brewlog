@@ -58,13 +58,9 @@ export class BeerDetailComponent implements OnInit {
     }
 
     ngOnInit() {
-        window.scrollTo(0, 0);
-
         if (this.storedBeerDetail === null) {
-            console.log('From api');
             this.getUntappdContentFromApi();
         } else {
-            console.log('From storage');
             this.setUntappdContent(this.storedBeerDetail);
         }
     }
