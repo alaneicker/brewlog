@@ -1,4 +1,7 @@
-<div class="modal" [class.is-open]="isOpen">
+<div class="modal trap" id="modal" [ngClass]="{
+        'is-open': isOpen,
+        'is-active': isOpen
+    }">
     <div class="modal__window">
         <div class="modal__header">
             <ng-content select=[modal-header]></ng-content>
