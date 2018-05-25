@@ -11,6 +11,8 @@ const dbConfig = require('./db-config')[env];
 const pool = mysql.createPool(dbConfig);
 pool.config.connectionLimit = 400;
 
+const cacheExpire = ((1000 * 60) * 60) * 24;
+
 const query = options => {
     const {
       query,
@@ -43,7 +45,10 @@ app.use(cors());
 
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
-        .then(data => res.send(data))
+        .then(data => {
+            res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
+            res.send(data)
+        })
         .catch(error => console.log(error));
 });
 
@@ -55,6 +60,7 @@ app.route('/api/beer/image/:imgId').get((req, res) => {
         
         const data = String(content);
 
+        res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
         res.send(data);
     });
 });
@@ -70,6 +76,7 @@ app.route('/api/beer/:imgId/:id').get((req, res) => {
 
                 data.imgDataUri = String(content);
                
+                res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
                 res.send(data);
             });
         })
