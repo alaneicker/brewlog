@@ -4,11 +4,11 @@
 .c-hero {
     background: right center/cover no-repeat url($homepageImg);
     height: calc(100vh - 50px);
-    padding-top: rem(60);
+    padding-top: rem(30);
 
     &__title {
         color: $white;
-        font-size: rem(35);
+        font-size: rem(30);
         text-align: center;
 
         span {
@@ -16,18 +16,32 @@
         }
     }
 
-    @media(min-width: $breakpoint-medium) {
-        background-position: center;
-        padding-top: rem(150);
+    @media(min-width: $breakpoint-small) {
+        padding-top: rem(60);
 
         &__title {
-            font-size: rem(50);
+            font-size: rem(35);
+        }
+    }
+
+    @media(min-width: $breakpoint-medium) {
+        background-position: center;
+        padding-top: rem(140);
+
+        &__title {
+            font-size: rem(45);
             text-align: left;
+            text-align: center;
         }
     }
 
     @media(min-width: $breakpoint-large) {
+        padding-top: rem(150);
+
         &__title {
+            text-align: left;
+            font-size: rem(50);
+
             span {
                 display: inline;
             }
