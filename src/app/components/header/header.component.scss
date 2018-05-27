@@ -15,7 +15,9 @@
     &__logo {
         color: $white;
         font-size: rem(22);
+        font-weight: $font-black;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     &__nav {

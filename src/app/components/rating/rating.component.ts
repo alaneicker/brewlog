@@ -2,10 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-rating',
-    styleUrls: ['./rating.component.scss'],
     template: `
         <div class="c-rating">
-            Your Rating:
+            My Rating:
             <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
         </div>
     `,
