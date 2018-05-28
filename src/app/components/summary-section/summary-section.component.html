@@ -49,12 +49,10 @@
 	<div *ngIf="isEditMode" class="summary__edit">
 		<div class="summary__edit-form">
 			<app-add-beer-form 
-				(submitted)="saveChanges()">
+				[formClass]="'dark'"
+				(cancelled)="cancelEdit()"
+				(submitted)="cancelEdit()">
 			</app-add-beer-form>
-		</div>
-		<div class="summary__edit-controls">
-			<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm" (click)="saveChanges()">Save</button>
-			<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm" (click)="cancelEdit()">Cancel</button>
 		</div>
 	</div>
 </section>

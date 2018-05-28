@@ -3,7 +3,7 @@
 .summary {
     background: $gray-0;
     align-content: center;
-    min-height: rem(400);
+    min-height: rem(500);
     color: $white;
 
     &__photo {
@@ -22,6 +22,7 @@
         padding: rem(16);
         display: flex;
         flex-direction: column;
+        flex: 1;
     }
 
     &__edit-form {

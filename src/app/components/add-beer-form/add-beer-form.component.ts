@@ -4,6 +4,7 @@ import {
     ViewChild,
     ElementRef,
     Output,
+    Input,
     EventEmitter,
 } from '@angular/core';
 
@@ -30,6 +31,10 @@ import { environment as env } from '../../../environments/environment';
 export class AddBeerFormComponent implements OnInit {
     @ViewChild('fileInput') fileInput: ElementRef;
     @Output() submitted: EventEmitter<any> = new EventEmitter();
+    @Output() cancelled: EventEmitter<any> = new EventEmitter();
+    @Input() formClass: string;
+    @Input() hasSaveBtn = true;
+    hasCancelBtn: boolean;
     addBeerForm: FormGroup;
     selectedFiles: string;
 
@@ -40,6 +45,8 @@ export class AddBeerFormComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        this.hasCancelBtn = this.cancelled.observers.length > 0;
+
         this.addBeerForm = this.fb.group({
             upload: new FormControl(''),
             beerName: new FormControl('', Validators.required),
@@ -63,6 +70,10 @@ export class AddBeerFormComponent implements OnInit {
                 });
               }, false);
         }
+    }
+
+    emitCancel() {
+        this.cancelled.emit();
     }
 
     submitForm(form: NgForm): void {

@@ -23,8 +23,10 @@
         <h3>Add A Beer</h3>
     </ng-container>
     <ng-container modal-body>
-        <app-add-beer-form 
-            (submitted)="closeModal('addBeer')">
-        </app-add-beer-form>
+        <div class="padding--24">
+            <app-add-beer-form
+                (submitted)="closeModal('addBeer')">
+            </app-add-beer-form>
+        </div>
     </ng-container>   
 </app-modal>

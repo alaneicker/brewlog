@@ -36,7 +36,7 @@ export class SummarySectionComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        this.summary.nativeElement.style.height = `${this.summary.nativeElement.offsetHeight}px`;
+        // this.summary.nativeElement.style.height = `${this.summary.nativeElement.offsetHeight}px`;
     }
 
     startEdit() {
