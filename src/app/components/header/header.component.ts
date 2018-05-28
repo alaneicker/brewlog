@@ -9,8 +9,12 @@ import { AppService } from '../../services/app.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerContent: IHeader;
+  @Input() appName: string;
   isLoggedIn: boolean;
+
+  modalActiveStates = {
+    addBeer: false,
+  };
 
   constructor(
     private appService: AppService,
@@ -18,6 +22,14 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn = this.appService.isLoggedIn;
+  }
+
+  openModal(modal) {
+    this.modalActiveStates[modal] = true;
+  }
+
+  closeModal(modal) {
+    this.modalActiveStates[modal] = false;
   }
 
 }

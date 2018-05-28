@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RatingModule } from '../../components/rating/rating.module';
+import { AddBeerFormModule } from '../../components/add-beer-form/add-beer-form.module';
 
 import { BeerDetailResolver } from './beer-detail.resolver';
 import { BeerDetailComponent } from './beer-detail.component';
@@ -19,6 +20,7 @@ import { routing } from './beer-detail.router';
         routing,
         CommonModule,
         RatingModule,
+        AddBeerFormModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyCmeCDLj1uvr97KxjUiaade1zfeya02Uog'
         })

@@ -10,19 +10,16 @@ import { AppService } from './services/app.service';
 import { HttpService } from './services/http.service';
 import { DataStorageService } from './services/data-storage.service';
 
+import { HeaderModule } from './components/header/header.module';
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { AddBeerFormComponent } from './components/add-beer-form/add-beer-form.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
         FooterComponent,
-        ModalComponent,
-        AddBeerFormComponent,
     ],
     imports: [
         BrowserModule,
@@ -31,6 +28,7 @@ import { AddBeerFormComponent } from './components/add-beer-form/add-beer-form.c
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
+        HeaderModule,
     ],
     providers: [
         AppService,

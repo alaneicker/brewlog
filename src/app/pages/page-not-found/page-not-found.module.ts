@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PageNotFoundComponent } from './page-not-found.component';
-import { RatingComponent } from '../../components/rating/rating.component';
 
 import { routing } from './page-not-found.router';
 

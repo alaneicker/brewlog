@@ -12,19 +12,7 @@ import { IHeader } from './interfaces/header.interface';
 })
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribe$: Subject<void> = new Subject();
-  title = 'Brew Journal';
-
-  headerContent: IHeader = {
-    appName: 'Brew Journal',
-    navItems: [
-      { text: 'Home', url: '/' },
-      { text: 'Add Beer', onClick: () => this.openModal('addBeer') },
-    ],
-  };
-
-  modalActiveStates = {
-    addBeer: false,
-  };
+  appName = 'Brew Journal';
 
   constructor(
     private router: Router,
@@ -44,13 +32,5 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
-  }
-
-  openModal(modal) {
-    this.modalActiveStates[modal] = true;
-  }
-
-  closeModal(modal) {
-    this.modalActiveStates[modal] = false;
   }
 }

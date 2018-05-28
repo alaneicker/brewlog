@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 import { AppService } from '../../services/app.service';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
@@ -8,7 +8,8 @@ import { IBeerDetail } from '../../interfaces/beer-detail.interface';
     templateUrl: './summary-section.component.html',
     styleUrls: ['./summary-section.component.scss']
 })
-export class SummarySectionComponent implements OnInit {
+export class SummarySectionComponent implements OnInit, AfterViewInit {
+    @ViewChild('summary') summary: ElementRef;
     @Input() photoUrl: string;
     @Input() title: string;
     @Input() comments: string;
@@ -24,6 +25,8 @@ export class SummarySectionComponent implements OnInit {
 
     isLoggedIn: boolean;
 
+    isEditMode = false;
+
     constructor(
         private appService: AppService,
     ) { }
@@ -31,4 +34,18 @@ export class SummarySectionComponent implements OnInit {
     ngOnInit() {
         this.isLoggedIn = this.appService.isLoggedIn;
     }
+
+    ngAfterViewInit() {
+        this.summary.nativeElement.style.height = `${this.summary.nativeElement.offsetHeight}px`;
+    }
+
+    startEdit() {
+        this.isEditMode = true;
+    }
+
+    cancelEdit() {
+        this.isEditMode = false;
+    }
+
+    saveChanges() {}
 }

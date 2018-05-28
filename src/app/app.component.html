@@ -1,24 +1,11 @@
 <!-- Header -->
-<app-header 
-    [headerContent]="headerContent">
+<app-header [appName]="appName">
+    <li>
+        <a routerLink="/">Home</a>
+    </li>
 </app-header>
 
 <!-- Router Outlet -->
 <router-outlet></router-outlet>
 
-<app-footer 
-    [appName]="headerContent.appName">
-</app-footer>
-
-<app-modal 
-    [isOpen]="modalActiveStates.addBeer" 
-    (close)="closeModal('addBeer')">
-    <ng-container modal-header>
-        <h3>Add A Beer</h3>
-    </ng-container>
-    <ng-container modal-body>
-        <app-add-beer-form 
-            (submitted)="closeModal('addBeer')">
-        </app-add-beer-form>
-    </ng-container>   
-</app-modal>
+<app-footer [appName]="appName"></app-footer>

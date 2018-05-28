@@ -1,14 +1,10 @@
 <header class="c-header">
-    <a class="c-header__logo" routerLink="/">{{ headerContent.appName }}</a>
+    <a class="c-header__logo" routerLink="/">{{ appName }}</a>
     <nav class="c-header__nav is-hidden is-visible--medium">
-        <ul class="c-header__nav-list">
-            <li *ngFor="let item of headerContent.navItems">
-                <ng-container *ngIf="item.url; else anchorWithClickEvent">
-                    <a routerLink="{{ item.url }}">{{ item.text }}</a>
-                </ng-container>
-                <ng-template #anchorWithClickEvent>
-                    <a href="javascript:void(0)" (click)="item.onClick()">{{ item.text }}</a>
-                </ng-template>
+        <ul class="c-header__nav-menu">
+            <ng-content></ng-content>
+            <li>
+                <a (click)="openModal('addBeer')">Add Beer</a>
             </li>
             <li *ngIf="!isLoggedIn">
                 <a routerLink="">Log In</a>
@@ -19,3 +15,16 @@
         </ul>
     </nav>
 </header>
+
+<app-modal 
+    [isOpen]="modalActiveStates.addBeer" 
+    (close)="closeModal('addBeer')">
+    <ng-container modal-header>
+        <h3>Add A Beer</h3>
+    </ng-container>
+    <ng-container modal-body>
+        <app-add-beer-form 
+            (submitted)="closeModal('addBeer')">
+        </app-add-beer-form>
+    </ng-container>   
+</app-modal>

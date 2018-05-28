@@ -1,9 +1,9 @@
-<section class="summary">
+<section class="summary" #summary>
 	<div 
 		class="summary__photo" 
 		[style.backgroundImage]="'url('+ (photoUrl || 'assets/images/no-beer-image.png') +')'">
 	</div>
-	<div class="summary__details">
+	<div *ngIf="!isEditMode" class="summary__details">
 		<div class="u-vr-1 u-text-xs">
 			Posted on: {{ datePosted }}
 		</div>
@@ -43,7 +43,18 @@
 		<p class="u-vr-3-top u-vr-3" *ngIf="comments">
 			{{ comments }}
 		</p>
-		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm">Edit</button>
+		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm" (click)="startEdit()">Edit</button>
 		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm">Delete</button>
+	</div>
+	<div *ngIf="isEditMode" class="summary__edit">
+		<div class="summary__edit-form">
+			<app-add-beer-form 
+				(submitted)="saveChanges()">
+			</app-add-beer-form>
+		</div>
+		<div class="summary__edit-controls">
+			<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm" (click)="saveChanges()">Save</button>
+			<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm" (click)="cancelEdit()">Cancel</button>
+		</div>
 	</div>
 </section>
