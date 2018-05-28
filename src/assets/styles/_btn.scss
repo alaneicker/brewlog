@@ -22,9 +22,18 @@
         box-shadow: 0 0 0 rem(3) $blue-2;
     }
 
+    &--red {
+        background: $red;
+
+        &:hover,
+        &:focus {
+            background: darken($red, 7%);
+        }
+    }
+
     &--sm {
         font-size: 14px;
-        padding: rem(10 16);
+        padding: rem(8 12);
     }
 
     &--hollow {
