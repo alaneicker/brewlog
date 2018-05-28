@@ -32,4 +32,8 @@ export class HeaderComponent implements OnInit {
     this.modalActiveStates[modal] = false;
   }
 
+  logIn() {}
+
+  logOut() {}
+
 }
