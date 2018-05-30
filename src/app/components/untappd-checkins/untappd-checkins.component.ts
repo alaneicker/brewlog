@@ -21,7 +21,7 @@ export class UntappdCheckinsComponent implements OnInit {
     @Input() userName: string;
     @Input() createdAt: string;
     @Input() beerName: string;
-    @Input() rating: string;
+    @Input() rating: number;
     @Input() comment: string;
 
     constructor() { }

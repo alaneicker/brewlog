@@ -11,7 +11,7 @@ import { environment as env } from '../../../environments/environment';
 })
 export class BeerCardComponent implements OnInit {
     @Input() title: string;
-    @Input() rating: string;
+    @Input() rating: number;
     @Input() imgId: string;
     @Input() routeId: string;
 

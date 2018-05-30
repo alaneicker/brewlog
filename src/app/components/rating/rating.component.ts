@@ -10,13 +10,14 @@ import { Component, OnInit, Input } from '@angular/core';
     `,
 })
 export class RatingComponent implements OnInit {
-    @Input() rating: string;
-    stars: string[];
+    @Input() rating: number;
+    stars: number[];
 
     constructor() { }
 
     ngOnInit() {
-        this.stars = Array(this.rating).fill('');
+        this.stars = Array(this.rating).fill(0);
+        console.log(this.stars);
     }
 
 }

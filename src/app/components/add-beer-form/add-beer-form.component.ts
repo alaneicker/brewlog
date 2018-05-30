@@ -34,7 +34,7 @@ export class AddBeerFormComponent implements OnInit {
     @Input() formPrefix: string;
 
     @Input() beerName: string;
-    @Input() rating: string;
+    @Input() rating: number;
     @Input() comments: string;
 
     @Output() submitted: EventEmitter<any> = new EventEmitter();
