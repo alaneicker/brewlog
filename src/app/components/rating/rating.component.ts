@@ -17,7 +17,6 @@ export class RatingComponent implements OnInit {
 
     ngOnInit() {
         this.stars = Array(this.rating).fill(0);
-        console.log(this.stars);
     }
 
 }
