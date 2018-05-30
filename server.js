@@ -11,8 +11,6 @@ const dbConfig = require('./db-config')[env];
 const pool = mysql.createPool(dbConfig);
 pool.config.connectionLimit = 400;
 
-const cacheExpire = ((1000 * 60) * 60) * 24;
-
 const query = options => {
     const {
       query,
@@ -39,6 +37,13 @@ const query = options => {
     });
 };
 
+const setCache = res => {
+    if (env === 'production') {
+        const cacheExpire = ((1000 * 60) * 60) * 24;
+        res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
+    }
+}
+
 app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000000 }));
 app.use(bodyParser.json({ limit: 1000000000000 })); 
 app.use(cors());
@@ -46,7 +51,7 @@ app.use(cors());
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => {
-            res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
+            setCache(res);
             res.send(data)
         })
         .catch(error => console.log(error));
@@ -60,7 +65,7 @@ app.route('/api/beer/image/:imgId').get((req, res) => {
         
         const data = String(content);
 
-        res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
+        setCache(res);
         res.send(data);
     });
 });
@@ -76,7 +81,7 @@ app.route('/api/beer/:imgId/:id').get((req, res) => {
 
                 data.imgDataUri = String(content);
                
-                res.setHeader('Cache-Control', `public, max-age=${ cacheExpire }`);
+                setCache(res);
                 res.send(data);
             });
         })
