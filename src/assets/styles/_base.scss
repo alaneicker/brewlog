@@ -18,6 +18,10 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+}
+
 b, strong {
     font-weight: $font-bold;
 }
