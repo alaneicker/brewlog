@@ -32,28 +32,28 @@
     <div class="u-vr-2">
         <span class="label">Rating</span>
         <div class="u-flex u-flex--hr u-vr u-vr-1-top">
-            <label for="rating-radio-1" class="c-radio-btn">
-                <input id="rating-radio-1" type="radio" name="rating" value="1" formControlName="rating">
+            <label [attr.for]="generateId(1, 'radio')" class="c-radio-btn">
+                <input [attr.id]="generateId(1, 'radio')" type="radio" name="rating" value="1" formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">1</span>
             </label>
-            <label for="rating-radio-2" class="c-radio-btn">
-                <input id="rating-radio-2" type="radio" name="rating" value="2" formControlName="rating">
+            <label [attr.for]="generateId(2, 'radio')" class="c-radio-btn">
+                <input [attr.id]="generateId(2, 'radio')" type="radio" name="rating" value="2" formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">2</span>
             </label>
-            <label for="rating-radio-3" class="c-radio-btn">
-                <input id="rating-radio-3" type="radio" name="rating" value="3" formControlName="rating">
+            <label [attr.for]="generateId(3, 'radio')" class="c-radio-btn">
+                <input [attr.id]="generateId(3, 'radio')" type="radio" name="rating" value="3" formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">3</span>
             </label>
-            <label for="rating-radio-4" class="c-radio-btn">
-                <input id="rating-radio-4" type="radio" name="rating" value="4" formControlName="rating">
+            <label [attr.for]="generateId(4, 'radio')" class="c-radio-btn">
+                <input [attr.id]="generateId(4, 'radio')" type="radio" name="rating" value="4" formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">4</span>
             </label>
-            <label for="rating-radio-5" class="c-radio-btn">
-                <input id="rating-radio-5" type="radio" name="rating" value="5" formControlName="rating">
+            <label [attr.for]="generateId(5, 'radio')" class="c-radio-btn">
+                <input [attr.id]="generateId(5, 'radio')" type="radio" name="rating" value="5" formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">5</span>
             </label>

@@ -4,6 +4,6 @@ export interface IBeerDetail {
     beerName: string;
     photoUrl?: string;
     comments?: string;
-    rating?: number;
+    rating?: string;
     imgDataUri?: string;
 }

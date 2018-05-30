@@ -30,10 +30,18 @@ import { environment as env } from '../../../environments/environment';
 })
 export class AddBeerFormComponent implements OnInit {
     @ViewChild('fileInput') fileInput: ElementRef;
+
+    @Input() formPrefix: string;
+
+    @Input() beerName: string;
+    @Input() rating: string;
+    @Input() comments: string;
+
     @Output() submitted: EventEmitter<any> = new EventEmitter();
     @Output() cancelled: EventEmitter<any> = new EventEmitter();
     @Input() formClass: string;
     @Input() hasSaveBtn = true;
+
     hasCancelBtn: boolean;
     addBeerForm: FormGroup;
     selectedFiles: string;
@@ -49,10 +57,14 @@ export class AddBeerFormComponent implements OnInit {
 
         this.addBeerForm = this.fb.group({
             upload: new FormControl(''),
-            beerName: new FormControl('', Validators.required),
-            rating: new FormControl('', Validators.required),
-            comments: new FormControl('', Validators.required),
+            beerName: new FormControl(this.beerName || '', Validators.required),
+            rating: new FormControl(String(this.rating) || '', Validators.required),
+            comments: new FormControl(this.comments || '', Validators.required),
         });
+    }
+
+    generateId(index: number, label: string): string {
+        return `${this.formPrefix}-${label}-${index}`;
     }
 
     onFileChange(event) {

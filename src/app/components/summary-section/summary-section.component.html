@@ -49,6 +49,10 @@
 	<div *ngIf="isEditMode" class="summary__edit">
 		<div class="summary__edit-form">
 			<app-add-beer-form 
+				[formPrefix]="'edit-beer'"
+				[beerName]="title"
+				[rating]="rating"
+				[comments]="comments"
 				[formClass]="'dark'"
 				(cancelled)="cancelEdit()"
 				(submitted)="cancelEdit()">

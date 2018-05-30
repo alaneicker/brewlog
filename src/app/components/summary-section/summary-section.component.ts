@@ -17,7 +17,7 @@ export class SummarySectionComponent implements OnInit, AfterViewInit {
     @Input() style: string;
     @Input() abv: string;
     @Input() ibu: string;
-    @Input() rating: number;
+    @Input() rating: string;
     @Input() brewery: string;
     @Input() breweryCity: string;
     @Input() breweryState: string;
