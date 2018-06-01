@@ -89,7 +89,7 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        this.httpService.postToAPI({
+        this.httpService.post({
             url: `${env.baseApiUrl}/beer/add`,
             data: {
                 upload: this.addBeerForm.get('upload').value,
@@ -104,9 +104,13 @@ export class AddBeerFormComponent implements OnInit {
                     this.selectedFiles = '';
                     this.submitted.emit();
 
-                    this.router.navigate(['blank']).then(() => {
+                    if (this.router.url === '/') {
                         this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
-                    });
+                    } else {
+                        this.router.navigate(['blank']).then(() => {
+                            this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
+                        });
+                    }
                 }
             })
             .catch(err => {

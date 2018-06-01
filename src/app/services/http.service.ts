@@ -7,14 +7,14 @@ export class HttpService {
 
     constructor(private http: HttpClient) {}
 
-    getFromApi(config): Promise<any> {
+    get(config): Promise<any> {
         return this.http.get(config.url, { responseType: config.responseType || 'json' })
             .toPromise()
             .then(this.extractData)
             .catch(this.handleError);
     }
 
-    postToAPI(config): Promise<any> {
+    post(config): Promise<any> {
         return this.http.post(config.url, config.data || {}, { responseType: config.responseType || 'json' })
             .toPromise()
             .then(this.extractData)

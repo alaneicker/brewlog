@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { AppService } from '../../services/app.service';
 import { HttpService } from '../../services/http.service';
@@ -35,6 +36,7 @@ export class SummarySectionComponent implements OnInit {
     constructor(
         private appService: AppService,
         private httpService: HttpService,
+        private router: Router,
     ) { }
 
     ngOnInit() {
@@ -54,7 +56,11 @@ export class SummarySectionComponent implements OnInit {
     deleteItem() {
         this.httpService.delete({ url: `${env.baseApiUrl}/beer/delete/${this.imgId}/${this.routeId}` })
             .then(res => {
-                alert(JSON.stringify(res));
+                if (res.affectedRows > 0) {
+                    this.router.navigate(['blank']).then(() => {
+                        this.router.navigate(['/']);
+                    });
+                }
             });
     }
 }

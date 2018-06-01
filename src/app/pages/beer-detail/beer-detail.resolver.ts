@@ -14,7 +14,7 @@ export class BeerDetailResolver implements Resolve<IBeerDetail> {
     ) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<IBeerDetail> {
-        return this.httpService.getFromApi({
+        return this.httpService.get({
             url: `${env.baseApiUrl}/beer/${route.params['imgId']}/${route.params['id']}`,
         })
             .then(res => {

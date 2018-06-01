@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.httpService.getFromApi({ url: `${env.baseApiUrl}/beers` })
+        this.httpService.get({ url: `${env.baseApiUrl}/beers` })
             .then(res => this.beers = res)
             .catch(error => console.log(error));
     }
