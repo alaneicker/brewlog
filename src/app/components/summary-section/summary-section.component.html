@@ -58,7 +58,7 @@
 				[comments]="comments"
 				[formClass]="'dark'"
 				(cancelled)="cancelEdit()"
-				(submitted)="cancelEdit()">
+				(submitted)="updateSuccessful($event)">
 			</app-add-beer-form>
 		</div>
 	</div>

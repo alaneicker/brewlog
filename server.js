@@ -92,7 +92,7 @@ app.route('/api/beer/add').post((req, res) => {
     const randomId = Math.round(Math.random() * 100000);
 
     fs.writeFile(`./uploads/user-image-${randomId}.txt`, req.body.upload, err => {
-        console.log('file written');
+        console.log(`./uploads/user-image-${randomId}.txt has been created.`);
     });
 
     query({ 
@@ -116,9 +116,32 @@ app.route('/api/beer/add').post((req, res) => {
 });
 
 app.route('/api/beer/edit/:imgId/:id').put((req, res) => {
-    console.log(req.params.imgId);
-    console.log(req.params.id);
-    console.log(req.body);
+    query({ 
+        query: `
+            UPDATE mybeers
+            SET beerName = ?, rating = ?, comments = ?
+            WHERE id = ${req.params.id}
+        `,
+        data: [
+            req.body.beerName,
+            req.body.rating,
+            req.body.comments
+        ]
+    })
+    .then(data => {
+
+        data.body = req.body;
+
+        if (req.body.upload !== '') {
+            fs.writeFile(`./uploads/user-image-${req.params.imgId}.txt`, req.body.upload, err => {
+                console.log(`user-image-${req.params.imgId}.txt has been updated.`);
+                res.send(data);
+            });
+        } else {
+            res.send(data);
+        }
+    })
+    .catch(error => console.log(error));
 });
 
 app.route('/api/beer/delete/:imgId/:id').delete((req, res) => {

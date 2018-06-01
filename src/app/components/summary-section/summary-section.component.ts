@@ -55,6 +55,18 @@ export class SummarySectionComponent implements OnInit {
         this.isEditMode = false;
     }
 
+    updateSuccessful(event) {
+        this.title = event.beerName;
+        this.rating = +event.rating;
+        this.comments = event.comments;
+
+        if (event.upload !== '') {
+            this.photoUrl = event.upload;
+        }
+
+        this.isEditMode = false;
+    }
+
     openModal() {
         this.modalActiveStates.deleteBeer = true;
     }
