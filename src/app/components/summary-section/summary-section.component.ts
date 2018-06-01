@@ -1,15 +1,20 @@
-import { Component, OnInit, AfterViewInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 import { AppService } from '../../services/app.service';
+import { HttpService } from '../../services/http.service';
 import { IBeerDetail } from '../../interfaces/beer-detail.interface';
+
+import { environment as env } from '../../../environments/environment';
 
 @Component({
     selector: 'app-summary-section',
     templateUrl: './summary-section.component.html',
     styleUrls: ['./summary-section.component.scss']
 })
-export class SummarySectionComponent implements OnInit, AfterViewInit {
+export class SummarySectionComponent implements OnInit {
     @ViewChild('summary') summary: ElementRef;
+    @Input() routeId: string;
+    @Input() imgId: string;
     @Input() photoUrl: string;
     @Input() title: string;
     @Input() comments: string;
@@ -29,14 +34,11 @@ export class SummarySectionComponent implements OnInit, AfterViewInit {
 
     constructor(
         private appService: AppService,
+        private httpService: HttpService,
     ) { }
 
     ngOnInit() {
         this.isLoggedIn = this.appService.isLoggedIn;
-    }
-
-    ngAfterViewInit() {
-        // this.summary.nativeElement.style.height = `${this.summary.nativeElement.offsetHeight}px`;
     }
 
     startEdit() {
@@ -48,4 +50,11 @@ export class SummarySectionComponent implements OnInit, AfterViewInit {
     }
 
     saveChanges() {}
+
+    deleteItem() {
+        this.httpService.delete({ url: `${env.baseApiUrl}/beer/delete/${this.imgId}/${this.routeId}` })
+            .then(res => {
+                alert(JSON.stringify(res));
+            });
+    }
 }

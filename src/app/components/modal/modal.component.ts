@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, OnChanges } from '@angular/core';
 
+declare var require: any;
 const createFocusTrap = require('../../../../node_modules/focus-trap');
 
 @Component({

@@ -15,7 +15,14 @@ export class HttpService {
     }
 
     postToAPI(config): Promise<any> {
-        return this.http.post(config.url, config.data, { responseType: config.responseType || 'json' })
+        return this.http.post(config.url, config.data || {}, { responseType: config.responseType || 'json' })
+            .toPromise()
+            .then(this.extractData)
+            .catch(this.handleError);
+    }
+
+    delete(config): Promise<any> {
+        return this.http.delete(config.url)
             .toPromise()
             .then(this.extractData)
             .catch(this.handleError);
@@ -27,7 +34,7 @@ export class HttpService {
     }
 
     private handleError(error: any): Promise<any> {
-        console.error('An error occurred', error);
+        console.error('An error occurred:', error);
         return Promise.reject(error.message || error);
     }
 

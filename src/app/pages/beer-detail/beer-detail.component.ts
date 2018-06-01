@@ -30,7 +30,8 @@ export class BeerDetailComponent implements OnInit {
     untappdAllOtherBeers: any;
     beerCheckins: any;
 
-    routeId: string;
+    routeId: number;
+    imgId: number;
 
     storedBeerDetail: any;
     untappdCheckinData: any;
@@ -44,7 +45,9 @@ export class BeerDetailComponent implements OnInit {
         private dataStorageService: DataStorageService,
     ) {
         this.userBeerData = this.route.snapshot.data.beerDetailSummary;
-        this.routeId = this.userBeerData.routeId;
+
+        this.routeId = this.userBeerData.id;
+        this.imgId = this.userBeerData.imgId;
 
         this.sessionStorageKeys = {
             untappdBeerKey: `untappd-beer-data-${this.routeId}`,

@@ -1,5 +1,6 @@
 export interface IBeerDetail {
-    routeId: string;
+    routeId: number;
+    imgId: number;
     id: number;
     beerName: string;
     datePosted: string;

@@ -44,7 +44,7 @@
 			{{ comments }}
 		</p>
 		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm" (click)="startEdit()">Edit</button>
-		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm">Delete</button>
+		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm" (click)="deleteItem()">Delete</button>
 	</div>
 	<div *ngIf="isEditMode" class="summary__edit">
 		<div class="summary__edit-form">

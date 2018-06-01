@@ -19,7 +19,6 @@ export class BeerDetailResolver implements Resolve<IBeerDetail> {
         })
             .then(res => {
                 if (res.id) {
-                    res.routeId = route.params['id'];
                     return res;
                 } else {
                     this.router.navigate(['/dashboard']);
