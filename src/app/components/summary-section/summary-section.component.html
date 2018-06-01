@@ -44,7 +44,7 @@
 			{{ comments }}
 		</p>
 		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--sm" (click)="startEdit()">Edit</button>
-		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm" (click)="deleteItem()">Delete</button>
+		<button *ngIf="isLoggedIn == true" class="c-btn c-btn--red c-btn--sm" (click)="openModal()">Delete</button>
 	</div>
 	<div *ngIf="isEditMode" class="summary__edit">
 		<div class="summary__edit-form">
@@ -60,3 +60,17 @@
 		</div>
 	</div>
 </section>
+
+<app-modal 
+    [isOpen]="modalActiveStates.deleteBeer" 
+    (close)="closeModal('addBeer')">
+    <ng-container modal-header>
+        <h3>Are you sure?</h3>
+    </ng-container>
+    <ng-container modal-body>
+        <div class="padding--24 u-align-center">
+            <button class="c-btn c-btn--sm" (click)="deleteItem()">Yes I'm Sure</button>
+			<button class="c-btn c-btn--red c-btn--sm" (click)="closeModal()">Cancel</button>
+        </div>
+    </ng-container>   
+</app-modal>

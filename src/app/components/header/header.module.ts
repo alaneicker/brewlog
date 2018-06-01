@@ -4,17 +4,17 @@ import { RouterModule } from '@angular/router';
 
 import { AddBeerFormModule } from '../add-beer-form/add-beer-form.module';
 import { HeaderComponent } from './header.component';
-import { ModalComponent } from '../modal/modal.component';
+import { ModalModule } from '../modal/modal.module';
 
 @NgModule({
   imports: [
     CommonModule,
     AddBeerFormModule,
     RouterModule,
+    ModalModule,
   ],
   declarations: [
     HeaderComponent,
-    ModalComponent,
   ],
   exports: [HeaderComponent]
 })

@@ -13,6 +13,7 @@ import { SummarySectionComponent } from '../../components/summary-section/summar
 import { RecommendedBeersComponent } from '../../components/recommended-beers/recommended-beers.component';
 import { BreweryLocationMapsComponent } from '../../components/brewery-locations-map/brewery-locations-map.component';
 import { UntappdCheckinsComponent } from '../../components/untappd-checkins/untappd-checkins.component';
+import { ModalModule } from '../../components/modal/modal.module';
 
 import { routing } from './beer-detail.router';
 
@@ -22,6 +23,7 @@ import { routing } from './beer-detail.router';
         CommonModule,
         RatingModule,
         AddBeerFormModule,
+        ModalModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyCmeCDLj1uvr97KxjUiaade1zfeya02Uog'
         })

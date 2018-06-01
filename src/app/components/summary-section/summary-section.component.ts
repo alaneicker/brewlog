@@ -33,6 +33,10 @@ export class SummarySectionComponent implements OnInit {
 
     isEditMode = false;
 
+    modalActiveStates = {
+        deleteBeer: false,
+    };
+
     constructor(
         private appService: AppService,
         private httpService: HttpService,
@@ -49,6 +53,14 @@ export class SummarySectionComponent implements OnInit {
 
     cancelEdit() {
         this.isEditMode = false;
+    }
+
+    openModal() {
+        this.modalActiveStates.deleteBeer = true;
+    }
+
+    closeModal() {
+        this.modalActiveStates.deleteBeer = false;
     }
 
     saveChanges() {}
