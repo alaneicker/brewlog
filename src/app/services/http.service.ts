@@ -21,6 +21,13 @@ export class HttpService {
             .catch(this.handleError);
     }
 
+    put(config): Promise<any> {
+        return this.http.put(config.url, config.data || {}, { responseType: config.responseType || 'json' })
+            .toPromise()
+            .then(this.extractData)
+            .catch(this.handleError);
+    }
+
     delete(config): Promise<any> {
         return this.http.delete(config.url)
             .toPromise()

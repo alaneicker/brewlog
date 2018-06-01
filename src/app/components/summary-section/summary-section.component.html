@@ -49,6 +49,9 @@
 	<div *ngIf="isEditMode" class="summary__edit">
 		<div class="summary__edit-form">
 			<app-add-beer-form 
+				[routeId]="routeId"
+				[imgId]="imgId"
+				[editMode]="true"
 				[formPrefix]="'edit-beer'"
 				[beerName]="title"
 				[rating]="rating"

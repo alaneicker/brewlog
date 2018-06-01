@@ -31,6 +31,11 @@ import { environment as env } from '../../../environments/environment';
 export class AddBeerFormComponent implements OnInit {
     @ViewChild('fileInput') fileInput: ElementRef;
 
+    @Input() routeId: string;
+    @Input() imgId: string;
+
+    @Input() editMode = false;
+
     @Input() formPrefix: string;
 
     @Input() beerName: string;
@@ -89,8 +94,12 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
-        this.httpService.post({
-            url: `${env.baseApiUrl}/beer/add`,
+        const url = this.editMode
+            ? `${env.baseApiUrl}/beer/edit/${this.imgId}/${this.routeId}`
+            : `${env.baseApiUrl}/beer/add`;
+
+        this.httpService[this.editMode ? 'put' : 'post']({
+            url: url,
             data: {
                 upload: this.addBeerForm.get('upload').value,
                 beerName: this.addBeerForm.get('beerName').value,
@@ -103,6 +112,14 @@ export class AddBeerFormComponent implements OnInit {
                     this.addBeerForm.reset();
                     this.selectedFiles = '';
                     this.submitted.emit();
+
+                    if (this.editMode) {
+                        this.beerName = res.beerName;
+                        this.rating = res.rating;
+                        this.comments = res.comments;
+
+                        return;
+                    }
 
                     if (this.router.url === '/') {
                         this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);

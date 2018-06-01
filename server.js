@@ -89,7 +89,7 @@ app.route('/api/beer/:imgId/:id').get((req, res) => {
 });
 
 app.route('/api/beer/add').post((req, res) => {
-    const randomId = Math.round(Math.random() * 100000);
+    /*const randomId = Math.round(Math.random() * 100000);
 
     fs.writeFile(`./uploads/user-image-${randomId}.txt`, req.body.upload, err => {
         console.log('file written');
@@ -112,11 +112,16 @@ app.route('/api/beer/add').post((req, res) => {
         data.imgId = randomId;
         res.send(data)
     })
-    .catch(error => console.log(error));
+    .catch(error => console.log(error));*/
+});
+
+app.route('/api/beer/edit/:imgId/:id').put((req, res) => {
+    console.log(req.params.imgId);
+    console.log(req.params.id);
+    console.log(req.body);
 });
 
 app.route('/api/beer/delete/:imgId/:id').delete((req, res) => {
-    console.log(`FILE TO DELETE: ./uploads/user-image-${req.params.imgId}.txt`);
     query({ query: `DELETE FROM mybeers WHERE id = ${req.params.id}` })
         .then(data => {
             fs.unlink(`./uploads/user-image-${req.params.imgId}.txt`, err => {
