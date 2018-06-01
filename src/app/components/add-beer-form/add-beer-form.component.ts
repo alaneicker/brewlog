@@ -9,7 +9,6 @@ import {
 } from '@angular/core';
 
 import {
-    FormBuilder,
     FormGroup,
     FormControl,
     FormArray,
@@ -48,11 +47,10 @@ export class AddBeerFormComponent implements OnInit {
     @Input() hasSaveBtn = true;
 
     hasCancelBtn: boolean;
-    addBeerForm: FormGroup;
+    form: FormGroup;
     selectedFiles: string;
 
     constructor(
-        private fb: FormBuilder,
         private httpService: HttpService,
         private router: Router,
     ) { }
@@ -60,7 +58,7 @@ export class AddBeerFormComponent implements OnInit {
     ngOnInit() {
         this.hasCancelBtn = this.cancelled.observers.length > 0;
 
-        this.addBeerForm = this.fb.group({
+        this.form = new FormGroup({
             upload: new FormControl(''),
             beerName: new FormControl(this.beerName || '', Validators.required),
             rating: new FormControl(String(this.rating) || '', Validators.required),
@@ -82,7 +80,7 @@ export class AddBeerFormComponent implements OnInit {
             reader.readAsDataURL(file);
 
             reader.addEventListener('load', () => {
-                this.addBeerForm.patchValue({
+                this.form.patchValue({
                     upload: reader.result
                 });
               }, false);
@@ -101,15 +99,15 @@ export class AddBeerFormComponent implements OnInit {
         this.httpService[this.editMode ? 'put' : 'post']({
             url: url,
             data: {
-                upload: this.addBeerForm.get('upload').value,
-                beerName: this.addBeerForm.get('beerName').value,
-                rating: this.addBeerForm.get('rating').value,
-                comments: this.addBeerForm.get('comments').value,
+                upload: this.form.get('upload').value,
+                beerName: this.form.get('beerName').value,
+                rating: this.form.get('rating').value,
+                comments: this.form.get('comments').value,
             },
         })
             .then(res => {
                 if (res.affectedRows > 0) {
-                    this.addBeerForm.reset();
+                    this.form.reset();
                     this.selectedFiles = '';
                     this.submitted.emit();
 

@@ -25,6 +25,7 @@
     <ng-container modal-body>
         <div class="padding--24">
             <app-add-beer-form
+                *ngIf="modalActiveStates.addBeer"
                 [formPrefix]="'add-beer'"
                 (submitted)="closeModal('addBeer')">
             </app-add-beer-form>

@@ -2,9 +2,9 @@
     method="post" 
     enctype="multipart/form-data"  
     [attr.class]="formClass"
-    (ngSubmit)="submitForm(_addBeerForm)" 
-    [formGroup]="addBeerForm" 
-    #_addBeerForm="ngForm"
+    (ngSubmit)="submitForm(_form)" 
+    [formGroup]="form" 
+    #_form="ngForm"
     novalidate>
 
     <div class="c-image-upload u-flex--medium u-flex--middle u-flex--hr u-vr-2">
