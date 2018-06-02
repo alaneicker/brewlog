@@ -89,7 +89,7 @@ app.route('/api/beer/:imgId/:id').get((req, res) => {
 });
 
 app.route('/api/beer/add').post((req, res) => {
-    const randomId = Math.round(Math.random() * 100000);
+    const randomId = Math.round(Math.random() * 100000000);
 
     fs.writeFile(`./uploads/user-image-${randomId}.txt`, req.body.upload, err => {
         console.log(`./uploads/user-image-${randomId}.txt has been created.`);
