@@ -23,11 +23,6 @@
         <div class="u-flex__item">
             {{ selectedFiles || 'No files selected' }}
         </div>
-        <div 
-            class="u-text-error u-text-xs u-vr-top"
-            *ngIf="
-                form.get('upload').errors && _form.submitted
-            ">An image is required</div>
     </div>
     
     <div class="u-vr-2"> 
