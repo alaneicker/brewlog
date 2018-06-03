@@ -15,55 +15,126 @@
                     id="upload" 
                     class="c-image-upload__input" 
                     type="file" 
-                    (change)="onFileChange($event)">
+                    (change)="onFileChange($event)"
+                    [class.has-error]="form.get('upload').errors && _form.submitted">
                 <span class="c-btn c-btn--sm c-image-upload__btn">Upload Image</span>
             </label>
         </div>
         <div class="u-flex__item">
             {{ selectedFiles || 'No files selected' }}
         </div>
+        <div 
+            class="u-text-error u-text-xs u-vr-top"
+            *ngIf="
+                form.get('upload').errors && _form.submitted
+            ">An image is required</div>
     </div>
     
     <div class="u-vr-2"> 
         <label for="beer-name">Beer Name</label>
-        <input id="beer-name" type="text" formControlName="beerName">
+        <input 
+            id="beer-name" 
+            type="text" 
+            formControlName="beerName" 
+            [class.has-error]="form.get('beerName').errors && _form.submitted">
+        <div 
+            class="u-text-error u-text-xs u-vr-top"
+            *ngIf="
+                form.get('beerName').errors && _form.submitted
+            ">Beer name is required</div>
     </div>
 
     <div class="u-vr-2">
         <span class="label">Rating</span>
         <div class="u-flex u-flex--hr u-vr u-vr-1-top">
-            <label [attr.for]="generateId(1, 'radio')" class="c-radio-btn">
-                <input [attr.id]="generateId(1, 'radio')" type="radio" name="rating" value="1" formControlName="rating">
+            <label 
+                [attr.for]="generateId(1, 'radio')"
+                [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                class="c-radio-btn">
+                <input 
+                    [attr.id]="generateId(1, 'radio')" 
+                    type="radio" 
+                    name="rating" 
+                    value="1" 
+                    formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">1</span>
             </label>
-            <label [attr.for]="generateId(2, 'radio')" class="c-radio-btn">
-                <input [attr.id]="generateId(2, 'radio')" type="radio" name="rating" value="2" formControlName="rating">
+            <label 
+                [attr.for]="generateId(2, 'radio')"
+                [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                class="c-radio-btn">
+                <input 
+                    [attr.id]="generateId(2, 'radio')"
+                    type="radio" 
+                    name="rating" 
+                    value="2" 
+                    formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">2</span>
             </label>
-            <label [attr.for]="generateId(3, 'radio')" class="c-radio-btn">
-                <input [attr.id]="generateId(3, 'radio')" type="radio" name="rating" value="3" formControlName="rating">
+            <label 
+                [attr.for]="generateId(3, 'radio')"
+                [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                class="c-radio-btn">
+                <input 
+                    [attr.id]="generateId(3, 'radio')"
+                    [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                    type="radio" 
+                    name="rating" 
+                    value="3" 
+                    formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">3</span>
             </label>
-            <label [attr.for]="generateId(4, 'radio')" class="c-radio-btn">
-                <input [attr.id]="generateId(4, 'radio')" type="radio" name="rating" value="4" formControlName="rating">
+            <label 
+                [attr.for]="generateId(4, 'radio')"
+                [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                class="c-radio-btn">
+                <input 
+                    [attr.id]="generateId(4, 'radio')"
+                    [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                    type="radio" 
+                    name="rating" 
+                    value="4" 
+                    formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">4</span>
             </label>
-            <label [attr.for]="generateId(5, 'radio')" class="c-radio-btn">
-                <input [attr.id]="generateId(5, 'radio')" type="radio" name="rating" value="5" formControlName="rating">
+            <label 
+                [attr.for]="generateId(5, 'radio')"
+                [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted"
+                class="c-radio-btn">
+                <input 
+                    [attr.id]="generateId(5, 'radio')"
+                    [class.has-error]="form.get('rating').value == 'undefined' && _form.submitted" 
+                    type="radio" 
+                    name="rating" 
+                    value="5" 
+                    formControlName="rating">
                 <span class="c-radio-btn__icon"></span>
                 <span class="c-radio-btn__text">5</span>
             </label>
         </div>
         <div class="u-text-xs">1 = worst, 5 = Best</div>
+        <div 
+            class="u-text-error u-text-xs u-vr-top"
+            *ngIf="
+                form.get('rating').value == 'undefined' && _form.submitted
+            ">Rating is required</div>
     </div>
 
     <div class="u-vr-2">
         <label for="comments">Comments</label>
-        <textarea id="comments" formControlName="comments"></textarea>
+        <textarea 
+            id="comments" 
+            formControlName="comments"
+            [class.has-error]="form.get('comments').errors && _form.submitted"></textarea>
+        <div 
+            class="u-text-error u-text-xs u-vr-top"
+            *ngIf="
+                form.get('comments').errors && _form.submitted
+            ">Comments are required</div>
     </div>
 
     <button *ngIf="hasSaveBtn" type="submit" class="c-btn c-btn--sm">{{ editMode ? 'Save' : 'Submit' }}</button>

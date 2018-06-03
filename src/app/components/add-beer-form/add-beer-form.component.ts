@@ -92,6 +92,11 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     submitForm(form: NgForm): void {
+
+        if (!form.valid) {
+            return;
+        }
+
         const url = this.editMode
             ? `${env.baseApiUrl}/beer/edit/${this.imgId}/${this.routeId}`
             : `${env.baseApiUrl}/beer/add`;

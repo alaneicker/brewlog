@@ -50,6 +50,10 @@ textarea {
         height: rem(22);
     }
 
+    &.has-error > &__icon {
+        box-shadow: inset 0 0 0 rem(1) $red;
+    } 
+
     input:focus ~ &__icon,
     input:checked ~ &__icon {
         box-shadow:  inset 0 0 0 rem(7) $blue-1;
