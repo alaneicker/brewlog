@@ -4,17 +4,21 @@
 
 <section *ngIf="beers" class="padding padding--24 wrapper">
 
-    <div class="u-flex u-flex--bottom u-flex--space-between u-vr-3 hdg--border-underline">
+    <div class="u-flex--medium u-flex--bottom u-flex--space-between u-vr-3 hdg--border-underline">
         <div class="u-flex__item--grow">
             <h2 class="u-text-xl u-text-flush">Beer Reviews</h2>
         </div>
         <div>
-            <input class="input input--search" type="text" placeholder="Search">
+            <input 
+                class="input input--search u-vr-1-top" 
+                type="text" 
+                placeholder="Search by Name"
+                [(ngModel)]="query">
         </div>
     </div>
 
     <ul class="c-beer-list">
-        <li class="c-beer-list__item" *ngFor="let beer of beers">
+        <li class="c-beer-list__item" *ngFor="let beer of beers | FilterPipe:query">
             <app-beer-card
                 [title]="beer.beerName"
                 [rating]="beer.rating"

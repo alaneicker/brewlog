@@ -13,6 +13,8 @@ import { environment as env } from '../../../environments/environment';
 export class DashboardComponent implements OnInit {
     beers: IBeerDetail[];
 
+    query = '';
+
     constructor(
         private httpService: HttpService
     ) { }
