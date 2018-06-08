@@ -66,16 +66,17 @@ export class SummarySectionComponent implements OnInit {
         this.modalActiveStates[modal] = false;
     }
 
-    saveChanges() {}
-
     deleteItem() {
-        this.httpService.delete({ url: `${env.baseApiUrl}/beer/delete/${this.imgId}/${this.routeId}` })
-            .then(res => {
-                if (res.affectedRows > 0) {
-                    this.router.navigate(['blank']).then(() => {
-                        this.router.navigate(['/']);
-                    });
-                }
-            });
+        this.closeModal('deleteBeer');
+        setTimeout(() => {
+            this.httpService.delete({ url: `${env.baseApiUrl}/beer/delete/${this.imgId}/${this.routeId}` })
+                .then(res => {
+                    if (res.affectedRows > 0) {
+                        this.router.navigate(['blank']).then(() => {
+                            this.router.navigate(['/']);
+                        });
+                    }
+                });
+        }, 500);
     }
 }

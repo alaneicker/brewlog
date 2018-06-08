@@ -112,15 +112,15 @@ export class AddBeerFormComponent implements OnInit {
         })
             .then(res => {
                 if (res.affectedRows > 0) {
-                    this.form.reset();
-                    this.selectedFiles = '';
 
                     if (this.editMode) {
                         this.submitted.emit(res.body);
                         return;
+                    } else {
+                        this.form.reset();
+                        this.selectedFiles = '';
+                        this.submitted.emit();
                     }
-
-                    this.submitted.emit();
 
                     if (this.router.url === '/') {
                         this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
