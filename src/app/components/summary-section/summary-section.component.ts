@@ -31,10 +31,9 @@ export class SummarySectionComponent implements OnInit {
 
     isLoggedIn: boolean;
 
-    isEditMode = false;
-
     modalActiveStates = {
         deleteBeer: false,
+        editBeer: false,
     };
 
     constructor(
@@ -47,14 +46,6 @@ export class SummarySectionComponent implements OnInit {
         this.isLoggedIn = this.appService.isLoggedIn;
     }
 
-    startEdit() {
-        this.isEditMode = true;
-    }
-
-    cancelEdit() {
-        this.isEditMode = false;
-    }
-
     updateSuccessful(event) {
         this.title = event.beerName;
         this.rating = +event.rating;
@@ -64,15 +55,15 @@ export class SummarySectionComponent implements OnInit {
             this.photoUrl = event.upload;
         }
 
-        this.isEditMode = false;
+        this.modalActiveStates.editBeer = false;
     }
 
-    openModal() {
-        this.modalActiveStates.deleteBeer = true;
+    openModal(modal) {
+        this.modalActiveStates[modal] = true;
     }
 
-    closeModal() {
-        this.modalActiveStates.deleteBeer = false;
+    closeModal(modal) {
+        this.modalActiveStates[modal] = false;
     }
 
     saveChanges() {}

@@ -17,6 +17,7 @@
 </header>
 
 <app-modal 
+    [id]="'add-beer-modal'"
     [isOpen]="modalActiveStates.addBeer" 
     (close)="closeModal('addBeer')">
     <ng-container modal-header>

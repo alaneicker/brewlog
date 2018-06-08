@@ -10,6 +10,7 @@ const createFocusTrap = require('../../../../node_modules/focus-trap');
 })
 export class ModalComponent implements OnInit, OnChanges {
     @ViewChild('modal') modal: ElementRef;
+    @Input() id: string;
     @Input() isOpen: boolean;
     @Output() close: EventEmitter<any> = new EventEmitter();
 
@@ -21,9 +22,14 @@ export class ModalComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges() {
+        this.focusTrap = createFocusTrap(`#${this.id}`, {});
+
         if (this.isOpen) {
             setTimeout(() => {
-                this.focusTrap = createFocusTrap('#modal', {});
+                this.focusTrap.activate();
+            }, 500);
+        } else {
+            setTimeout(() => {
                 this.focusTrap.activate();
             }, 500);
         }
