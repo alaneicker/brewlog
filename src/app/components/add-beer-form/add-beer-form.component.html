@@ -28,6 +28,7 @@
     <div class="u-vr-2"> 
         <label for="beer-name">Beer Name</label>
         <input 
+            class="input"
             id="beer-name" 
             type="text" 
             formControlName="beerName" 
@@ -122,6 +123,7 @@
     <div class="u-vr-2">
         <label for="comments">Comments</label>
         <textarea 
+            class="input"
             id="comments" 
             formControlName="comments"
             [class.has-error]="form.get('comments').errors && _form.submitted"></textarea>
