@@ -33,6 +33,10 @@
     &--middle {
       align-items: center;
     }
+
+    &--bottom {
+      align-items: baseline;
+    }
   
     &--space-between {
       justify-content: space-between;

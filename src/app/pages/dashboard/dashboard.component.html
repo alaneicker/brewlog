@@ -4,7 +4,14 @@
 
 <section *ngIf="beers" class="padding padding--24 wrapper">
 
-    <h2 class="u-align-center u-text-xl hdg--border-underline u-vr-3">Beer Reviews</h2>
+    <div class="u-flex u-flex--middle u-flex--space-between u-vr-3 hdg--border-underline">
+        <div class="u-flex__item--grow">
+            <h2 class="u-text-xl">Beer Reviews</h2>
+        </div>
+        <div>
+            <input class="search" type="text" placeholder="Search">
+        </div>
+    </div>
 
     <ul class="c-beer-list">
         <li class="c-beer-list__item" *ngFor="let beer of beers">
