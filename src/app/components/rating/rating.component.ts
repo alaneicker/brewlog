@@ -16,10 +16,14 @@ export class RatingComponent implements OnInit, OnChanges {
     constructor() { }
 
     ngOnInit() {
-        this.stars = Array(this.rating).fill(0);
+        this.setRatingStars();
     }
 
     ngOnChanges() {
+        this.setRatingStars();
+    }
+
+    setRatingStars() {
         this.stars = Array(this.rating).fill(0);
     }
 
