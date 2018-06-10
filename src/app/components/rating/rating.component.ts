@@ -1,23 +1,19 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
     selector: 'app-rating',
     template: `
-        <div class="c-rating">
+        <div *ngIf="stars" class="c-rating">
             My Rating:
             <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
         </div>
     `,
 })
-export class RatingComponent implements OnInit, OnChanges {
+export class RatingComponent implements OnChanges {
     @Input() rating: number;
     stars: number[];
 
     constructor() { }
-
-    ngOnInit() {
-        this.setRatingStars();
-    }
 
     ngOnChanges() {
         this.setRatingStars();
