@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, OnChanges, AfterViewInit } from '@angular/core';
 
 declare var require: any;
 const createFocusTrap = require('../../../../node_modules/focus-trap');
@@ -8,7 +8,7 @@ const createFocusTrap = require('../../../../node_modules/focus-trap');
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss']
 })
-export class ModalComponent implements OnInit, OnChanges {
+export class ModalComponent implements OnInit, AfterViewInit, OnChanges {
     @ViewChild('modal') modal: ElementRef;
     @Input() id: string;
     @Input() isOpen: boolean;
@@ -16,22 +16,26 @@ export class ModalComponent implements OnInit, OnChanges {
 
     focusTrap: any;
 
+    domLoaded = false;
+
     constructor() { }
 
-    ngOnInit() {
+    ngOnInit() {}
+
+    ngAfterViewInit() {
+        this.focusTrap = createFocusTrap(`#${this.id}`, {});
+        this.domLoaded = true;
     }
 
     ngOnChanges() {
-        this.focusTrap = createFocusTrap(`#${this.id}`, {});
-
-        if (this.isOpen) {
+        if (this.domLoaded) {
             setTimeout(() => {
-                this.focusTrap.activate();
-            }, 500);
-        } else {
-            setTimeout(() => {
-                this.focusTrap.activate();
-            }, 500);
+                if (this.isOpen) {
+                    this.focusTrap.activate();
+                } else {
+                    this.handleClose();
+                }
+            }, 100);
         }
     }
 

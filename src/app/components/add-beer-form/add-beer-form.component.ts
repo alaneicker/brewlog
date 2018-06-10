@@ -22,6 +22,8 @@ import { HttpService } from '../../services/http.service';
 
 import { environment as env } from '../../../environments/environment';
 
+import { ModalComponent } from '../modal/modal.component';
+
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
@@ -53,6 +55,7 @@ export class AddBeerFormComponent implements OnInit {
     constructor(
         private httpService: HttpService,
         private router: Router,
+        private modal: ModalComponent,
     ) { }
 
     ngOnInit() {
@@ -88,6 +91,7 @@ export class AddBeerFormComponent implements OnInit {
     }
 
     emitCancel() {
+        this.modal.handleClose();
         this.cancelled.emit();
     }
 
@@ -113,6 +117,7 @@ export class AddBeerFormComponent implements OnInit {
             .then(res => {
                 if (res.affectedRows > 0) {
 
+                    this.modal.handleClose();
                     this.submitted.emit(res.body);
 
                     if (this.editMode) {
