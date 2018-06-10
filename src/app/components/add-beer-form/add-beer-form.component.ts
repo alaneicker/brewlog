@@ -113,13 +113,13 @@ export class AddBeerFormComponent implements OnInit {
             .then(res => {
                 if (res.affectedRows > 0) {
 
+                    this.submitted.emit(res.body);
+
                     if (this.editMode) {
-                        this.submitted.emit(res.body);
                         return;
                     } else {
                         this.form.reset();
                         this.selectedFiles = '';
-                        this.submitted.emit();
                     }
 
                     if (this.router.url === '/') {
