@@ -48,6 +48,10 @@ app.use(bodyParser.urlencoded({ extended: false, limit: 1000000000000 }));
 app.use(bodyParser.json({ limit: 1000000000000 })); 
 app.use(cors());
 
+app.use('/', express.static(`${__dirname}/dist`));
+app.set('view engine', 'html');
+app.set('views', `${__dirname}/dist`);
+
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => {
