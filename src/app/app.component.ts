@@ -12,7 +12,7 @@ import { IHeader } from './interfaces/header.interface';
 })
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribe$: Subject<void> = new Subject();
-  appName = 'Brew Journal';
+  appName = 'Brew Review';
 
   constructor(
     private router: Router,
