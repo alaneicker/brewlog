@@ -8,9 +8,9 @@ module.exports = {
     },
     production: {
       connectionLimit: 100,
-      host: 'us-cdbr-iron-east-05.cleardb.net',
-      user: 'be477d69ad2e03',
-      password: 'ec5a1352',
-      database: 'heroku_18b06d6c55cb8e4'
+      host: 'us-cdbr-iron-east-04.cleardb.net',
+      user: 'b5794d01784e8b',
+      password: '7eebe9f0',
+      database: 'heroku_f4ea44a144af0b0'
     }
 };

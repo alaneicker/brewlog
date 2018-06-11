@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
     baseUrl: '/',
-    baseApiUrl: 'https://brewreview.herokuapp.com/api',
+    baseApiUrl: 'https://brew-reviews.herokuapp.com/api',
 };
