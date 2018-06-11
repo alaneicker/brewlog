@@ -35,7 +35,7 @@ export class ModalComponent implements OnInit, AfterViewInit, OnChanges {
                 } else {
                     this.handleClose();
                 }
-            }, 100);
+            }, 200);
         }
     }
 
