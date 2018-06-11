@@ -55,7 +55,7 @@ app.set('views', `${__dirname}/dist`);
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => {
-            setCache(res);
+            //setCache(res);
             res.send(data)
         })
         .catch(error => console.log(error));
