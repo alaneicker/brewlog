@@ -55,7 +55,7 @@ app.set('views', `${__dirname}/dist`);
 app.route('/api/beers').get((req, res) => {
     query({ query: `SELECT * FROM mybeers` })
         .then(data => {
-            //setCache(res);
+            setCache(res);
             res.send(data)
         })
         .catch(error => console.log(error));
@@ -69,7 +69,7 @@ app.route('/api/beer/image/:imgId').get((req, res) => {
         
         const data = String(content);
 
-        //setCache(res);
+        setCache(res);
         res.send(data);
     });
 });
@@ -139,6 +139,7 @@ app.route('/api/beer/edit/:imgId/:id').put((req, res) => {
         if (req.body.upload !== '') {
             fs.writeFile(`./uploads/user-image-${req.params.imgId}.txt`, req.body.upload, err => {
                 console.log(`user-image-${req.params.imgId}.txt has been updated.`);
+                res.setHeader('Cache-Control', `public, max-age=-1`);
                 res.send(data);
             });
         } else {
