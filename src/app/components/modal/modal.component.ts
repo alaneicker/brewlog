@@ -12,6 +12,7 @@ export class ModalComponent implements OnInit, AfterViewInit, OnChanges {
     @ViewChild('modal') modal: ElementRef;
     @Input() id: string;
     @Input() isOpen: boolean;
+    @Input() isLoading = false;
     @Output() close: EventEmitter<any> = new EventEmitter();
 
     focusTrap: any;

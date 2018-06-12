@@ -32,25 +32,27 @@ import { ModalComponent } from '../modal/modal.component';
 export class AddBeerFormComponent implements OnInit {
     @ViewChild('fileInput') fileInput: ElementRef;
 
-    @Input() routeId: string;
-    @Input() imgId: string;
-
-    @Input() editMode = false;
-
-    @Input() formPrefix: string;
-
-    @Input() beerName: string;
-    @Input() rating: number;
-    @Input() comments: string;
-
+    @Output() inProgress: EventEmitter<any> = new EventEmitter();
     @Output() submitted: EventEmitter<any> = new EventEmitter();
     @Output() cancelled: EventEmitter<any> = new EventEmitter();
+
+    @Input() routeId: string;
+    @Input() imgId: string;
+    @Input() formPrefix: string;
+    @Input() beerName: string;
+    @Input() comments: string;
     @Input() formClass: string;
+
     @Input() hasSaveBtn = true;
+    @Input() editMode = false;
+
+    @Input() rating: number;
+
+    selectedFiles: string;
 
     hasCancelBtn: boolean;
+
     form: FormGroup;
-    selectedFiles: string;
 
     constructor(
         private httpService: HttpService,
@@ -100,6 +102,8 @@ export class AddBeerFormComponent implements OnInit {
         if (!form.valid) {
             return;
         }
+
+        this.inProgress.emit();
 
         const url = this.editMode
             ? `${env.baseApiUrl}/beer/edit/${this.imgId}/${this.routeId}`

@@ -31,6 +31,8 @@ export class SummarySectionComponent implements OnInit {
 
     isLoggedIn: boolean;
 
+    updating = false;
+
     modalActiveStates = {
         deleteBeer: false,
         editBeer: false,
@@ -56,6 +58,11 @@ export class SummarySectionComponent implements OnInit {
         }
 
         this.modalActiveStates.editBeer = false;
+        this.updating = false;
+    }
+
+    updateInProgress() {
+        this.updating = true;
     }
 
     openModal(modal) {
