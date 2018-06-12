@@ -69,7 +69,7 @@ app.route('/api/beer/image/:imgId').get((req, res) => {
         
         const data = String(content);
 
-        setCache(res);
+        //setCache(res);
         res.send(data);
     });
 });

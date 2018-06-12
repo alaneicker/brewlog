@@ -1,5 +1,15 @@
 @import '../../../assets/styles/_tools.scss';
 
+.beer-detail {
+    position: relative;
+
+    &.is-loading:after {
+        @include is-loading;
+        bottom: auto;
+        height: calc(100vh - 50px);
+    }
+}
+
 .c-untappd-checkins {
     @media (min-width: $breakpoint-medium) {
         max-width: rem(400);

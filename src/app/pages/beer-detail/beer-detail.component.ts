@@ -39,6 +39,8 @@ export class BeerDetailComponent implements OnInit {
 
     sessionStorageKeys: any;
 
+    isLoading = true;
+
     constructor(
         private httpService: HttpService,
         private route: ActivatedRoute,
@@ -62,6 +64,7 @@ export class BeerDetailComponent implements OnInit {
 
     ngOnInit() {
         if (this.storedBeerDetail === null) {
+            this.isLoading = true;
             this.getUntappdContentFromApi();
         } else {
             this.setUntappdContent(this.storedBeerDetail);
@@ -95,6 +98,8 @@ export class BeerDetailComponent implements OnInit {
         } else {
             this.setBreweryAndCheckinContentFromApi(beer.bid, brewery.brewery_id);
         }
+
+        this.isLoading = false;
     }
 
     setBreweryAndCheckinContentFromApi(beerId, breweryId) {

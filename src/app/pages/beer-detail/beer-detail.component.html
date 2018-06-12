@@ -1,74 +1,76 @@
-<app-summary-section
-    [routeId]="routeId"
-    [imgId]="imgId"
-    [datePosted]="userBeerData.datePosted"
-    [photoUrl]="userBeerData.imgDataUri"
-    [title]="userBeerData.beerName"
-    [comments]="userBeerData.comments"
-    [rating]="userBeerData.rating"
-    [abv]="untappdBeerAbv"
-    [ibu]="untappdBeerIbu"
-    [style]="untappdBeerStyle"
-    [brewery]="untappdBrewery"
-    [breweryCity]="untappdBreweryCity"
-    [breweryState]="untappdBreweryState"
-    [breweryWebsite]="untappdBreweryWebsite">
-</app-summary-section>
-
-<section class="padding padding--16 padding--24@medium bg-white">
-    <div class="wrapper">
-        <h3 class="u-text-lg u-vr-1 u-align-center">
-            About {{ userBeerData.beerName }}
-        </h3>
-        <p>{{ untappdBeerDescription }}</p>
-    </div>
-</section>
-
-<div class="u-vr-1">
-    <app-google-map 
-        [mapHeight]="'300'"
+<div class="beer-detail" [class.is-loading]="isLoading">
+    <app-summary-section
+        [routeId]="routeId"
+        [imgId]="imgId"
+        [datePosted]="userBeerData.datePosted"
+        [photoUrl]="userBeerData.imgDataUri"
+        [title]="userBeerData.beerName"
+        [comments]="userBeerData.comments"
+        [rating]="userBeerData.rating"
+        [abv]="untappdBeerAbv"
+        [ibu]="untappdBeerIbu"
+        [style]="untappdBeerStyle"
         [brewery]="untappdBrewery"
-        [locationData]="untappdLocationData"
-        [zoom]="14"></app-google-map>
-</div>
-
-<section class="padding padding--16 padding--24@medium">
-    <div class="wrapper">
-        <div class="u-flex--medium u-flex--hr">
-            <div class="u-flex__item--grow bg-white">
-                <h3 class="u-text-md padding--16 bg-blue u-text-white u-text-normal">
-                    Similar Beers You May Like
-                </h3>
-                <ul class="c-recommended-beers-list padding--24">
-                    <app-recommended-beers
-                        *ngFor="let otherBeer of untappdAllOtherBeers"
-                        [title]="otherBeer.beer.beer_name"
-                        [label]="otherBeer.beer.beer_label"
-                        [abv]="otherBeer.beer.beer_abv"
-                        [ibu]="otherBeer.beer.beer_ibu"
-                        [style]="otherBeer.beer.beer_style"
-                        [brewery]="otherBeer.brewery.brewery_name"
-                        [breweryWebsite]="otherBeer.brewery.contact.url">
-                    </app-recommended-beers>
-                </ul>
-            </div>
-            <div class="bg-white c-untappd-checkins">
-                <h3 class="u-text-md padding--16 bg-green u-text-white u-text-normal">
-                    Untappd Check-ins
-                </h3>
-                <ul class="padding--24">
-                    <li class="u-vr-2" *ngFor="let checkin of beerCheckins">
-                        <app-untappd-checkins
-                            [userAvatar]="checkin.user.user_avatar"
-                            [userName]="checkin.user.user_name"
-                            [createdAt]="checkin.created_at"
-                            [beerName]="checkin.beer.beer_name"
-                            [rating]="checkin.rating_score"
-                            [comment]="checkin.checkin_comment">
-                        </app-untappd-checkins>
-                    </li>
-                </ul>
+        [breweryCity]="untappdBreweryCity"
+        [breweryState]="untappdBreweryState"
+        [breweryWebsite]="untappdBreweryWebsite">
+    </app-summary-section>
+    
+    <section class="padding padding--16 padding--24@medium bg-white">
+        <div class="wrapper">
+            <h3 class="u-text-lg u-vr-1 u-align-center">
+                About {{ userBeerData.beerName }}
+            </h3>
+            <p>{{ untappdBeerDescription }}</p>
+        </div>
+    </section>
+    
+    <div class="u-vr-1">
+        <app-google-map 
+            [mapHeight]="'300'"
+            [brewery]="untappdBrewery"
+            [locationData]="untappdLocationData"
+            [zoom]="14"></app-google-map>
+    </div>
+    
+    <section class="padding padding--16 padding--24@medium">
+        <div class="wrapper">
+            <div class="u-flex--medium u-flex--hr">
+                <div class="u-flex__item--grow bg-white">
+                    <h3 class="u-text-md padding--16 bg-blue u-text-white u-text-normal">
+                        Similar Beers You May Like
+                    </h3>
+                    <ul class="c-recommended-beers-list padding--24">
+                        <app-recommended-beers
+                            *ngFor="let otherBeer of untappdAllOtherBeers"
+                            [title]="otherBeer.beer.beer_name"
+                            [label]="otherBeer.beer.beer_label"
+                            [abv]="otherBeer.beer.beer_abv"
+                            [ibu]="otherBeer.beer.beer_ibu"
+                            [style]="otherBeer.beer.beer_style"
+                            [brewery]="otherBeer.brewery.brewery_name"
+                            [breweryWebsite]="otherBeer.brewery.contact.url">
+                        </app-recommended-beers>
+                    </ul>
+                </div>
+                <div class="bg-white c-untappd-checkins">
+                    <h3 class="u-text-md padding--16 bg-green u-text-white u-text-normal">
+                        Untappd Check-ins
+                    </h3>
+                    <ul class="padding--24">
+                        <li class="u-vr-2" *ngFor="let checkin of beerCheckins">
+                            <app-untappd-checkins
+                                [userAvatar]="checkin.user.user_avatar"
+                                [userName]="checkin.user.user_name"
+                                [createdAt]="checkin.created_at"
+                                [beerName]="checkin.beer.beer_name"
+                                [rating]="checkin.rating_score"
+                                [comment]="checkin.checkin_comment">
+                            </app-untappd-checkins>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>

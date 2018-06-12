@@ -29,14 +29,7 @@
     }
 
     &.is-loading > &__window:after {
-        content: '';
-        display: block;
-        background: rgba(255,255,255,0.75) no-repeat center url('/assets/images/spinner.svg');
-        position: absolute;
-        right: 0;
-        top: 0;
-        left: 0;
-        bottom: 0;
+        @include is-loading;
     }
 
     &__header {
