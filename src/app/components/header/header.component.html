@@ -5,7 +5,7 @@
             <li>
                 <a routerLink="/">Home</a>
             </li>
-            <li>
+            <li *ngIf="isLoggedIn">
                 <a href="#" (click)="openModal('addBeer')">Add Beer</a>
             </li>
             <li>
