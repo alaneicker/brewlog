@@ -84,17 +84,13 @@ export class AddBeerFormComponent implements OnInit {
         if (file) {
             this.selectedFiles = file.name;
 
-            getOrientedImage(file, (err, canvas) => {
-                if (!err) {
-                    reader.readAsDataURL(file);
+            reader.readAsDataURL(file);
 
-                    reader.addEventListener('load', () => {
-                        this.form.patchValue({
-                            upload: reader.result
-                        });
-                    }, false);
-                }
-            });
+            reader.addEventListener('load', () => {
+                this.form.patchValue({
+                    upload: reader.result
+                });
+            }, false);
         }
     }
 
