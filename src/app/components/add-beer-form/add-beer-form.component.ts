@@ -19,6 +19,7 @@ import {
 import { Router } from '@angular/router';
 
 import { HttpService } from '../../services/http.service';
+import { Ng2ImgMaxService } from 'ng2-img-max';
 
 import { environment as env } from '../../../environments/environment';
 
@@ -58,6 +59,7 @@ export class AddBeerFormComponent implements OnInit {
         private httpService: HttpService,
         private router: Router,
         private modal: ModalComponent,
+        private ng2ImgMax: Ng2ImgMaxService,
     ) { }
 
     ngOnInit() {
@@ -82,13 +84,20 @@ export class AddBeerFormComponent implements OnInit {
         if (file) {
             this.selectedFiles = file.name;
 
-            reader.readAsDataURL(file);
+            this.ng2ImgMax.compressImage(file, 0.065).subscribe(
+                compressedFile => {
+                    reader.readAsDataURL(compressedFile);
 
-            reader.addEventListener('load', () => {
-                this.form.patchValue({
-                    upload: reader.result
-                });
-            }, false);
+                    reader.addEventListener('load', () => {
+                        this.form.patchValue({
+                            upload: reader.result
+                        });
+                    }, false);
+                },
+                error => {
+                    console.log('Oh no!', error);
+                }
+            );
         }
     }
 
