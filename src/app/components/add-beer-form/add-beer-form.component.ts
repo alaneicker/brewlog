@@ -24,6 +24,8 @@ import { environment as env } from '../../../environments/environment';
 
 import { ModalComponent } from '../modal/modal.component';
 
+import * as getOrientedImage from 'exif-orientation-image';
+
 @Component({
   selector: 'app-add-beer-form',
   templateUrl: './add-beer-form.component.html',
@@ -82,13 +84,17 @@ export class AddBeerFormComponent implements OnInit {
         if (file) {
             this.selectedFiles = file.name;
 
-            reader.readAsDataURL(file);
+            getOrientedImage(file, (err, canvas) => {
+                if (!err) {
+                    reader.readAsDataURL(file);
 
-            reader.addEventListener('load', () => {
-                this.form.patchValue({
-                    upload: reader.result
-                });
-              }, false);
+                    reader.addEventListener('load', () => {
+                        this.form.patchValue({
+                            upload: reader.result
+                        });
+                    }, false);
+                }
+            });
         }
     }
 
