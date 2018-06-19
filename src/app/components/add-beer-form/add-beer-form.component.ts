@@ -126,31 +126,29 @@ export class AddBeerFormComponent implements OnInit {
                 rating: this.form.get('rating').value,
                 comments: this.form.get('comments').value,
             },
-        })
-            .then(res => {
-                if (res.affectedRows > 0) {
+        }).then(res => {
+            if (res.affectedRows > 0) {
 
-                    this.modal.handleClose();
-                    this.submitted.emit(res.body);
+                this.modal.handleClose();
+                this.submitted.emit(res.body);
 
-                    if (this.editMode) {
-                        return;
-                    } else {
-                        this.form.reset();
-                        this.selectedFiles = '';
-                    }
-
-                    if (this.router.url === '/') {
-                        this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
-                    } else {
-                        this.router.navigate(['blank']).then(() => {
-                            this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
-                        });
-                    }
+                if (this.editMode) {
+                    return;
+                } else {
+                    this.form.reset();
+                    this.selectedFiles = '';
                 }
-            })
-            .catch(err => {
-                console.log(err);
-            });
+
+                if (this.router.url === '/') {
+                    this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
+                } else {
+                    this.router.navigate(['blank']).then(() => {
+                        this.router.navigate([`/beer-detail/${res.imgId}/${res.insertId}`]);
+                    });
+                }
+            }
+        }).catch(err => {
+            console.log(err);
+        });
     }
 }
