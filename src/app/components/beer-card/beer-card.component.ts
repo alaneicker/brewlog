@@ -14,6 +14,7 @@ export class BeerCardComponent implements OnInit {
     @Input() rating: number;
     @Input() imgId: string;
     @Input() routeId: string;
+    @Input() isFeatured: number;
 
     photoUrl: string;
 

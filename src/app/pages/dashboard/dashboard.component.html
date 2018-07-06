@@ -18,12 +18,15 @@
     </div>
 
     <ul class="c-beer-list">
-        <li class="c-beer-list__item" *ngFor="let beer of beers | FilterPipe:query">
+        <li class="c-beer-list__item" 
+            [class.is-featured]="beer.isFeatured"
+            *ngFor="let beer of beers | FilterPipe:query">
             <app-beer-card
                 [title]="beer.beerName"
                 [rating]="beer.rating"
                 [routeId]="beer.id"
-                [imgId]="beer.imgId">
+                [imgId]="beer.imgId"
+                [isFeatured]="beer.isFeatured">
             </app-beer-card>
         </li>
     </ul>
