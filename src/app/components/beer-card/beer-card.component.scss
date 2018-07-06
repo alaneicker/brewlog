@@ -2,20 +2,45 @@
 
 .c-beer-card {
     position: relative;
+    overflow: hidden;
 
     &__banner {
         background: $red;
         color: $white;
-        display: inline-flex;
-        font-size: rem(13);
+        display: inline-block;
+        font-size: rem(12);
         font-weight: $font-medium;
-        padding: rem(8 12);
+        padding: rem(8 0);
         text-transform: uppercase;
         position: absolute;
         top: rem(0);
-        right: rem(0);
-        border-left: rem(2) solid $gray-6;
-        border-bottom: rem(2) solid $gray-6;
+        right: rem(16);
+        width: rem(120);
+        text-align: center;
+
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            width: 0;
+            height: 0;
+        }
+
+        &:before {
+            left: 0;
+            border-left: 0 solid transparent;
+            border-right: rem(60) solid transparent;
+            border-top: rem(20) solid $red;
+        }
+
+        &:after {
+            right: 0;
+            border-left: rem(60) solid transparent;
+            border-right: 0 solid transparent;
+            border-top: rem(20) solid $red;
+        }
     }
 
     &__photo {
