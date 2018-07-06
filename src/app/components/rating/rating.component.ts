@@ -4,7 +4,7 @@ import { Component, Input, OnChanges } from '@angular/core';
     selector: 'app-rating',
     template: `
         <div *ngIf="stars" class="c-rating">
-            My Rating:
+            Rating:
             <span class="u-text-gold" *ngFor="let star of stars">&#9733;</span>
         </div>
     `,
