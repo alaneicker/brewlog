@@ -7,14 +7,14 @@
         background: $red;
         color: $white;
         display: inline-block;
-        font-size: rem(15);
+        font-size: rem(13);
         font-weight: $font-medium;
         padding: rem(8 0);
         text-transform: uppercase;
         position: absolute;
-        top: rem(-4);
+        top: rem(-2);
         right: rem(16);
-        width: rem(120);
+        width: rem(80);
         text-align: center;
 
         &:before,
@@ -30,13 +30,13 @@
         &:before {
             left: 0;
             border-left: 0 solid transparent;
-            border-right: rem(60) solid transparent;
+            border-right: rem(40) solid transparent;
             border-top: rem(20) solid $red;
         }
 
         &:after {
             right: 0;
-            border-left: rem(60) solid transparent;
+            border-left: rem(40) solid transparent;
             border-right: 0 solid transparent;
             border-top: rem(20) solid $red;
         }
