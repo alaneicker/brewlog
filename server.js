@@ -75,7 +75,14 @@ app.route('/api/beer/image/:imgId').get((req, res) => {
 });
 
 app.route('/api/beer/:imgId/:id').get((req, res) => {
-    query({ query: `SELECT * FROM mybeers WHERE id = ${req.params.id}`, isArray: false })
+    query({ 
+          query: `
+            SELECT * 
+            FROM mybeers 
+            WHERE id = ${req.params.id}
+          `,
+          isArray: false
+        })
         .then(data => {
 
             fs.readFile(`./uploads/user-image-${data.imgId}.txt`, 'utf8', (err, content) => {
@@ -102,7 +109,11 @@ app.route('/api/beer/add').post((req, res) => {
     query({ 
         query: `
             INSERT INTO mybeers 
-            SET beerName = ?, rating = ?, comments = ?, imgId = ?, datePosted = ?
+            SET beerName = ?, 
+                rating = ?, 
+                comments = ?, 
+                imgId = ?, 
+                datePosted = ?
         `,
         data: [
             req.body.beerName,
@@ -123,7 +134,9 @@ app.route('/api/beer/edit/:imgId/:id').put((req, res) => {
     query({ 
         query: `
             UPDATE mybeers
-            SET beerName = ?, rating = ?, comments = ?
+            SET beerName = ?, 
+                rating = ?, 
+                comments = ?
             WHERE id = ${req.params.id}
         `,
         data: [
@@ -150,7 +163,10 @@ app.route('/api/beer/edit/:imgId/:id').put((req, res) => {
 });
 
 app.route('/api/beer/delete/:imgId/:id').delete((req, res) => {
-    query({ query: `DELETE FROM mybeers WHERE id = ${req.params.id}` })
+    query({ query: `
+            DELETE FROM mybeers 
+            WHERE id = ${req.params.id}
+        `})
         .then(data => {
             fs.unlink(`./uploads/user-image-${req.params.imgId}.txt`, err => {
                 res.send(data);
