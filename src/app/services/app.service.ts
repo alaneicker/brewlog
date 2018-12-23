@@ -5,6 +5,6 @@ export class AppService {
     isLoggedIn: boolean;
 
     constructor() {
-        this.isLoggedIn = true;
+        this.isLoggedIn = false;
     }
 }
