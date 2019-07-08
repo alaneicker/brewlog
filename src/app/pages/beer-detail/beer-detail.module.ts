@@ -20,7 +20,7 @@ import { routing } from './beer-detail.router';
         CommonModule,
         SummarySectionModule,
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyCmeCDLj1uvr97KxjUiaade1zfeya02Uog'
+            apiKey: 'AIzaSyAet8Mk1nPvOn_AebLE5ZxXoGejOD8tPzA'
         })
     ],
     declarations: [
